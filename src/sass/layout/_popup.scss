@@ -1,0 +1,94 @@
+.modal-open .modal {
+    @include scroll;
+}
+
+.modal {
+
+    &-dialog {
+        @include respond-to(xs) {
+            margin-top: $base-indent * 3;
+        }
+
+        &--lg {
+            max-width: 960px;
+            margin: $base-indent auto;
+        } //.modal-dialog--lg
+
+        &--md {
+            max-width: 768px;
+            margin: $base-indent auto;
+        } //.modal-dialog--md
+
+        &--sm {
+            max-width: 425px;
+            margin: $base-indent auto;
+        } //.modal-dialog--sm
+    } //.modal-dialog
+
+    &-header {
+        color: #fff;
+        border-bottom: none;
+        background-color: $color-main;
+        position: relative;
+
+        .modal__btn--close {
+            top: 8px;
+            right: 5px;
+        }
+    } //.modal-header
+
+    &-title {
+        margin: auto 0;
+        font-family: $f;
+        font-weight: 500;
+        font-size: 17px;
+        letter-spacing: 0;
+        text-transform: initial;
+        line-height: 1;
+    } //.modal-title
+
+    &-footer {
+        border-top: 1px solid $modal-border-color;
+        background-color: $color-bg--lighten;
+
+        button {
+            padding: 4px 20px;
+            font-size: 14px;
+        }
+    } //.modal-footer
+
+    &-close {
+        height: auto;
+        padding: 5px 10px;
+        font-size: 21px;
+        font-weight: 600;
+        line-height: 1;
+        color: #fff;
+        text-shadow: none;
+        background-color: transparent;
+        box-shadow: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        opacity: 0.5;
+        position: absolute;
+        top: 7px;
+        right: 5px;
+        z-index: z(default);
+
+        &:hover {
+            text-decoration: none;
+            opacity: 1;
+        }
+
+        &::before {
+            content: '\f00d';
+            font-family: faL;
+            font-size: 16px;
+        }
+
+        &:not(:disabled):not(.disabled) {
+            cursor: pointer;
+        }
+    } //.modal-close
+} //.modal

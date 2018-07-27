@@ -1,0 +1,51 @@
+//transition
+@mixin tr($time: 0.35s, $what: all, $why: ease) {
+    transition: $what $time $why;
+}
+
+//triangel before
+@mixin beforearr($color: #fff, $direction: t, $width: 12, $height: 6) {
+    position: relative;
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -6px;
+        left: 20px;
+        margin-left: -6px;
+        @include arr($width, $height, $color, $direction);
+    }
+}
+
+
+//Custom Webkit Scroll
+@mixin scroll {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    @include scrollbar {
+        width: 5px;
+    }
+    @include scrollbar-track {
+        width: 5px;
+    }
+    @include scrollbar-thumb {
+        background-color: $color-bg--dark;
+    }
+}
+
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+

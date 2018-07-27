@@ -1,0 +1,94 @@
+%img {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+%box {
+    border-radius: $border-radius;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 0 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+%styleInput {
+    height: 40px;
+    line-height: 40px;
+}
+
+%badge {
+    min-width: 20px;
+    height: 19px;
+    padding: 3px 5px;
+    text-align: center;
+    font-family: $f-num--b;
+    font-size: 9px;
+    color: #000;
+    border-radius: 500px;
+    overflow: hidden;
+    @include flex;
+    align-items: center;
+}
+
+@mixin textLight {
+    font-family: $f-light;
+    font-weight: 300;
+}
+
+@mixin borderTop {
+    border-top: 1px solid $color-border--lightest;
+
+    &:first-child {
+        border-top: none;
+    }
+}
+
+@mixin gutter($offset: $gutter) {
+    margin-bottom: $offset;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@mixin listIcon {
+    padding-left: 15px;
+    position: relative;
+
+    &::before {
+        content: '';
+        display: block;
+        width: 8px;
+        height: 2px;
+        background-color: $color-main;
+        position: absolute;
+        top: 12px;
+        left: 0;
+    }
+} //ul li &::before (-)
+
+@mixin sOverlay($color: #000, $opacity: 0.45) {
+    position: relative;
+
+    &::before {
+        display: block;
+        content: '';
+        background-color: rgba($color, $opacity);
+        @include tr;
+        @include coverdiv;
+        z-index: z(down);
+    }
+
+    & > * {
+        z-index: z(default);
+    }
+}
+
+@mixin container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    @include respond-to(lg) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

@@ -1,0 +1,26 @@
+.tab {
+
+    &__titles {
+        @include flexCenter;
+    } //tab__titles
+
+    &__title {
+        padding: 5px 30px;
+        border-bottom: 2px solid rgba(#000, 0.2);
+        cursor: pointer;
+        @include nosel;
+
+        &:hover {
+            border-bottom: 2px solid rgba(#000, 0.3);
+        }
+
+        &.is-active {
+            border-bottom: 2px solid #000;
+        }
+    } //tab__title
+
+    &__content {
+        display: none;
+        padding: 15px 30px;
+    } //tab__content
+} //tab

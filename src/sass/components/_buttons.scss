@@ -1,0 +1,23 @@
+%button {
+    padding: 6px 35px 7px;
+    font-family: $f;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: $border-radius;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    z-index: z(default);
+    @include tr;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.btn {
+    @extend %button;
+}

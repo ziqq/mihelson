@@ -1,0 +1,149 @@
+$breakpoints: (
+    i5: 320px,
+    i7: 375px,
+    i8: 414px,
+    xs: 425px,
+    sm: 768px,
+    md: 1024px,
+    lg: 1200px
+);
+
+//z-index
+$z-index: (
+    bottom: -9999,
+    down: -1,
+    default: 1,
+    success: 50,
+    dropdown: 333,
+    overlay: 999,
+    modal: 1001
+);
+
+//FONT
+$f: roboto-400, sans-serif;
+$f-i: roboto-400i, sans-serif;
+$f-c: roboto-400c, sans-serif;
+$f-light: roboto-300, sans-serif;
+$f-light-i: roboto-300i, sans-serif;
+$f-light-c: roboto-300c, sans-serif;
+$f-medium: roboto-500, sans-serif;
+$f-medium-i: roboto-500i, sans-serif;
+$f-medium-c: roboto-500c, sans-serif;
+$f-bold: roboto-600, sans-serif;
+$f-bold-i: roboto-600i, sans-serif;
+$f-bold-c: roboto-600c, sans-serif;
+
+//font for num
+$f-num: oswald-400, sans-serif;
+$f-num--l: oswald-300, sans-serif;
+$f-num--m: oswald-500, sans-serif;
+$f-num--b: oswald-600, sans-serif;
+
+$font-size-base: 16px;
+$font-family-base: $f;
+$line-height-base: 1.5;
+$font-weight-base: 400;
+
+//Отступы
+$base-indent: 20px;
+$half-indent: $base-indent / 2;
+$section-indent: 50px;
+
+$gutter: $base-indent;
+
+//Base Variebles
+$color-accent: #00dfbf;
+$color-main: #ff8272;
+$color-third: #fff06b;
+
+$color-muted: #d6d6d6;
+$color-primary: #ff8272;
+$color-primary--light: #ff9280;
+$color-success: #8cc152;
+$color-success--light: #a0d468;
+$color-info: #0b5f90;
+$color-info--light: #1d8acb;
+$color-danger: #c9302c;
+$color-danger--light: #d9534f;
+
+//gray
+$gray--darkest: #242626;
+$gray--darken: #353737;
+$gray--dark: #464646;
+$gray: #585a59;
+$gray--light: #adadad;
+$gray--lighten: #e0e0e0;
+$gray--lightest: #f9f9f9;
+
+//text
+$color-text: $gray;
+
+//bg
+$color-bg--accent: #fff4f0;
+$color-bg--darkest: #191919;
+$color-bg--darken: #191919;
+$color-bg--dark: #222;
+$color-bg: #2f2f2f;
+$color-bg--light: #eee;
+$color-bg--lighten: #f5f5f5;
+$color-bg--lightest: #f9f9f9;
+
+//border
+$color-border--darkest: $gray--darkest;
+$color-border--darken: $gray--darken;
+$color-border--dark: $gray--dark;
+$color-border: $gray;
+$color-border--light: #d6d6d6;
+$color-border--lighten: #e0e0e0;
+$color-border--lightest: #eee;
+
+$border-radius: 2px;
+
+$color-icon: #727272;
+$color-placeholder: #999;
+
+//Тень
+$bxs: 1px 1px 10px #ddd;
+$bxs-hover: 1px 1px 10px rgba($color-main, 0.6);
+
+//button colors
+$button-colors: (
+    accent: $color-accent,
+    default: $color-main,
+    success: $color-success,
+    error: $color-danger,
+    warning: $color-danger--light,
+    info: $color-info--light,
+    muted: $color-muted
+);
+
+//Icons
+$icon-enter: '\f090'; //вход
+$icon-home: '\f015'; //dashbord
+$icon-lk: '\f007'; //личный кабинет
+
+$nav-icons: (
+    enter: $icon-enter,
+    home: $icon-home,
+    lk: $icon-lk
+);
+
+//Modal Variebles
+$modal-border-width: 1px;
+$modal-border-color: #e8e8e8;
+$border-radius: $border-radius;
+
+$modal-box-shadow: 0 0.25rem 0.5rem rgba(#000, 0.5) !default;
+
+$modal-backdrop-bg: #000 !default;
+$modal-content-bg: #fff !default;
+$modal-backdrop-opacity: 0.4 !default;
+$modal-header-padding: 1rem !default;
+$modal-inner-padding: 1rem !default;
+
+$modal-md: 500px !default;
+$modal-sm: 300px !default;
+$modal-lg: 800px !default;
+
+$transition-collapse: height 0.35s ease !default;
+$transition-fade: opacity 0.15s linear !default;
