@@ -33,99 +33,77 @@ $f-bold: roboto-600, sans-serif;
 $f-bold-i: roboto-600i, sans-serif;
 $f-bold-c: roboto-600c, sans-serif;
 
-//font for num
-$f-num: oswald-400, sans-serif;
-$f-num--l: oswald-300, sans-serif;
-$f-num--m: oswald-500, sans-serif;
-$f-num--b: oswald-600, sans-serif;
-
 $font-size-base: 16px;
 $font-family-base: $f;
 $line-height-base: 1.5;
 $font-weight-base: 400;
 
 //Отступы
-$base-indent: 20px;
+$base-indent: 30px;
 $half-indent: $base-indent / 2;
-$section-indent: 50px;
+$section-indent: 70px;
 
 $gutter: $base-indent;
 
 //Base Variebles
-$color-accent: #00dfbf;
-$color-main: #ff8272;
-$color-third: #fff06b;
-
-$color-muted: #d6d6d6;
-$color-primary: #ff8272;
-$color-primary--light: #ff9280;
-$color-success: #8cc152;
-$color-success--light: #a0d468;
-$color-info: #0b5f90;
-$color-info--light: #1d8acb;
-$color-danger: #c9302c;
-$color-danger--light: #d9534f;
+$color-accent: #ffdd00;
+$color-link: #74a3c7;
 
 //gray
 $gray--darkest: #242626;
 $gray--darken: #353737;
-$gray--dark: #464646;
-$gray: #585a59;
-$gray--light: #adadad;
-$gray--lighten: #e0e0e0;
+$gray--dark: #e8e9eb;
+$gray: #707070;
+$gray--light: #afadad;
+$gray--lighten: #e8e9eb;
 $gray--lightest: #f9f9f9;
 
 //text
-$color-text: $gray;
+$color-text: #000;
 
 //bg
-$color-bg--accent: #fff4f0;
-$color-bg--darkest: #191919;
-$color-bg--darken: #191919;
-$color-bg--dark: #222;
-$color-bg: #2f2f2f;
-$color-bg--light: #eee;
-$color-bg--lighten: #f5f5f5;
-$color-bg--lightest: #f9f9f9;
+$color-bg--darkest: none;
+$color-bg--darken: none;
+$color-bg--dark: #141414;
+$color-bg: none;
+$color-bg--light: $gray--light;
+$color-bg--lighten: none;
+$color-bg--lightest: none;
 
 //border
-$color-border--darkest: $gray--darkest;
-$color-border--darken: $gray--darken;
-$color-border--dark: $gray--dark;
-$color-border: $gray;
-$color-border--light: #d6d6d6;
-$color-border--lighten: #e0e0e0;
-$color-border--lightest: #eee;
+$color-border--darkest: none;
+$color-border--darken: none;
+$color-border--dark: none;
+$color-border: none;
+$color-border--light: $gray--lighten;
+$color-border--lighten: none;
+$color-border--lightest: none;
 
-$border-radius: 2px;
+$border-radius: 4px;
 
-$color-icon: #727272;
+$color-icon: $gray;
 $color-placeholder: #999;
 
 //Тень
-$bxs: 1px 1px 10px #ddd;
-$bxs-hover: 1px 1px 10px rgba($color-main, 0.6);
+$bxs-hover: 0 5px 10px rgba(0, 0, 0, 0.26);
 
 //button colors
 $button-colors: (
     accent: $color-accent,
-    default: $color-main,
-    success: $color-success,
-    error: $color-danger,
-    warning: $color-danger--light,
-    info: $color-info--light,
-    muted: $color-muted
+    black: $color-text
 );
 
 //Icons
-$icon-enter: '\f090'; //вход
-$icon-home: '\f015'; //dashbord
-$icon-lk: '\f007'; //личный кабинет
+$icon-instagram: '\f16d';
+$icon-youtube: '\f167';
+$icon-telegram: '\f3fe';
+$icon-vk: '\f189';
 
-$nav-icons: (
-    enter: $icon-enter,
-    home: $icon-home,
-    lk: $icon-lk
+$soc-icons: (
+    instagram: $icon-instagram,
+    youtube: $icon-youtube,
+    telegram: $icon-telegram,
+    vk: $icon-vk
 );
 
 //Modal Variebles

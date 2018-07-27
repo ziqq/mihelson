@@ -7,13 +7,13 @@ strong {
 // Стили  ссылок
 
 a {
-    color: $color-main;
+    color: $color-accent;
     text-decoration: none;
     outline: none;
     @include tr;
 
     &:hover {
-        color: lighten($color-main, 10%);
+        color: lighten($color-accent, 10%);
     }
 
     &.is-disable {
@@ -28,10 +28,10 @@ h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 {
 h1,.h1 {
     font-family: $f-bold;
     font-weight: 600;
-    font-size: 48px;
+    font-size: 40px;
     line-height: 1.05em;
     @include max-screen(1024) {
-        font-size: 40px;
+        font-size: 36px;
         line-height: 1.125em;
     }
     @include respond-to(sm) {
@@ -39,19 +39,11 @@ h1,.h1 {
     }
 }
 
-h2,.h2 {
-    font-family: $f-bold;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 1.25em;
-    @include max-screen(1024) {
-        font-size: 32px;
-        line-height: 1.25em;
-    }
-    @include respond-to(sm) {
-        font-size: 26px;
-        line-height: 1.15384615em;
-    }
+h2,.h2, h3,.h3 {
+    color: $color-text;
+    font-family: $f-medium;
+    font-size: 27px;
+    font-weight: 500;
 }
 
 h3,.h3 {
@@ -125,10 +117,6 @@ select {
             font-size: 16px;
         }
     }
-}
-
-.num {
-    font-family: $f-num;
 }
 
 .text-color {
