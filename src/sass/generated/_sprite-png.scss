@@ -4,8 +4,11 @@ $icons: map-merge($icons,('rating--gray': (X: 0px, Y:-64px, W: 74px, H: 13px, TW
 $icons: map-merge($icons,('rating': (X: -84px, Y:-64px, W: 74px, H: 13px, TW: 205px, TH: 119px, IMG: '../img/sprite.png')));
 $icons: map-merge($icons,('rating_big--gray': (X: -74px, Y:0px, W: 131px, H: 22px, TW: 205px, TH: 119px, IMG: '../img/sprite.png')));
 $icons: map-merge($icons,('rating_big': (X: -74px, Y:-32px, W: 131px, H: 22px, TW: 205px, TH: 119px, IMG: '../img/sprite.png')));
+$icons: map-merge($icons,('search--mobile': (X: -84px, Y:-87px, W: 22px, H: 22px, TW: 205px, TH: 119px, IMG: '../img/sprite.png')));
+$icons: map-merge($icons,('search': (X: -116px, Y:-87px, W: 22px, H: 22px, TW: 205px, TH: 119px, IMG: '../img/sprite.png')));
 $icons: map-merge($icons,('ss-angle--left': (X: 0px, Y:-87px, W: 32px, H: 32px, TW: 205px, TH: 119px, IMG: '../img/sprite.png')));
 $icons: map-merge($icons,('ss-angle--right': (X: -42px, Y:-87px, W: 32px, H: 32px, TW: 205px, TH: 119px, IMG: '../img/sprite.png')));
+$icons: map-merge($icons,('telephone': (X: -148px, Y:-87px, W: 16px, H: 16px, TW: 205px, TH: 119px, IMG: '../img/sprite.png')));
 
 
 // Gets an attribute from the sass map
@@ -87,6 +90,20 @@ $icons: map-merge($icons,('ss-angle--right': (X: -42px, Y:-87px, W: 32px, H: 32p
 //	background-position: -74px -32px
 //}
 //
+//.icon-search--mobile{
+	//	width: 22px
+//	height: 22px
+//	background-image: url('../img/sprite.png')
+//	background-position: -84px -87px
+//}
+//
+//.icon-search{
+	//	width: 22px
+//	height: 22px
+//	background-image: url('../img/sprite.png')
+//	background-position: -116px -87px
+//}
+//
 //.icon-ss-angle--left{
 	//	width: 32px
 //	height: 32px
@@ -99,5 +116,12 @@ $icons: map-merge($icons,('ss-angle--right': (X: -42px, Y:-87px, W: 32px, H: 32p
 //	height: 32px
 //	background-image: url('../img/sprite.png')
 //	background-position: -42px -87px
+//}
+//
+//.icon-telephone{
+	//	width: 16px
+//	height: 16px
+//	background-image: url('../img/sprite.png')
+//	background-position: -148px -87px
 //}
 //

@@ -1,8 +1,8 @@
 %button {
-    padding: 6px 35px 7px;
+    padding: 9px 35px;
     font-family: $f;
-    font-size: 15px;
-    letter-spacing: 0.3px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
     text-align: center;
     color: #fff;
     text-decoration: none;
@@ -20,4 +20,20 @@
 
 .btn {
     @extend %button;
+
+    @each $theme, $color in $button-colors {
+
+        &.btn--#{$theme} {
+            background-color: $color;
+
+            &:hover {
+                background-color: lighten($color, 15%);
+                box-shadow: inset 0 1px 3px #000;
+            }
+
+            &:active {
+                box-shadow: inset 0 0 30px $color;
+            }
+        }
+    }
 }

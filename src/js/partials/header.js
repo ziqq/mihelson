@@ -42,10 +42,10 @@ if ($('.js-search-input').length > 0) {
     });
 
     searchInput.on('focus', function() {
+        var hint = $(this)
+            .closest('.js-search')
+            .find('.search__hint');
         if ($(this).val() !== '') {
-            var hint = $(this)
-                .closest('.js-search')
-                .find('.search__hint');
             hint.removeAttr('style');
         } else {
             hint.css('display', 'none');
@@ -53,9 +53,9 @@ if ($('.js-search-input').length > 0) {
     });
 
     searchInput.on('blur', function() {
-        var hint = $(this)
+        $(this)
             .closest('.js-search')
-            .find('.search__hint');
-        hint.css('display', 'none');
+            .find('.search__hint')
+            .css('display', 'none');
     });
 }

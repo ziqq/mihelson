@@ -1,0 +1,120 @@
+.wrapper {
+    min-height: 100vh;
+    @include flexColumn;
+}
+
+.main {
+    flex: 1;
+
+    @include respond-to(sm) {
+        padding-top: 50px;
+    }
+}
+
+.icon {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    fill: $color-icon;
+}
+
+.box-center {
+    @include flexColumn;
+    align-items: center;
+} //.box-center
+
+.social {
+    @include flexCenter;
+
+    &__list {
+        @include flexCenter;
+    } //social__list
+
+    &__item {
+
+        & + & {
+            margin-left: 30px;
+        }
+    } //social__item
+
+    &__link {
+
+        &:hover {
+
+            .social__icon {
+                fill: #000;
+            }
+        }
+    } //social__link
+
+    &__icon {
+        fill: $gray;
+    } //social__icon
+} //social
+
+.phone {
+    position: relative;
+
+    &__link {
+        display: block;
+        color: $gray--darkest;
+        font-size: 20px;
+        line-height: 1;
+    } //phone__link
+
+    &__text {
+        display: block;
+        margin-top: 5px;
+        color: $gray;
+        font-family: $f;
+        font-size: 13px;
+        line-height: 1;
+    } //phone__text
+
+    &--icon {
+
+        .phone__link {
+            position: relative;
+        }
+    } //phone--icon
+} //phone
+
+.go-top {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: $color-link;
+    font-family: $f-bold;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 1px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    // transform: translateX(-50%);
+    transition: bottom 0.5s cubic-bezier(0.17, 0.67, 0.13, 0.98);
+    z-index: z(success);
+    display: flex;
+
+    // @include min-screen(426) {
+    //     display: none;
+    // }
+
+    &::before {
+        content: '\f106';
+        color: $color-link;
+        font-family: faR;
+        font-size: 20px;
+        line-height: 1;
+        @include vx;
+        top: 15px;
+    }
+
+    &.is-visible {
+        transform: translateX(0);
+    }
+} //.go-top

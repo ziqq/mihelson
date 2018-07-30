@@ -26,14 +26,14 @@
 <!-- item.checkbox('мужской', 'bb-checkbox--radio, profile-editor__checkbox') -->
 
 {% macro btn(title, class) %}
-<button class="button {{class}}">
+<button class="btn {{class}}">
 	{{title}}
 </button>
 {% endmacro %}
 <!-- item.button('Пригласить', 'invite__btn') -->
 
 {% macro btnLink(title, class, href="#") %}
-<a href="{{ href }}" class="button {{class}}">
+<a href="{{ href }}" class="btn {{class}}">
 	{{title}}
 </a>
 {% endmacro %}

@@ -48,6 +48,7 @@ $gutter: $base-indent;
 //Base Variebles
 $color-accent: #ffdd00;
 $color-link: #74a3c7;
+$color-link--hover: #1b55c3;
 
 //gray
 $gray--darkest: #242626;
@@ -62,8 +63,8 @@ $gray--lightest: #f9f9f9;
 $color-text: #000;
 
 //bg
-$color-bg--darkest: none;
-$color-bg--darken: none;
+$color-bg--darkest: #000;
+$color-bg--darken: #292929;
 $color-bg--dark: #141414;
 $color-bg: none;
 $color-bg--light: $gray--light;
@@ -90,7 +91,7 @@ $bxs-hover: 0 5px 10px rgba(0, 0, 0, 0.26);
 //button colors
 $button-colors: (
     accent: $color-accent,
-    black: $color-text
+    black: $color-bg--dark
 );
 
 //Icons

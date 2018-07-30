@@ -1,0 +1,54 @@
+$header-height: 50px;
+
+.header {
+
+    @include respond-to(sm) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: z(dropdown);
+    }
+
+    &__top {
+        height: $header-height;
+        background-color: $gray--lighten;
+        position: relative;
+    } //.header__top
+
+    &__bottom {
+        height: $header-height;
+
+        @include respond-to(sm) {
+            display: none;
+        }
+    } //.header__bottom
+
+    &__inner {
+        @include flexCenter;
+    } //.header__inner
+
+    &__logo {
+        margin-right: 40px;
+        @include respond-to(sm) {
+            margin-left: 52px;
+        }
+    }//.header__logo
+
+    &__nav {
+        flex: 1;
+    }//.header__nav
+
+    &__search {
+        margin-right: $gutter;
+    }//.header__search
+} //.header
+
+.logo {
+    &__link {
+        color: $color-text;
+        font-family: $f-bold;
+        line-height: $header-height;
+        letter-spacing: 0.5px;
+    }//.logo__link
+}//.logo

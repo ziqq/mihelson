@@ -26,10 +26,108 @@
     <link href="img/favicon/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
     <link href="img/favicon/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
     <link href="css/app.css" rel="stylesheet" media="all"> </head>
-  <body class="loading" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+  <body class="loading">
     <div class="wrapper ">
       <!-- begin header -->
-      <header class="header " itemscope itemtype="http://schema.org/WPHeader">
+      <header class="header ">
+        <!-- begin header__top -->
+        <div class="header__top">
+          <div class="container">
+            <div class="header__inner">
+              <!-- begin logo -->
+              <div class="logo header__logo">
+                <a href="/" class="logo__link">Михельсон</a>
+              </div>
+              <!-- end logo -->
+              <!-- begin nav -->
+              <nav class="nav nav--top header__nav sm-hide">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Производство</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Бренды</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- end nav -->
+              <div class="header__search sm-hide">
+                <!-- begin search -->
+                <div class="search__wrap">
+                  <div class="search js-search">
+                    <form autocomplete="on">
+                      <input class="search__field js-search-input" type="text" placeholder="Что вы ищите ?" autocomplete="off">
+                      <button class="search__submit">Поиск</button>
+                      <div class="search__hint" style="display: none;">
+                        <div class="search-hint search-hint--cyties">
+                          <ul class="search-hint__list">
+                            <li class="search-hint__item">
+                              <a href="#" class="search-hint__link">
+                                <span class="search-hint__text">Same title</span>
+                              </a>
+                            </li>
+                            <li class="search-hint__item">
+                              <a href="#" class="search-hint__link">
+                                <span class="search-hint__text">Same title</span>
+                              </a>
+                            </li>
+                            <li class="search-hint__item">
+                              <a href="#" class="search-hint__link">
+                                <span class="search-hint__text">Same title</span>
+                              </a>
+                            </li>
+                            <li class="search-hint__item">
+                              <a href="#" class="search-hint__link">
+                                <span class="search-hint__text">Same title</span>
+                              </a>
+                            </li>
+                            <li class="search-hint__item">
+                              <a href="#" class="search-hint__link">
+                                <span class="search-hint__text">Same title</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <!-- end search -->
+              </div>
+              <button class="btn btn--black sm-hide"> Cтать дилером </button>
+            </div>
+          </div>
+        </div>
+        <!-- end header__top -->
+        <!-- begin header__bottom -->
+        <div class="header__bottom">
+          <div class="container">
+            <div class="header__inner">
+              <!-- begin nav -->
+              <nav class="nav nav--bottom sm-hide">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Легкий старт</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Логистика</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Уникальные коды</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Журнал</a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- end nav -->
+            </div>
+          </div>
+        </div>
+        <!-- end header__bottom -->
         <!-- begin mobile-toggle-btn -->
         <div class="js-nav-toggle menu-toggle">
           <div class="menu-toggle__boxes">
@@ -40,22 +138,774 @@
           </div>
         </div>
         <!-- end mobile-toggle-btn -->
+        <!-- begin mobile-nave -->
+        <nav class="mobile-nav js-nav">
+          <div class="mobile-nav__in">
+            <div class="mobile-nav__search sm-only">
+              <!-- begin search -->
+              <div class="search__wrap">
+                <div class="search js-search">
+                  <form autocomplete="on">
+                    <input class="search__field js-search-input" type="text" placeholder="Что вы ищите ?" autocomplete="off">
+                    <button class="search__submit"></button>
+                    <div class="search__hint" style="display: none;">
+                      <div class="search-hint search-hint--cyties">
+                        <ul class="search-hint__list">
+                          <li class="search-hint__item">
+                            <a href="#" class="search-hint__link">
+                              <span class="search-hint__text">Same title</span>
+                            </a>
+                          </li>
+                          <li class="search-hint__item">
+                            <a href="#" class="search-hint__link">
+                              <span class="search-hint__text">Same title</span>
+                            </a>
+                          </li>
+                          <li class="search-hint__item">
+                            <a href="#" class="search-hint__link">
+                              <span class="search-hint__text">Same title</span>
+                            </a>
+                          </li>
+                          <li class="search-hint__item">
+                            <a href="#" class="search-hint__link">
+                              <span class="search-hint__text">Same title</span>
+                            </a>
+                          </li>
+                          <li class="search-hint__item">
+                            <a href="#" class="search-hint__link">
+                              <span class="search-hint__text">Same title</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- end search -->
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__item">
+                <a href="#" class="mobile-nav__link mobile-nav__link--home">Главная</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="#" class="mobile-nav__link js-mobile-nav-sub--open">Производство</a>
+                <div class="mobile-nav--sub">
+                  <ul class="mobile-nav__list">
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link mobile-nav__link--back js-mobile-nav-sub--close">Назад</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Control Shift 20
+                        <span>рентабельность 20%</span>
+                      </a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Балаково Запчасть
+                        <span>рентабельность 20%</span>
+                      </a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">РТИ АВТО
+                        <span>рентабельность 20%</span>
+                      </a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">РТИ АВТО
+                        <span>рентабельность 20%</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="box-center">
+                    <div class="phone phone--icon">
+                      <a href="#" class="phone__link" itemprop="telephone">8 800 555 25 40</a>
+                    </div>
+                    <button class="btn btn--black mobile-nav__btn"> Cтать дилером </button>
+                    <!-- begin social -->
+                    <div class="social ">
+                      <ul class="social__list">
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-social__instagram social__icon">
+                              <use xlink:href="img/sprite.svg#social__instagram"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-social__youtube social__icon">
+                              <use xlink:href="img/sprite.svg#social__youtube"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-social__telegram social__icon">
+                              <use xlink:href="img/sprite.svg#social__telegram"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-social__vk social__icon">
+                              <use xlink:href="img/sprite.svg#social__vk"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- end social -->
+                  </div>
+                </div>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="#" class="mobile-nav__link js-mobile-nav-sub--open">Бренды</a>
+                <div class="mobile-nav--sub">
+                  <ul class="mobile-nav__list">
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link mobile-nav__link--back js-mobile-nav-sub--close">Назад</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Control Shift 20</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Балаково Запчасть</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">РТИ АВТО</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">БРТИ</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">БалаковоРезинотехника</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Сэви</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">БМРТ</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Резинотехника</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Вепа</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Технологии Будущего</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">AD Plastic</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Опора</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">МЗМ</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Промтехнология</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">ПТП</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Технопартнер</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Уралэластотехника</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Волгопромтранс</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Элад</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Резерв</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">СЗРТ</a>
+                    </li>
+                  </ul>
+                  <div class="box-center">
+                    <div class="phone phone--icon">
+                      <a href="#" class="phone__link" itemprop="telephone">8 800 555 25 40</a>
+                    </div>
+                    <button class="btn btn--black mobile-nav__btn"> Cтать дилером </button>
+                    <!-- begin social -->
+                    <div class="social ">
+                      <ul class="social__list">
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-social__instagram social__icon">
+                              <use xlink:href="img/sprite.svg#social__instagram"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-social__youtube social__icon">
+                              <use xlink:href="img/sprite.svg#social__youtube"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-social__telegram social__icon">
+                              <use xlink:href="img/sprite.svg#social__telegram"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-social__vk social__icon">
+                              <use xlink:href="img/sprite.svg#social__vk"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- end social -->
+                  </div>
+                </div>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="#" class="mobile-nav__link js-mobile-nav-sub--open">Контакты</a>
+                <div class="mobile-nav--sub">
+                  <ul class="mobile-nav__list">
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link mobile-nav__link--back js-mobile-nav-sub--close">Назад</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <div href="" class="mobile-nav__link">
+                        <strong>Бесплатный телефон: </strong>
+                        <a href="tel:88005552540">8 (800) 555-25-40</a>
+                      </div>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="javascript:void(0);" class="mobile-nav__link">108-добавочный номер
+                        <span>руководитель отдела продаж</span>
+                        <strong>Забрусков Алексей Сергеевич</strong>
+                      </a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="javascript:void(0);" class="mobile-nav__link">141-добавочный номер
+                        <span>генеральный директор компании</span>
+                        <strong>Михельсон Игорь Станиславович</strong>
+                      </a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <div class="mobile-nav__link">
+                        <strong>Городской телефон: </strong>
+                        <a href="tel:+78453631067">+7 (8453) 63-10-67</a>
+                        <a href="tel:+78453683288">+7 (8453) 68-32-88</a>
+                      </div>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <div class="mobile-nav__link">
+                        <strong>Мобильный телефон: </strong>
+                        <a href="tel:+79962100000">+7 (996) 210-00-00</a>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="mobile-nav__list mobile-nav__list--sub">
+                    <div class="mobile-nav__item">
+                      <div class="mobile-nav__link">
+                        <strong>Электронная почта:</strong>
+                        <a href="mailto:info@mikhelson.ru">info@mikhelson.ru</a>
+                      </div>
+                    </div>
+                  </ul>
+                  <ul class="mobile-nav__list mobile-nav__list--sub">
+                    <li class="mobile-nav__item">
+                      <div class="mobile-nav__link">
+                        <strong>Режим работы: </strong> Пн - Сб 8:00 - 17:00
+                        <br> Вс - выходной
+                        <br> Обед 13:00 - 14:00 </div>
+                    </li>
+                  </ul>
+                  <ul class="mobile-nav__list mobile-nav__list--sub">
+                    <li class="mobile-nav__item">
+                      <a href="mailto:info@mikhelson.ru" class="mobile-nav__link">
+                        <strong>Адрес производства: </strong> 413840, рф Саратовская область,
+                        <br> г. Балаково, ул. Транспортная, 7/5 </a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="mailto:info@mikhelson.ru" class="mobile-nav__link">
+                        <strong>Адрес склада: </strong> 413840, рф Саратовская область,
+                        <br> г. Балаково, ул. Транспортная, 6/1 </a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="mailto:info@mikhelson.ru" class="mobile-nav__link">
+                        <strong>Адрес офиса: </strong> 413840, рф Саратовская область,
+                        <br> г. Балаково, ул. Факел Социализма, 24 </a>
+                    </li>
+                  </ul>
+                  <div class="box-center">
+                    <div class="phone phone--icon">
+                      <a href="#" class="phone__link" itemprop="telephone">8 800 555 25 40</a>
+                    </div>
+                    <button class="btn btn--black mobile-nav__btn"> Cтать дилером </button>
+                    <!-- begin social -->
+                    <div class="social ">
+                      <ul class="social__list">
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-social__instagram social__icon">
+                              <use xlink:href="img/sprite.svg#social__instagram"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-social__youtube social__icon">
+                              <use xlink:href="img/sprite.svg#social__youtube"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-social__telegram social__icon">
+                              <use xlink:href="img/sprite.svg#social__telegram"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-social__vk social__icon">
+                              <use xlink:href="img/sprite.svg#social__vk"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- end social -->
+                  </div>
+                </div>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="#" class="mobile-nav__link js-mobile-nav-sub--open">Актуальное</a>
+                <div class="mobile-nav--sub">
+                  <ul class="mobile-nav__list">
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link mobile-nav__link--back js-mobile-nav-sub--close">Назад</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Легкий старт</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Логистика</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Уникальные коды</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Журнал</a>
+                    </li>
+                  </ul>
+                  <div class="box-center">
+                    <div class="phone phone--icon">
+                      <a href="#" class="phone__link" itemprop="telephone">8 800 555 25 40</a>
+                    </div>
+                    <button class="btn btn--black mobile-nav__btn"> Cтать дилером </button>
+                    <!-- begin social -->
+                    <div class="social ">
+                      <ul class="social__list">
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-social__instagram social__icon">
+                              <use xlink:href="img/sprite.svg#social__instagram"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-social__youtube social__icon">
+                              <use xlink:href="img/sprite.svg#social__youtube"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-social__telegram social__icon">
+                              <use xlink:href="img/sprite.svg#social__telegram"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-social__vk social__icon">
+                              <use xlink:href="img/sprite.svg#social__vk"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- end social -->
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="mobile-nav__list mobile-nav__list--sub pt-0">
+              <li class="mobile-nav__item">
+                <a href="#" class="mobile-nav__link">О компании</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="#" class="mobile-nav__link">Оплата</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="#" class="mobile-nav__link">Сертификаты (.pdf)</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="#" class="mobile-nav__link">Гарантийные обязательства</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="#" class="mobile-nav__link">Политика конфиденциальности</a>
+              </li>
+            </ul>
+            <div class="box-center">
+              <div class="phone phone--icon">
+                <a href="#" class="phone__link" itemprop="telephone">8 800 555 25 40</a>
+              </div>
+              <button class="btn btn--black mobile-nav__btn"> Cтать дилером </button>
+              <!-- begin social -->
+              <div class="social ">
+                <ul class="social__list">
+                  <li class="social__item">
+                    <a href="#" class="social__link">
+                      <svg class="icon icon-social__instagram social__icon">
+                        <use xlink:href="img/sprite.svg#social__instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a href="#" class="social__link">
+                      <svg class="icon icon-social__youtube social__icon">
+                        <use xlink:href="img/sprite.svg#social__youtube"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a href="#" class="social__link">
+                      <svg class="icon icon-social__telegram social__icon">
+                        <use xlink:href="img/sprite.svg#social__telegram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a href="#" class="social__link">
+                      <svg class="icon icon-social__vk social__icon">
+                        <use xlink:href="img/sprite.svg#social__vk"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- end social -->
+            </div>
+          </div>
+        </nav>
+        <!-- end mobile-nav -->
       </header>
       <!-- end header -->
       <!-- begin home -->
-      <main class="main home">
-        <h1>Title</h1>
-        <svg class="icon icon-rating ">
-          <use xlink:href="img/sprite.svg#rating"></use>
-        </svg>
-      </main>
+      <main class="main home"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam amet minima officia, est, reiciendis culpa porro quaerat natus iusto incidunt rem ea nisi esse omnis. Dicta error est in laborum doloremque molestiae quasi ea, rerum magni illo sed aliquam
+        eius fugiat eum corrupti delectus magnam reiciendis ipsam ipsum? Provident, laboriosam. Adipisci, vero atque perferendis sed dolor sint maiores ullam aliquam fugit, natus modi? Tempore doloribus magni autem veniam, illo animi praesentium nihil
+        rem obcaecati blanditiis itaque placeat neque dolorum consectetur esse ipsum, dicta iusto. Non, quidem veritatis iusto laborum suscipit accusamus perspiciatis rerum aspernatur laboriosam odit nesciunt atque ullam maxime. Sint assumenda aperiam
+        et, sunt at aliquid ex nesciunt obcaecati harum architecto deserunt ducimus nostrum reiciendis reprehenderit iure voluptatem expedita dicta quia. Totam velit iure doloremque dolorem voluptatum minus natus ipsa placeat ipsam, recusandae perspiciatis
+        quae! Laboriosam corrupti mollitia sed totam sunt explicabo recusandae ipsum nulla earum fugiat. Officia nesciunt aut nobis saepe praesentium vel fuga ipsa quo tempora culpa natus dolorem provident quidem dolores minima, inventore, asperiores,
+        commodi consequatur blanditiis. Reiciendis iste voluptatum repellendus animi voluptate ea neque repellat exercitationem ratione vitae vero tempore quis, eligendi, veritatis nesciunt molestiae dolorem sunt, illum architecto accusantium eveniet
+        minima velit! Quisquam nam tempore labore magni dolorem iure pariatur veritatis numquam sit natus libero nesciunt quae molestias adipisci quas id hic assumenda dicta ducimus, fugiat quam exercitationem velit commodi eligendi. Deleniti harum praesentium,
+        quo nobis neque nulla itaque, sapiente aspernatur ducimus sunt ab atque iste, inventore iusto debitis. Ad maxime aliquam, perferendis aliquid adipisci tempore asperiores reprehenderit velit provident error ea fugiat illum officiis sit debitis
+        vel veniam mollitia, cumque totam ratione dolores, vero quasi dignissimos. Suscipit delectus alias eum illum, totam iste consequuntur repellat. Voluptas recusandae, numquam praesentium expedita nemo dolorum! Commodi qui nisi consectetur recusandae
+        placeat optio, odit officia debitis sequi aliquid reiciendis dolorem numquam quas sit error alias dolore voluptate architecto voluptas assumenda rerum vitae? Illo deserunt minus vel natus libero beatae obcaecati quidem magni pariatur quisquam
+        eaque eos corporis laudantium ex excepturi, saepe doloribus mollitia! Mollitia eos asperiores itaque eveniet, quos iste quis quae vero in temporibus iure vel praesentium commodi iusto ab cum sunt ratione consequatur dolorem sapiente fugit quo
+        cupiditate totam. Veritatis magnam similique deserunt dicta sunt assumenda dolorem asperiores eius, ad magni nulla quo explicabo incidunt inventore aut omnis praesentium est beatae eum modi laboriosam perferendis nemo! Ad nihil doloremque asperiores
+        sint explicabo enim numquam officia magnam ut deserunt odio, labore dolorem magni quaerat commodi alias eum cupiditate. Laborum ducimus non, ea voluptas minus autem consequatur, animi quo, dicta odit nobis soluta quia facilis? Minus nemo saepe
+        ea dolores architecto dolor perferendis cupiditate magni maxime illum incidunt officia odio suscipit, debitis, sed non commodi sapiente similique possimus? Quod facere at aut debitis corporis, numquam cupiditate quidem quo ullam officia atque
+        dolorem. A totam facilis obcaecati quisquam pariatur repudiandae, possimus asperiores voluptates magni, adipisci ipsa minima magnam voluptas, voluptatum quibusdam. Doloribus qui recusandae impedit ipsam inventore est sunt, ipsa rem consequuntur
+        obcaecati. Culpa voluptatum, deserunt facere enim atque magni corrupti id reiciendis obcaecati molestias. Exercitationem veritatis aliquid pariatur! Eos eius in accusantium quidem hic ea nihil ex commodi excepturi blanditiis. Vitae provident dolores,
+        assumenda porro praesentium doloremque, sint hic tempore perspiciatis laborum molestiae fugiat quisquam ducimus quae, qui numquam voluptas nam magnam consequuntur corrupti voluptate harum. Esse, autem. Praesentium, alias tempora laudantium id
+        error consectetur deserunt commodi ullam ad quia recusandae, rerum cupiditate quo sequi fugit aliquam explicabo reprehenderit reiciendis quis. Laboriosam cumque tempore, illum repellendus quisquam delectus. Magni qui necessitatibus impedit sed
+        animi eius repellat suscipit ducimus nostrum facilis veritatis quidem assumenda a, velit sapiente non expedita incidunt atque. Veniam rem voluptatum beatae atque aperiam assumenda maxime voluptate! Similique consequuntur temporibus molestiae quidem
+        autem dolor obcaecati placeat, ullam animi veniam pariatur esse expedita iste adipisci nemo laudantium eius porro corrupti tempore itaque. Officia cupiditate numquam officiis, sequi, dicta velit labore optio reprehenderit, quae quis repudiandae
+        aspernatur odit sunt doloribus! Architecto, maiores fugit. Expedita dolorem, quas reprehenderit officia quo aliquid hic eaque reiciendis, libero omnis soluta, distinctio obcaecati deserunt aspernatur quidem doloremque labore nisi modi ut in odit?
+        Esse aliquid dolores quasi, eveniet optio deserunt magni ipsa iste rem ullam reiciendis asperiores cupiditate at ea voluptatem unde, distinctio sit laboriosam ad nam laborum dolorem? Ipsa velit cumque voluptatum pariatur quaerat nostrum ipsam
+        dicta id illo perspiciatis. Labore expedita rem saepe cumque laudantium repellat doloribus deleniti eaque quae eligendi debitis tempora voluptates fugit inventore tempore ut, ullam officia itaque iure dicta et! Eum voluptates fugiat ullam distinctio
+        totam, officiis et explicabo dolorum a quia commodi, aspernatur ducimus sint rem repudiandae! Illum hic quaerat, enim nesciunt quisquam ab in natus architecto maiores tempora quibusdam nostrum nobis illo quod beatae pariatur rem rerum neque explicabo
+        suscipit ut magnam fugiat harum. Rem consectetur tempora laborum quaerat earum hic quos nesciunt doloribus aliquam cupiditate explicabo vitae reiciendis, deserunt porro, est ex quibusdam vel iusto asperiores accusamus odio consequuntur optio repudiandae.
+        Blanditiis, fuga? Obcaecati error commodi recusandae culpa, velit officia, ipsum nisi tempora repellat maxime numquam ea suscipit quos cumque porro? Dolorum minima obcaecati, velit quam natus repellat laborum blanditiis optio qui ea labore perferendis
+        facilis consequatur ex ipsa quia architecto sit voluptate repudiandae, soluta porro mollitia! Cupiditate, sequi. Aliquam repudiandae voluptatibus maxime, placeat cumque illum provident ut soluta, nesciunt ipsam expedita, optio quibusdam numquam
+        autem tenetur. Quod eaque doloribus natus vitae distinctio maiores cupiditate illo fuga ad corporis? Aliquam rem itaque optio odit ut odio provident. Odio debitis, vitae reiciendis natus rem error accusantium accusamus rerum omnis iste ipsa aspernatur
+        laboriosam culpa nam id quia eius eveniet exercitationem temporibus quam. Rerum autem at voluptas, id tenetur quae alias quod ipsa! Dolorem nobis quis dolor distinctio velit similique cum libero et odio aliquam, beatae praesentium suscipit ipsa
+        tenetur, fugit cupiditate mollitia, omnis consectetur voluptatum commodi ea vel ab? Eius consectetur soluta pariatur corrupti aliquid fugit provident voluptatum, cum nostrum dolores sunt quis aliquam id exercitationem laudantium minima. Quaerat
+        cumque, laboriosam similique quia labore repudiandae quisquam nam nesciunt odit molestias nostrum explicabo cum non architecto, ipsa reprehenderit maxime magnam deserunt voluptate. Ipsum ut assumenda sed laudantium dolores. Minus aliquid dolore
+        dolorum? Doloremque quasi reprehenderit quis tempora illum eum beatae perspiciatis sed est, iure ad nulla fugiat unde. Similique aliquam quod dolores modi, quisquam libero dolorem dicta, ratione officiis magnam maiores beatae architecto ex consectetur
+        odio asperiores dolorum distinctio tempora ab vitae exercitationem? Ipsum, sed nihil. Dolorum eos distinctio, odio mollitia eaque accusamus, ex culpa amet nostrum voluptatibus aperiam, expedita dolore eum est quas repudiandae odit at saepe. Atque
+        deserunt debitis accusamus, at dolore labore exercitationem error. Aut pariatur nihil commodi odit itaque unde distinctio, exercitationem voluptate, cumque delectus incidunt velit eos quod inventore eaque ipsum illo amet totam, repudiandae laborum
+        vel nisi? Fuga incidunt, debitis maxime blanditiis explicabo sit ab voluptatibus quia itaque quibusdam tempore quod omnis dignissimos perspiciatis quaerat provident alias illum voluptates? Consequuntur, dolore quibusdam vel eius exercitationem
+        laborum atque expedita itaque corporis neque! Dicta repellat possimus dignissimos ratione sunt provident voluptatem iste dolor atque sapiente veritatis labore ab quo non quisquam fugit excepturi consequatur voluptatum eius nemo mollitia, accusantium
+        perferendis enim vero? Temporibus quidem ullam voluptas! Autem aliquid, ullam vel delectus ea dolor exercitationem eos repellat. Deleniti iusto culpa vel quis aut eaque harum unde libero illo dolorem? Eveniet iste laboriosam at, sit qui ut quos
+        aut vero sed cupiditate recusandae est dicta vitae ex non eaque asperiores! Culpa quam nulla repudiandae, quia nisi dignissimos odio sed repellat esse veritatis fugiat maxime quasi neque omnis animi possimus officia totam. Quidem, rem officiis!
+        Totam, tempore vel. Quidem quod, accusamus et nobis exercitationem qui, perspiciatis error tenetur quos optio officiis ipsum alias porro voluptates eveniet temporibus voluptas. Quos asperiores, id, autem accusantium at animi cupiditate nihil adipisci
+        labore vitae quia soluta suscipit neque nesciunt, itaque nemo laudantium numquam quasi eius ipsum. Corrupti laudantium neque dolorem magni temporibus possimus iste natus soluta maiores nobis amet earum, modi qui dolore nulla ex excepturi sed vel
+        aperiam magnam labore consequuntur? Iusto reprehenderit perferendis aperiam modi culpa recusandae distinctio laudantium provident omnis ipsam saepe, tempora commodi cumque voluptas suscipit possimus at eaque porro facere tenetur quibusdam officia
+        eum ea debitis? Quos vitae aperiam officiis omnis quae dolore numquam qui facere cum corrupti, eum aut consequatur, aliquid delectus, incidunt laudantium temporibus. Error libero deleniti doloribus, odit sed dolorem ex rerum esse maiores labore
+        cumque ipsam aspernatur sit natus nihil debitis ut facilis dolore temporibus. Temporibus, nesciunt dolore! Repellat sequi error odio sint nulla neque provident non molestias vero, cum officia quod laborum obcaecati minus, explicabo similique corporis
+        quia numquam tempore incidunt. Fugit labore id, repellat consequuntur dicta exercitationem qui! Magnam, sequi provident. Voluptate nulla, eius ipsam molestiae optio officiis quod, praesentium ullam magnam animi unde nam eligendi at ab dolores
+        facere deserunt beatae ipsa quisquam necessitatibus! Nobis, sint nihil cupiditate quisquam voluptatem nam ipsa, consectetur eaque excepturi odio reprehenderit fugit dignissimos quas temporibus animi a soluta et illo unde assumenda dolorum facere
+        voluptate. Quae inventore in possimus, accusantium architecto illo, illum, asperiores molestias temporibus sed officiis aliquam obcaecati error sint voluptas rem dolore atque! Nisi, culpa ex ipsum in et dolor vero consectetur rerum ratione itaque!
+        Non ut similique est perferendis. Temporibus esse eius a. Eos unde iure minus provident eaque totam id soluta officia, quasi, quisquam necessitatibus consectetur dolorum laborum assumenda voluptas itaque quod. Ea animi numquam ducimus omnis libero
+        nulla amet id cumque reiciendis laborum debitis vitae minus modi nihil voluptates eveniet, architecto repellendus quidem blanditiis obcaecati facere sequi, possimus assumenda autem. Distinctio veritatis quod eveniet labore reiciendis doloremque
+        esse quisquam, quo cupiditate ullam amet at sed debitis ex et a? Officia voluptatem maxime nostrum delectus ea minima recusandae, unde ipsum quibusdam voluptate ut dolor neque temporibus provident fuga numquam? Quaerat ipsum obcaecati ut, dolorum
+        qui architecto vitae eaque debitis dolores consequuntur rem possimus culpa fugiat natus quasi eos. Sint tempore amet nobis ab laborum dicta magni, deserunt inventore illo ipsum neque esse optio qui at facilis quas nemo cumque recusandae accusantium
+        voluptates accusamus maiores. Unde, sed eum labore qui fugiat ducimus tenetur quia vitae voluptates optio eius. Itaque, delectus ipsum doloremque aspernatur adipisci exercitationem et nostrum officiis repellat dicta totam perferendis sit ipsa
+        mollitia quaerat accusantium nobis. Quam nesciunt molestias explicabo praesentium delectus nihil omnis sequi quibusdam excepturi! Quidem laudantium, illum sequi, quod repellat voluptatum qui tempora enim adipisci voluptates accusantium libero
+        totam praesentium odio soluta! Porro, quos quis, veritatis minima quas repellat perspiciatis dolorum tempora nobis doloribus esse ab similique enim, reprehenderit quo nulla. Voluptatibus eaque magni atque nostrum ut quam, voluptatum incidunt hic
+        praesentium rem! Est eius eum dolorum modi veniam quod voluptates odio fugiat architecto quisquam sed qui, nobis temporibus aspernatur maiores aperiam, quo dolore suscipit magnam ad vero nihil ea placeat! Dolorem iste eius vero explicabo, cum
+        tempore blanditiis obcaecati soluta praesentium commodi et distinctio ab cumque at minima impedit quia. Voluptatum adipisci quae veritatis, inventore dolor ut omnis esse facere eos repudiandae libero ex. Pariatur, culpa illum iste possimus ducimus
+        obcaecati repellendus. Sequi esse ipsam accusantium mollitia obcaecati incidunt beatae adipisci explicabo odio nulla, sed veritatis iusto repellat ducimus rerum aliquam ratione culpa. Neque accusamus expedita nihil sit aut, praesentium quam. Vero
+        quae corrupti ratione earum suscipit aliquid dolore obcaecati commodi nihil id laudantium dolorum, saepe ut sequi ipsa dolores ab, quaerat inventore, maxime quas atque minima. Fuga iste, aut nisi, vel aliquid porro animi doloribus ut commodi nesciunt
+        at doloremque asperiores eos quaerat. Cum praesentium minus facere nam optio commodi. Nesciunt ex recusandae harum eaque facilis qui est neque voluptate fugit animi nemo, quam deserunt, assumenda ad, voluptatibus nulla nihil. Quasi sunt molestias
+        sint porro, iure quaerat perferendis numquam aliquid animi dignissimos consectetur asperiores? Possimus a voluptatibus maxime reiciendis numquam excepturi neque beatae eos pariatur repellendus doloremque deleniti, vero laborum doloribus, perspiciatis
+        odit. Minus illum qui dolorem aliquid cum? Rerum quo est, maiores tempora maxime numquam corrupti vitae, eaque nisi, officiis nihil velit aliquid praesentium hic laudantium iure distinctio quis labore fuga ipsa ducimus beatae fugiat qui ullam?
+        Asperiores officiis architecto nihil quod dicta. Iste soluta quas recusandae aliquid. Repudiandae eius asperiores rerum voluptas iusto, pariatur obcaecati consectetur minima quasi eaque nihil quibusdam ea labore ipsa, soluta dolores reprehenderit
+        magnam dicta explicabo rem, id cumque itaque! Sapiente voluptates quod eligendi mollitia accusamus expedita porro repellendus dicta nisi. Iure voluptatem minima maxime autem dicta perferendis, doloribus neque, ratione, eum vel alias voluptates
+        velit. Nam commodi ipsum consequuntur ipsa atque, quia officiis, at molestiae unde suscipit fuga, alias dignissimos hic iste numquam officia excepturi voluptatum quibusdam libero totam praesentium ex? Tenetur neque sint laboriosam labore mollitia
+        perferendis veniam, eum corporis minima porro eos omnis harum ab? Veniam, reprehenderit, laudantium esse ipsum nobis hic ea quasi voluptate pariatur deleniti nihil quae! Nesciunt autem corporis aut, quae ullam eum odit debitis enim, modi laboriosam
+        sunt in cumque necessitatibus iusto maxime expedita adipisci nihil ad aperiam. Atque ipsa obcaecati repudiandae reiciendis adipisci, nobis aspernatur architecto, recusandae iusto nostrum porro quia illum ipsam laboriosam tempora et distinctio
+        consequuntur consequatur accusantium sit delectus alias perferendis? Corporis magni recusandae officiis, ab possimus, maxime exercitationem unde doloribus dolore quam quos quaerat quia optio molestiae ipsum mollitia id at non ad placeat, vitae
+        tempore. Necessitatibus eius deserunt inventore exercitationem ullam labore atque voluptates nemo, mollitia odit. Voluptatibus molestias explicabo inventore enim, facilis ut at corporis. Aliquam dolor corrupti veniam! Ut soluta doloribus facilis
+        dolores dignissimos reiciendis distinctio quae suscipit labore officiis a omnis, eaque et cumque, modi ipsum fugiat corporis nemo eos quod sint quas libero. Quam quia asperiores quod cum, accusamus qui voluptate libero placeat non voluptates illum
+        minima praesentium explicabo fuga suscipit laudantium sunt iste soluta nobis alias eaque repudiandae numquam natus? Ipsa repellendus amet alias ipsam autem ea esse illum aspernatur deleniti, aperiam nam soluta corporis cupiditate dolore cum fugit
+        repellat, suscipit unde sint accusantium dolores nesciunt? Temporibus, cupiditate itaque dignissimos ducimus, illo vitae impedit doloribus, voluptates blanditiis quo quidem minima? Nostrum nam repellendus dolorum, id necessitatibus quam ab enim
+        illum eveniet, inventore commodi amet voluptate consectetur quasi esse vero nulla minus. Ab eos corporis labore impedit sunt odit mollitia amet culpa perspiciatis repellat aliquid nam et iste facilis voluptas, illo suscipit? Veniam nostrum harum
+        laboriosam quidem architecto, numquam rerum porro animi dolorem maxime qui aliquid aperiam earum deleniti at corporis odit in eos perspiciatis quasi doloribus ab tenetur! Omnis, ipsum eum? Sint earum, harum laboriosam nisi fugit iure suscipit
+        molestias! Autem commodi tempora ratione soluta aspernatur incidunt illo rerum, cumque ad architecto non vel perferendis facilis sed accusantium modi optio earum. Quia iure, molestiae aliquid voluptatem aperiam exercitationem ad nihil sequi. Voluptatum
+        ducimus porro aperiam voluptate perspiciatis debitis quis accusantium quae aspernatur, itaque odio temporibus? Nulla, sequi praesentium. Suscipit provident veniam error dolore impedit corrupti magni molestias dolores non libero? Delectus quas
+        placeat doloribus sit mollitia maiores voluptates tempore suscipit eos cumque. Cupiditate deserunt saepe asperiores dolorem corporis libero non ad tempora laboriosam laudantium aut aliquam sequi doloribus porro, dignissimos nemo aliquid consectetur
+        repudiandae recusandae molestiae rerum tempore aspernatur soluta! Consequuntur, animi quibusdam reprehenderit similique quasi dolorem quaerat adipisci autem vero quisquam qui mollitia libero perferendis amet eaque incidunt possimus delectus hic
+        voluptatem inventore reiciendis deserunt, quod quis? Distinctio deleniti consequatur facere, omnis quidem quam quia mollitia officia ad nemo maiores enim blanditiis tempora delectus assumenda, quisquam repellendus ab nihil porro aliquid? Maiores
+        deserunt voluptatem adipisci eius iste reiciendis unde expedita placeat, perspiciatis sapiente, necessitatibus itaque maxime in sit recusandae, non sunt exercitationem id quidem? Expedita ad amet, ratione et nam distinctio quas quisquam cum exercitationem
+        reprehenderit itaque minus deleniti, quibusdam voluptate dignissimos voluptatum perspiciatis sunt porro quo sed necessitatibus suscipit voluptatem. At sit natus quibusdam. A, distinctio autem impedit blanditiis voluptatibus culpa, consequatur
+        adipisci, eum ut quidem dolore provident assumenda incidunt suscipit aliquam deserunt sapiente est ratione minus vero commodi praesentium! Esse, assumenda unde harum itaque aut eius tempora sed, dicta repudiandae accusantium reprehenderit eum
+        atque non! Quaerat maxime unde voluptatum porro est sed accusamus sequi repellendus. Qui rerum fuga necessitatibus, excepturi soluta quo sapiente incidunt maiores dolore porro pariatur accusantium minima consequuntur totam distinctio et aperiam
+        repudiandae debitis similique eum eius ipsum repellat perspiciatis accusamus? Illum repudiandae fugiat sapiente temporibus aliquid eaque doloremque quaerat rerum ipsum nesciunt earum nihil facilis sequi quidem enim laboriosam dicta magni quia,
+        veniam exercitationem distinctio inventore atque sunt. Quod culpa distinctio nostrum et? Culpa, soluta sit, accusamus aspernatur deleniti harum consequatur totam necessitatibus corrupti accusantium quam ipsum fugit impedit magni hic. Maiores deleniti,
+        magni quis necessitatibus ullam officia, voluptas minus libero architecto, rem eum deserunt at ratione. Atque a distinctio maiores aperiam. Deleniti placeat rerum quidem quam sint, quis animi, assumenda accusantium soluta quae dolorem nobis officia
+        quas aspernatur repudiandae possimus quod magnam repellat? Iure recusandae error, sit ipsam laudantium a eligendi accusantium accusamus velit veniam explicabo magnam, quasi rerum? Illo cupiditate nam reiciendis quo veritatis dolore placeat veniam
+        dignissimos id maxime est maiores tempora quia eius et nisi quod quidem eveniet suscipit quas exercitationem iste ducimus, repudiandae tenetur. Incidunt eaque explicabo voluptate est aspernatur. Minima, sed provident rerum aperiam non iure necessitatibus
+        quo officiis impedit, magnam nihil vitae deleniti commodi consectetur autem esse libero amet ullam. Expedita at velit consectetur corrupti, assumenda iste molestias reiciendis fuga, odio maxime, eum harum est obcaecati quis qui sequi consequatur
+        quasi! Dolor, ea qui sit, modi praesentium nisi, maxime illum recusandae ex molestias expedita? Culpa ea exercitationem adipisci molestias! Natus, distinctio. Ad earum ipsa corporis rerum molestiae odio sunt impedit reiciendis, eveniet dolore
+        cupiditate maiores fugit doloribus at molestias sed esse officiis laborum dicta beatae iusto blanditiis? Soluta eum minus reiciendis non quas est et tempore vitae, debitis voluptatem necessitatibus porro dolorum a nulla laudantium at quisquam
+        expedita itaque ea hic voluptate. Deleniti dignissimos a quibusdam unde laboriosam asperiores ratione itaque quae, consequuntur similique sequi et, facere, voluptatem placeat molestias inventore voluptatum praesentium. Distinctio odit temporibus
+        voluptatem ullam labore iure porro at unde nostrum nemo iusto, hic rerum totam ipsa vel tempora sit earum. Velit porro, accusantium illo excepturi deserunt, autem, quos sapiente non aperiam amet enim mollitia ipsa culpa harum? Necessitatibus assumenda
+        incidunt, dolorum distinctio hic tenetur nostrum obcaecati aut? </main>
       <!-- end home -->
       <!-- begin footer -->
-      <footer class="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter"> </footer>
+      <footer class="footer">
+        <!-- begin footer__top -->
+        <div class="footer__top">
+          <div class="container">
+            <div class="footer__in">
+              <ul class="footer__item">
+                <li>
+                  <a href="#">Главная</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+                <li>
+                  <a href="#">О компании</a>
+                </li>
+                <li>
+                  <a href="#">Логистика</a>
+                </li>
+                <li>
+                  <a href="#">Оплата </a>
+                </li>
+              </ul>
+              <ul class="footer__item">
+                <li>
+                  <a href="#">Журнал</a>
+                </li>
+                <li>
+                  <a href="#">Все бренды</a>
+                </li>
+                <li>
+                  <a href="#">Сертификаты (.pdf)</a>
+                </li>
+                <li>
+                  <a href="#">Гарантийные обязательства</a>
+                </li>
+                <li>
+                  <a href="#">Политика конфиденциальности</a>
+                </li>
+              </ul>
+              <ul class="footer__item">
+                <li>
+                  <a href="#">Балаково запчасть</a>
+                </li>
+                <li>
+                  <a href="#">CS-20</a>
+                </li>
+                <li>
+                  <a href="#">РТИ АВТО</a>
+                </li>
+                <li>
+                  <a href="#">БРТИ</a>
+                </li>
+              </ul>
+              <div class="footer__item no-hide">
+                <div class="box-center">
+                  <div class="phone phone--icon">
+                    <a href="#" class="phone__link" itemprop="telephone">8 800 555 25 40</a>
+                    <span class="phone__text">Звонок бесплатный</span>
+                  </div>
+                  <button class="btn btn--black"> Cтать дилером </button>
+                  <!-- begin social -->
+                  <div class="social ">
+                    <ul class="social__list">
+                      <li class="social__item">
+                        <a href="#" class="social__link">
+                          <svg class="icon icon-social__instagram social__icon">
+                            <use xlink:href="img/sprite.svg#social__instagram"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link">
+                          <svg class="icon icon-social__youtube social__icon">
+                            <use xlink:href="img/sprite.svg#social__youtube"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link">
+                          <svg class="icon icon-social__telegram social__icon">
+                            <use xlink:href="img/sprite.svg#social__telegram"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link">
+                          <svg class="icon icon-social__vk social__icon">
+                            <use xlink:href="img/sprite.svg#social__vk"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- end social -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end footer__top -->
+        <!-- begin footer__bottom -->
+        <div class="footer__bottom">
+          <div class="container">
+            <div class="footer__in">
+              <div class="footer__item">
+                <ul class="footer__list pb-22">
+                  <li>
+                    <a href="/">
+                      <strong>Компания Михельсон</strong>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="footer__list">
+                  <li>
+                    <strong>Режим работы:</strong>
+                    <span>Пн - Сб 8:00 - 17:00</span>
+                    <span>Вс - выходной</span>
+                  </li>
+                </ul>
+                <ul class="footer__list">
+                  <li>
+                    <strong>Обед: </strong>
+                    <span>13:00 - 14:00</span>
+                  </li>
+                </ul>
+                <ul class="footer__list no-hide">
+                  <p class="copyright">© Михельсон, 1993-2018
+                    <br>Все права защищены</span>
+                  </p>
+                </ul>
+              </div>
+              <div class="footer__item">
+                <ul class="footer__list">
+                  <li>
+                    <strong>Бесплатный телефон:</strong>
+                    <a href="tel:88005552540">
+                      <span>8 (800) 555-25-40</span>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="footer__list">
+                  <li>
+                    <strong>Городской телефон:</strong>
+                    <a href="tel:88453631067"></a>
+                    <span>+7 (8453) 63-10-67</span>
+                    </a>
+                    <a href="tel:88453683288"></a>
+                    <span>+7 (8453) 68-32-88</span>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="footer__list">
+                  <li>
+                    <strong>Мобильный телефон:</strong>
+                    <a href="tel:89962100000">
+                      <span>+7 (996) 210-00-00</span>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="footer__list">
+                  <li>
+                    <strong>Электронная почта:</strong>
+                    <a href="mailto:info@mikhelson.ru">
+                      <span>info@mikhelson.ru</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__item">
+                <ul class="footer__list">
+                  <li>
+                    <strong>Адрес производства:</strong>
+                    <span>413840, рф Саратовская область,
+                      <br>г. Балаково, ул. Транспортная, 7/5</span>
+                  </li>
+                </ul>
+                <ul class="footer__list">
+                  <li>
+                    <strong>Адрес склада:</strong>
+                    <span>413840, рф Саратовская область,
+                      <br>г. Балаково, ул. Транспортная, 6/1</span>
+                  </li>
+                </ul>
+                <ul class="footer__list">
+                  <li>
+                    <strong>Адрес офиса:</strong>
+                    <span>413840, рф Саратовская область,
+                      <br>г. Балаково, ул. Факел Социализма, 24</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end footer__bottom -->
+      </footer>
       <!-- end footer -->
     </div>
     <div class="preloader js-preloader--main"></div>
     <div class="overlay js-overlay--main"></div>
+    <div class="go-top js-go-top"></div>
     <!-- begin popups -->
     <div class="popups">
       <!-- begin example-popup -->
@@ -69,7 +919,7 @@
             <div class="modal-body"> ...modal body </div>
             <div class="modal-footer">
               <button class="button" data-dismiss="modal" aria-label="Close">Отмена</button>
-              <button class="button modal__btn"> Применить </button>
+              <button class="btn modal__btn"> Применить </button>
             </div>
           </div>
         </div>

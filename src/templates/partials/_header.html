@@ -1,5 +1,65 @@
 <!-- begin header -->
-<header class="header {{headerClass}}" itemscope itemtype="http://schema.org/WPHeader">
+<header class="header {{headerClass}}">
+
+	<!-- begin header__top -->
+	<div class="header__top">
+		<div class="container">
+			<div class="header__inner">
+
+				<!-- begin logo -->
+				<div class="logo header__logo">
+					<a href="/" class="logo__link">Михельсон</a>
+				</div>
+				<!-- end logo -->
+
+				<!-- begin nav -->
+				<nav class="nav nav--top header__nav sm-hide">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="#" class="nav__link">Производство</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Бренды</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- end nav -->
+
+				<div class="header__search sm-hide">
+					{% include "partials/_search.html" %}
+				</div>
+
+				{{item.btn('Cтать дилером', 'btn--black sm-hide')}}
+
+			</div>
+		</div>
+	</div>
+	<!-- end header__top -->
+
+	<!-- begin header__bottom -->
+	<div class="header__bottom">
+		<div class="container">
+			<div class="header__inner">
+				<!-- begin nav -->
+				<nav class="nav nav--bottom sm-hide">
+					<ul class="nav__list">
+						{% import "data/data.html" as nav %} {% for item in nav.mainMenu %}
+						<li class="nav__item">
+							<a href="#" class="nav__link">{{item.title}}</a>
+						</li>
+						{% endfor %}
+					</ul>
+				</nav>
+				<!-- end nav -->
+			</div>
+		</div>
+	</div>
+	<!-- end header__bottom -->
+
+
 	<!-- begin mobile-toggle-btn -->
 	<div class="js-nav-toggle menu-toggle">
 		<div class="menu-toggle__boxes">
@@ -10,4 +70,8 @@
 		</div>
 	</div>
 	<!-- end mobile-toggle-btn -->
-</header><!-- end header -->
+
+	{% include "partials/_mobile-menu.html" %}
+
+</header>
+<!-- end header -->

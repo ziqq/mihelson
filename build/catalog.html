@@ -26,10 +26,108 @@
     <link href="img/favicon/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
     <link href="img/favicon/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
     <link href="css/app.css" rel="stylesheet" media="all"> </head>
-  <body class="loading" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+  <body class="loading">
     <div class="wrapper ">
       <!-- begin header -->
-      <header class="header " itemscope itemtype="http://schema.org/WPHeader">
+      <header class="header ">
+        <!-- begin header__top -->
+        <div class="header__top">
+          <div class="container">
+            <div class="header__inner">
+              <!-- begin logo -->
+              <div class="logo header__logo">
+                <a href="/" class="logo__link">Михельсон</a>
+              </div>
+              <!-- end logo -->
+              <!-- begin nav -->
+              <nav class="nav nav--top header__nav sm-hide">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Производство</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Бренды</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- end nav -->
+              <div class="header__search sm-hide">
+                <!-- begin search -->
+                <div class="search__wrap">
+                  <div class="search js-search">
+                    <form autocomplete="on">
+                      <input class="search__field js-search-input" type="text" placeholder="Что вы ищите ?" autocomplete="off">
+                      <button class="search__submit">Поиск</button>
+                      <div class="search__hint" style="display: none;">
+                        <div class="search-hint search-hint--cyties">
+                          <ul class="search-hint__list">
+                            <li class="search-hint__item">
+                              <a href="#" class="search-hint__link">
+                                <span class="search-hint__text">Same title</span>
+                              </a>
+                            </li>
+                            <li class="search-hint__item">
+                              <a href="#" class="search-hint__link">
+                                <span class="search-hint__text">Same title</span>
+                              </a>
+                            </li>
+                            <li class="search-hint__item">
+                              <a href="#" class="search-hint__link">
+                                <span class="search-hint__text">Same title</span>
+                              </a>
+                            </li>
+                            <li class="search-hint__item">
+                              <a href="#" class="search-hint__link">
+                                <span class="search-hint__text">Same title</span>
+                              </a>
+                            </li>
+                            <li class="search-hint__item">
+                              <a href="#" class="search-hint__link">
+                                <span class="search-hint__text">Same title</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <!-- end search -->
+              </div>
+              <button class="btn btn--black sm-hide"> Cтать дилером </button>
+            </div>
+          </div>
+        </div>
+        <!-- end header__top -->
+        <!-- begin header__bottom -->
+        <div class="header__bottom">
+          <div class="container">
+            <div class="header__inner">
+              <!-- begin nav -->
+              <nav class="nav nav--bottom sm-hide">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Легкий старт</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Логистика</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Уникальные коды</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Журнал</a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- end nav -->
+            </div>
+          </div>
+        </div>
+        <!-- end header__bottom -->
         <!-- begin mobile-toggle-btn -->
         <div class="js-nav-toggle menu-toggle">
           <div class="menu-toggle__boxes">
@@ -40,17 +138,683 @@
           </div>
         </div>
         <!-- end mobile-toggle-btn -->
+        <!-- begin mobile-nave -->
+        <nav class="mobile-nav js-nav">
+          <div class="mobile-nav__in">
+            <div class="mobile-nav__search sm-only">
+              <!-- begin search -->
+              <div class="search__wrap">
+                <div class="search js-search">
+                  <form autocomplete="on">
+                    <input class="search__field js-search-input" type="text" placeholder="Что вы ищите ?" autocomplete="off">
+                    <button class="search__submit"></button>
+                    <div class="search__hint" style="display: none;">
+                      <div class="search-hint search-hint--cyties">
+                        <ul class="search-hint__list">
+                          <li class="search-hint__item">
+                            <a href="#" class="search-hint__link">
+                              <span class="search-hint__text">Same title</span>
+                            </a>
+                          </li>
+                          <li class="search-hint__item">
+                            <a href="#" class="search-hint__link">
+                              <span class="search-hint__text">Same title</span>
+                            </a>
+                          </li>
+                          <li class="search-hint__item">
+                            <a href="#" class="search-hint__link">
+                              <span class="search-hint__text">Same title</span>
+                            </a>
+                          </li>
+                          <li class="search-hint__item">
+                            <a href="#" class="search-hint__link">
+                              <span class="search-hint__text">Same title</span>
+                            </a>
+                          </li>
+                          <li class="search-hint__item">
+                            <a href="#" class="search-hint__link">
+                              <span class="search-hint__text">Same title</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- end search -->
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__item">
+                <a href="#" class="mobile-nav__link mobile-nav__link--home">Главная</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="#" class="mobile-nav__link js-mobile-nav-sub--open">Производство</a>
+                <div class="mobile-nav--sub">
+                  <ul class="mobile-nav__list">
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link mobile-nav__link--back js-mobile-nav-sub--close">Назад</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Control Shift 20
+                        <span>рентабельность 20%</span>
+                      </a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Балаково Запчасть
+                        <span>рентабельность 20%</span>
+                      </a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">РТИ АВТО
+                        <span>рентабельность 20%</span>
+                      </a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">РТИ АВТО
+                        <span>рентабельность 20%</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="box-center">
+                    <div class="phone phone--icon">
+                      <a href="#" class="phone__link" itemprop="telephone">8 800 555 25 40</a>
+                    </div>
+                    <button class="btn btn--black mobile-nav__btn"> Cтать дилером </button>
+                    <!-- begin social -->
+                    <div class="social ">
+                      <ul class="social__list">
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-social__instagram social__icon">
+                              <use xlink:href="img/sprite.svg#social__instagram"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-social__youtube social__icon">
+                              <use xlink:href="img/sprite.svg#social__youtube"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-social__telegram social__icon">
+                              <use xlink:href="img/sprite.svg#social__telegram"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-social__vk social__icon">
+                              <use xlink:href="img/sprite.svg#social__vk"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- end social -->
+                  </div>
+                </div>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="#" class="mobile-nav__link js-mobile-nav-sub--open">Бренды</a>
+                <div class="mobile-nav--sub">
+                  <ul class="mobile-nav__list">
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link mobile-nav__link--back js-mobile-nav-sub--close">Назад</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Control Shift 20</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Балаково Запчасть</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">РТИ АВТО</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">БРТИ</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">БалаковоРезинотехника</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Сэви</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">БМРТ</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Резинотехника</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Вепа</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Технологии Будущего</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">AD Plastic</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Опора</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">МЗМ</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Промтехнология</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">ПТП</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Технопартнер</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Уралэластотехника</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Волгопромтранс</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Элад</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Резерв</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">СЗРТ</a>
+                    </li>
+                  </ul>
+                  <div class="box-center">
+                    <div class="phone phone--icon">
+                      <a href="#" class="phone__link" itemprop="telephone">8 800 555 25 40</a>
+                    </div>
+                    <button class="btn btn--black mobile-nav__btn"> Cтать дилером </button>
+                    <!-- begin social -->
+                    <div class="social ">
+                      <ul class="social__list">
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-social__instagram social__icon">
+                              <use xlink:href="img/sprite.svg#social__instagram"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-social__youtube social__icon">
+                              <use xlink:href="img/sprite.svg#social__youtube"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-social__telegram social__icon">
+                              <use xlink:href="img/sprite.svg#social__telegram"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-social__vk social__icon">
+                              <use xlink:href="img/sprite.svg#social__vk"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- end social -->
+                  </div>
+                </div>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="#" class="mobile-nav__link js-mobile-nav-sub--open">Контакты</a>
+                <div class="mobile-nav--sub">
+                  <ul class="mobile-nav__list">
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link mobile-nav__link--back js-mobile-nav-sub--close">Назад</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <div href="" class="mobile-nav__link">
+                        <strong>Бесплатный телефон: </strong>
+                        <a href="tel:88005552540">8 (800) 555-25-40</a>
+                      </div>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="javascript:void(0);" class="mobile-nav__link">108-добавочный номер
+                        <span>руководитель отдела продаж</span>
+                        <strong>Забрусков Алексей Сергеевич</strong>
+                      </a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="javascript:void(0);" class="mobile-nav__link">141-добавочный номер
+                        <span>генеральный директор компании</span>
+                        <strong>Михельсон Игорь Станиславович</strong>
+                      </a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <div class="mobile-nav__link">
+                        <strong>Городской телефон: </strong>
+                        <a href="tel:+78453631067">+7 (8453) 63-10-67</a>
+                        <a href="tel:+78453683288">+7 (8453) 68-32-88</a>
+                      </div>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <div class="mobile-nav__link">
+                        <strong>Мобильный телефон: </strong>
+                        <a href="tel:+79962100000">+7 (996) 210-00-00</a>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="mobile-nav__list mobile-nav__list--sub">
+                    <div class="mobile-nav__item">
+                      <div class="mobile-nav__link">
+                        <strong>Электронная почта:</strong>
+                        <a href="mailto:info@mikhelson.ru">info@mikhelson.ru</a>
+                      </div>
+                    </div>
+                  </ul>
+                  <ul class="mobile-nav__list mobile-nav__list--sub">
+                    <li class="mobile-nav__item">
+                      <div class="mobile-nav__link">
+                        <strong>Режим работы: </strong> Пн - Сб 8:00 - 17:00
+                        <br> Вс - выходной
+                        <br> Обед 13:00 - 14:00 </div>
+                    </li>
+                  </ul>
+                  <ul class="mobile-nav__list mobile-nav__list--sub">
+                    <li class="mobile-nav__item">
+                      <a href="mailto:info@mikhelson.ru" class="mobile-nav__link">
+                        <strong>Адрес производства: </strong> 413840, рф Саратовская область,
+                        <br> г. Балаково, ул. Транспортная, 7/5 </a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="mailto:info@mikhelson.ru" class="mobile-nav__link">
+                        <strong>Адрес склада: </strong> 413840, рф Саратовская область,
+                        <br> г. Балаково, ул. Транспортная, 6/1 </a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="mailto:info@mikhelson.ru" class="mobile-nav__link">
+                        <strong>Адрес офиса: </strong> 413840, рф Саратовская область,
+                        <br> г. Балаково, ул. Факел Социализма, 24 </a>
+                    </li>
+                  </ul>
+                  <div class="box-center">
+                    <div class="phone phone--icon">
+                      <a href="#" class="phone__link" itemprop="telephone">8 800 555 25 40</a>
+                    </div>
+                    <button class="btn btn--black mobile-nav__btn"> Cтать дилером </button>
+                    <!-- begin social -->
+                    <div class="social ">
+                      <ul class="social__list">
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-social__instagram social__icon">
+                              <use xlink:href="img/sprite.svg#social__instagram"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-social__youtube social__icon">
+                              <use xlink:href="img/sprite.svg#social__youtube"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-social__telegram social__icon">
+                              <use xlink:href="img/sprite.svg#social__telegram"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-social__vk social__icon">
+                              <use xlink:href="img/sprite.svg#social__vk"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- end social -->
+                  </div>
+                </div>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="#" class="mobile-nav__link js-mobile-nav-sub--open">Актуальное</a>
+                <div class="mobile-nav--sub">
+                  <ul class="mobile-nav__list">
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link mobile-nav__link--back js-mobile-nav-sub--close">Назад</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Легкий старт</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Логистика</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Уникальные коды</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link">Журнал</a>
+                    </li>
+                  </ul>
+                  <div class="box-center">
+                    <div class="phone phone--icon">
+                      <a href="#" class="phone__link" itemprop="telephone">8 800 555 25 40</a>
+                    </div>
+                    <button class="btn btn--black mobile-nav__btn"> Cтать дилером </button>
+                    <!-- begin social -->
+                    <div class="social ">
+                      <ul class="social__list">
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-social__instagram social__icon">
+                              <use xlink:href="img/sprite.svg#social__instagram"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-social__youtube social__icon">
+                              <use xlink:href="img/sprite.svg#social__youtube"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-social__telegram social__icon">
+                              <use xlink:href="img/sprite.svg#social__telegram"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-social__vk social__icon">
+                              <use xlink:href="img/sprite.svg#social__vk"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- end social -->
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="mobile-nav__list mobile-nav__list--sub pt-0">
+              <li class="mobile-nav__item">
+                <a href="#" class="mobile-nav__link">О компании</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="#" class="mobile-nav__link">Оплата</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="#" class="mobile-nav__link">Сертификаты (.pdf)</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="#" class="mobile-nav__link">Гарантийные обязательства</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="#" class="mobile-nav__link">Политика конфиденциальности</a>
+              </li>
+            </ul>
+            <div class="box-center">
+              <div class="phone phone--icon">
+                <a href="#" class="phone__link" itemprop="telephone">8 800 555 25 40</a>
+              </div>
+              <button class="btn btn--black mobile-nav__btn"> Cтать дилером </button>
+              <!-- begin social -->
+              <div class="social ">
+                <ul class="social__list">
+                  <li class="social__item">
+                    <a href="#" class="social__link">
+                      <svg class="icon icon-social__instagram social__icon">
+                        <use xlink:href="img/sprite.svg#social__instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a href="#" class="social__link">
+                      <svg class="icon icon-social__youtube social__icon">
+                        <use xlink:href="img/sprite.svg#social__youtube"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a href="#" class="social__link">
+                      <svg class="icon icon-social__telegram social__icon">
+                        <use xlink:href="img/sprite.svg#social__telegram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a href="#" class="social__link">
+                      <svg class="icon icon-social__vk social__icon">
+                        <use xlink:href="img/sprite.svg#social__vk"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- end social -->
+            </div>
+          </div>
+        </nav>
+        <!-- end mobile-nav -->
       </header>
       <!-- end header -->
       <!-- begin catalog -->
       <main class="main catalog"> </main>
       <!-- end catalog -->
       <!-- begin footer -->
-      <footer class="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter"> </footer>
+      <footer class="footer">
+        <!-- begin footer__top -->
+        <div class="footer__top">
+          <div class="container">
+            <div class="footer__in">
+              <ul class="footer__item">
+                <li>
+                  <a href="#">Главная</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+                <li>
+                  <a href="#">О компании</a>
+                </li>
+                <li>
+                  <a href="#">Логистика</a>
+                </li>
+                <li>
+                  <a href="#">Оплата </a>
+                </li>
+              </ul>
+              <ul class="footer__item">
+                <li>
+                  <a href="#">Журнал</a>
+                </li>
+                <li>
+                  <a href="#">Все бренды</a>
+                </li>
+                <li>
+                  <a href="#">Сертификаты (.pdf)</a>
+                </li>
+                <li>
+                  <a href="#">Гарантийные обязательства</a>
+                </li>
+                <li>
+                  <a href="#">Политика конфиденциальности</a>
+                </li>
+              </ul>
+              <ul class="footer__item">
+                <li>
+                  <a href="#">Балаково запчасть</a>
+                </li>
+                <li>
+                  <a href="#">CS-20</a>
+                </li>
+                <li>
+                  <a href="#">РТИ АВТО</a>
+                </li>
+                <li>
+                  <a href="#">БРТИ</a>
+                </li>
+              </ul>
+              <div class="footer__item no-hide">
+                <div class="box-center">
+                  <div class="phone phone--icon">
+                    <a href="#" class="phone__link" itemprop="telephone">8 800 555 25 40</a>
+                    <span class="phone__text">Звонок бесплатный</span>
+                  </div>
+                  <button class="btn btn--black"> Cтать дилером </button>
+                  <!-- begin social -->
+                  <div class="social ">
+                    <ul class="social__list">
+                      <li class="social__item">
+                        <a href="#" class="social__link">
+                          <svg class="icon icon-social__instagram social__icon">
+                            <use xlink:href="img/sprite.svg#social__instagram"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link">
+                          <svg class="icon icon-social__youtube social__icon">
+                            <use xlink:href="img/sprite.svg#social__youtube"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link">
+                          <svg class="icon icon-social__telegram social__icon">
+                            <use xlink:href="img/sprite.svg#social__telegram"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link">
+                          <svg class="icon icon-social__vk social__icon">
+                            <use xlink:href="img/sprite.svg#social__vk"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- end social -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end footer__top -->
+        <!-- begin footer__bottom -->
+        <div class="footer__bottom">
+          <div class="container">
+            <div class="footer__in">
+              <div class="footer__item">
+                <ul class="footer__list pb-22">
+                  <li>
+                    <a href="/">
+                      <strong>Компания Михельсон</strong>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="footer__list">
+                  <li>
+                    <strong>Режим работы:</strong>
+                    <span>Пн - Сб 8:00 - 17:00</span>
+                    <span>Вс - выходной</span>
+                  </li>
+                </ul>
+                <ul class="footer__list">
+                  <li>
+                    <strong>Обед: </strong>
+                    <span>13:00 - 14:00</span>
+                  </li>
+                </ul>
+                <ul class="footer__list no-hide">
+                  <p class="copyright">© Михельсон, 1993-2018
+                    <br>Все права защищены</span>
+                  </p>
+                </ul>
+              </div>
+              <div class="footer__item">
+                <ul class="footer__list">
+                  <li>
+                    <strong>Бесплатный телефон:</strong>
+                    <a href="tel:88005552540">
+                      <span>8 (800) 555-25-40</span>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="footer__list">
+                  <li>
+                    <strong>Городской телефон:</strong>
+                    <a href="tel:88453631067"></a>
+                    <span>+7 (8453) 63-10-67</span>
+                    </a>
+                    <a href="tel:88453683288"></a>
+                    <span>+7 (8453) 68-32-88</span>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="footer__list">
+                  <li>
+                    <strong>Мобильный телефон:</strong>
+                    <a href="tel:89962100000">
+                      <span>+7 (996) 210-00-00</span>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="footer__list">
+                  <li>
+                    <strong>Электронная почта:</strong>
+                    <a href="mailto:info@mikhelson.ru">
+                      <span>info@mikhelson.ru</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__item">
+                <ul class="footer__list">
+                  <li>
+                    <strong>Адрес производства:</strong>
+                    <span>413840, рф Саратовская область,
+                      <br>г. Балаково, ул. Транспортная, 7/5</span>
+                  </li>
+                </ul>
+                <ul class="footer__list">
+                  <li>
+                    <strong>Адрес склада:</strong>
+                    <span>413840, рф Саратовская область,
+                      <br>г. Балаково, ул. Транспортная, 6/1</span>
+                  </li>
+                </ul>
+                <ul class="footer__list">
+                  <li>
+                    <strong>Адрес офиса:</strong>
+                    <span>413840, рф Саратовская область,
+                      <br>г. Балаково, ул. Факел Социализма, 24</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end footer__bottom -->
+      </footer>
       <!-- end footer -->
     </div>
     <div class="preloader js-preloader--main"></div>
     <div class="overlay js-overlay--main"></div>
+    <div class="go-top js-go-top"></div>
     <!-- begin popups -->
     <div class="popups">
       <!-- begin example-popup -->
@@ -64,7 +828,7 @@
             <div class="modal-body"> ...modal body </div>
             <div class="modal-footer">
               <button class="button" data-dismiss="modal" aria-label="Close">Отмена</button>
-              <button class="button modal__btn"> Применить </button>
+              <button class="btn modal__btn"> Применить </button>
             </div>
           </div>
         </div>

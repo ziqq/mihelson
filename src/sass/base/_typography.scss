@@ -7,13 +7,13 @@ strong {
 // Стили  ссылок
 
 a {
-    color: $color-accent;
+    color: $color-link;
     text-decoration: none;
     outline: none;
     @include tr;
 
     &:hover {
-        color: lighten($color-accent, 10%);
+        color: $color-link--hover;
     }
 
     &.is-disable {

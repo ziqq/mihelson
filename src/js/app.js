@@ -17,6 +17,21 @@ $(document).ready(function() {
         });
     }
 
+    //Click event to scroll to top
+    $('.js-go-top').on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, 400);
+    });
+
+    $(window).scroll(function() {
+        console.log('---', 'scroll');
+        if ($(this).scrollTop() > $(this).height()) {
+            $('.js-go-top').addClass('is-visible');
+        } else {
+            $('.js-go-top').removeClass('is-visible');
+        }
+    });
+
     //Stop drag
     $('img').on('dragstart', function(event) {
         event.preventDefault();

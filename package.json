@@ -88,8 +88,8 @@
         "webpack-bundle-analyzer": "^2.13.1"
     },
     "dependencies": {
-        "smart-grid": "^2.0.1",
+        "jquery": "^3.1.1",
         "lost": "^8.2.0",
-        "jquery": "^3.1.1"
+        "smart-grid": "^2.0.1"
     }
 }
