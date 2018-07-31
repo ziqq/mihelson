@@ -27,7 +27,7 @@
         outline: none;
         cursor: pointer;
         position: absolute;
-        top: 0;
+        top: -1px;
         right: 0;
         z-index: 3;
         transition: width 0.4s cubic-bezier(0, 0.795, 0, 1);
@@ -83,13 +83,13 @@
     width: 300px;
     height: 100%;
     position: absolute;
-    top: 42px;
+    top: 41px;
     left: -294px;
     z-index: z(dropdown);
     border: 0;
     border-radius: 0 0 $border-radius $border-radius;
     background-color: #fff;
-    @include scroll;
+    @include scroll--thin;
 
     box-shadow: 0 10px 20px rgba(#000, 0.2);
 

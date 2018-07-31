@@ -38,3 +38,11 @@
 </a>
 {% endmacro %}
 <!-- item.buttonLink('Пригласить', 'invite__btn') -->
+
+{% macro picture(slider, img) %}
+<picture class="m-slider__image">
+	<source media="(max-width: 480px)" srcset="img/sliders/{{slider}}/mob/{{img}}.png">
+	<img class="m-slider__img" src="img/sliders/{{slider}}/desk/{{img}}.png" alt="alt">
+</picture>
+{% endmacro %}
+<!-- item.picture(slider, img) -->

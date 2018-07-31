@@ -1,0 +1,121 @@
+.hero {
+    background-color: $color-bg--dark;
+
+    &__slider {
+    } //.hero__slider
+
+    &__slides {
+    } //.hero__slides
+
+    &__slide {
+        height: 368px;
+        @include respond-to(sm) {
+            padding: 0 $gutter;
+        }
+        @include respond-to(xs) {
+            height: 407px;
+        }
+        @include respond-to(i8) {
+            height: 391px;
+        }
+        @include respond-to(i7) {
+            height: 358px;
+        }
+        @include respond-to(i5) {
+            height: 300px;
+        }
+    } //.hero__slide
+
+    .container {
+        padding: 0;
+    }
+} //.hero
+
+.m-slider {
+
+    &__slider {
+    } //.m-slider__slider
+
+    &__slides {
+    } //.m-slider__slides
+
+    &__slide {
+        position: relative;
+    } //.m-slider__slide
+
+    &__image {
+        @include coverdiv;
+    }
+
+    &__text {
+        padding-top: 4%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include respond-to(xs) {
+            padding: 18% 20px 0;
+        }
+        @include respond-to(i5) {
+            padding-top: 12%;
+        }
+    } //.m-slider__text
+
+    &__title {
+        display: block;
+        margin-bottom: 20px;
+        color: #fff;
+        font-family: $f-medium;
+        font-size: 40px;
+        font-weight: 500;
+        text-transform: uppercase;
+        @include respond-to(xs) {
+            font-size: 27px;
+        }
+        @include respond-to(i5) {
+            margin-bottom: 10px;
+        }
+    } //.m-slider__title
+
+    &__desc {
+        display: block;
+        max-width: 320px;
+        margin-bottom: 50px;
+        color: rgba(#fff, 0.8);
+        font-family: $f-light;
+        font-size: 16px;
+        @include respond-to(i5) {
+            margin-bottom: 20px;
+        }
+    } //.m-slider__desc
+
+    &__btn {
+        font-family: $f-medium;
+        font-size: 15px;
+    } //.m-slider__btn
+
+    .slick-slide {
+        margin: 0;
+    }
+
+    .slick-dots {
+        width: auto;
+        bottom: auto;
+        top: 65px;
+        right: 0;
+        z-index: z(default);
+
+        @include respond-to(sm) {
+            right: $gutter;
+        }
+
+        li {
+            color: rgba(#fff, 0.8);
+            font-size: 15px;
+            display: none;
+
+            &.slick-active {
+                display: block;
+            }
+        }
+    }
+} //.m-slider

@@ -1,5 +1,5 @@
 %button {
-    padding: 9px 35px;
+    padding: 8px 35px;
     font-family: $f;
     font-size: 14px;
     letter-spacing: 0.5px;
@@ -28,12 +28,33 @@
 
             &:hover {
                 background-color: lighten($color, 15%);
-                box-shadow: inset 0 1px 3px #000;
             }
 
             &:active {
                 box-shadow: inset 0 0 30px $color;
             }
         }
+
+        &--accent {
+            color: #000;
+        }
     }
-}
+} //.btn
+
+.btn-link {
+    color: $color-link;
+    font-family: $f;
+    font-weight: 400;
+    font-size: 15px;
+    border: 0;
+    background-color: transparent;
+    position: relative;
+
+    &::after {
+        content: '\f105';
+        font-family: faL;
+        position: relative;
+        top: 1px;
+        right: -3px;
+    }
+} //.btn-link
