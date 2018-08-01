@@ -41,8 +41,10 @@
 
 {% macro picture(slider, img) %}
 <picture class="m-slider__image">
-	<source media="(max-width: 480px)" srcset="img/sliders/{{slider}}/mob/{{img}}.png">
-	<img class="m-slider__img" src="img/sliders/{{slider}}/desk/{{img}}.png" alt="alt">
+	<source media="(max-width: 480px)" srcset="img/sliders/{{slider}}/480/{{img}}.png">
+	<source media="(max-width: 768px)" srcset="img/sliders/{{slider}}/768/{{img}}.png">
+	<source media="(max-width: 1024px)" srcset="img/sliders/{{slider}}/1024/{{img}}.png">
+	<img class="m-slider__img" src="img/sliders/{{slider}}/1200/{{img}}.png" alt="alt">
 </picture>
 {% endmacro %}
 <!-- item.picture(slider, img) -->

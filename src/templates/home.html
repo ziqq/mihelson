@@ -1,19 +1,15 @@
 ---
-title: Title
+	title: Title
 ---
 
-{% extends "layouts/_layout.html" %}
-
-{% block content %}
+{% extends "layouts/_layout.html" %} {% block content %}
 
 <!-- begin home -->
 <main class="main home">
 	<!-- begin hero -->
-	 <section class="hero">
+	<section class="hero">
 		<div class="container">
 			<div class="hero__slider m-slider">
-				<div class="m-slider__arrow m-slider__arrow--next"></div>
-				<div class="m-slider__arrow m-slider__arrow--prev"></div>
 				<div class="m-slider__dots"></div>
 				<div class="hero__slides m-slider__slides js-hero-slider">
 					{% for i in range(0, 3) %}
@@ -21,15 +17,114 @@ title: Title
 						{{item.picture('hero', '1')}}
 						<div class="m-slider__text">
 							<div class="m-slider__title">Победа очевидна</div>
-							<div class="m-slider__desc">Более 20 высокорентабельных <br> брендов автозапчастей напрямую <br> от производителей на вашем <br>складе через 3 дня</div>
+							<div class="m-slider__desc">Более 20 высокорентабельных
+								<br> брендов автозапчастей напрямую
+								<br> от производителей на вашем
+								<br>складе через 3 дня</div>
 							{{item.btn('Оставить заявку', 'btn--accent m-slider__btn')}}
 						</div>
 					</div>
-					 {% endfor %}
+					{% endfor %}
 				</div>
 			</div>
 		</div>
-	</section><!-- end hero -->
-</main><!-- end home -->
+	</section>
+	<!-- end hero -->
+
+	<!-- begin info -->
+	<section class="section info">
+		<div class="container">
+			<div class="info__inner">
+				<div class="info__left">
+					<div class="info__slider m-slider m-slider--info">
+						<div class="m-slider__dots"></div>
+						<div class="info__slides m-slider__slides js-slider">
+							{% for i in range(0, 3) %}
+							<div class="info__slide m-slider__slide">
+								<img src="img/sliders/info/1.jpg" alt="">
+								<div class="m-slider__text m-slider__text--center">
+									<div class="m-slider__title">Свой экспедитор в
+										<br>Балаково</div>
+									<div class="m-slider__desc">Погрузка, доставка, межтерминальное хранение без очередей и расходов на водителей.</div>
+								</div>
+							</div>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+				<div class="info__right">
+					<div class="info__slider m-slider m-slider--info">
+						<div class="m-slider__dots"></div>
+						<div class="info__slides m-slider__slides js-slider">
+							{% for i in range(0, 3) %}
+							<div class="info__slide m-slider__slide">
+								<img src="img/sliders/info/2.jpg" alt="">
+								<div class="m-slider__text m-slider__text--center">
+									<div class="m-slider__title">Бесплатная доставка до
+										<br>Вашего склада</div>
+									<div class="m-slider__desc">Погрузка, доставка, межтерминальное хранение без очередей и расходов на водителей.</div>
+								</div>
+							</div>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end info -->
+
+	<!-- begin jurnal -->
+	<section class="section jurnal">
+		<div class="container">
+			<div class="page-title__wrap">
+				<div class="page-title__in">
+					<h2 class="h2 page-title">Михельсон журнал</h2>
+					<span class="page-title__sub">Полезные статьи о бизнесе.</span>
+				</div>
+				<a href="#" class="btn-link page-title__btn">Все статьи</a>
+			</div>
+
+			<!-- begin article__wrap -->
+			 <div class="article__wrap">
+				 {% for i in range(0, 3) %}
+				<!-- begin article -->
+				<a href="#" class="article">
+					<span class="article__date">24.07.2018</span>
+					<p class="article__text">Наставники из Екатеринбурга приняли участие в первой интеллектуальной игре «Что? Где? Когда?»</p>
+					<button class="article__link btn-link">Подробнее</button>
+				</a><!-- end article -->
+				  {% endfor %}
+			</div><!-- end article__wrap -->
+
+			<a href="#" class="btn-link xs-only">Все статьи</a>
+		</div>
+	</section>
+	<!-- end jurnal -->
+
+	<!-- begin reviews -->
+	<section class="section reviews">
+		<div class="container">
+			<div class="reviews__slider m-slider m-slider--reviews">
+				<div class="m-slider__dots"></div>
+				<div class="reviews__slides m-slider__slides js-slider">
+					{% for i in range(0, 3) %}
+					<div class="reviews__slide m-slider__slide">
+						<div class="m-slider__text m-slider__text--center">
+							<div class="m-slider__title">Персональный менеджер всегда на связи</div>
+							<div class="m-slider__desc">Никаких звонков на горячую линию и поисков писем на почте, мы на связи в Viber/WhatsApp</div>
+							{{item.btn('Оставить заявку', 'btn--black m-slider__btn')}}
+						</div>
+						<img class="reviews__img" src="img/sliders/reviews/1.png" alt="">
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end reviews -->
+
+</main>
+<!-- end home -->
 
 {% endblock %}

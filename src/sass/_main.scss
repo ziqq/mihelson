@@ -18,6 +18,40 @@
     fill: $color-icon;
 }
 
+.section {
+    margin-bottom: 80px;
+    @include respond-to(sm) {
+        margin-bottom: 40px;
+    }
+}//.section
+
+.page-title {
+    @include respond-to(xs) {
+       text-align: center;
+       &__sub {
+           display: block;
+           text-align: center;
+       }
+    }
+    &__wrap {
+        margin-bottom: 40px;
+        @include flexCenter;
+        @include respond-to(xs) {
+            justify-content: center;
+        }
+    }//.page-title__wrap
+    &__btn {
+        margin-left: auto;
+        @include respond-to(xs) {
+            display: none;
+        }
+    }//.page-title__btn
+}//.page-title
+
+.text-center {
+    text-align: center;
+}//.text-center
+
 .box-center {
     @include flexColumn;
     align-items: center;

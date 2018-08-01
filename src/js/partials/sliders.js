@@ -1,8 +1,6 @@
 //Slick Slider https://kenwheeler.github.io/slick/
 if ($('.js-hero-slider').length > 0) {
     $('.js-hero-slider').slick({
-        nextArrow: '.m-slider__arrow--next',
-        prevArrow: '.m-slider__arrow--prev',
         arrows: true,
         infinite: true,
         autoplay: true,
@@ -25,5 +23,28 @@ if ($('.js-hero-slider').length > 0) {
                 }
             }
         ]
+    });
+}
+
+var infoSliderSettings = {
+    arrows: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 700,
+    dots: false,
+    responsive: [
+        {
+            breakpoint: 481,
+            settings: {
+                dots: false
+            }
+        }
+    ]
+};
+
+if ($('.js-slider').length > 0) {
+    $('.js-slider').slick({
+        infoSliderSettings
     });
 }
