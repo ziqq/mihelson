@@ -1,4 +1,5 @@
 body {
+
     &.modal-open {
         padding-right: 0 !important;
     }
@@ -170,3 +171,28 @@ body {
     text-align: center;
     color: $color-text;
 } //.policy
+
+.list-style {
+
+    &--circle {
+
+        li {
+            margin-left: 22px;
+            list-style-type: disc;
+        }
+    }
+
+    &--def {
+
+        li {
+            padding-left: 20px;
+            position: relative;
+
+            &::before {
+                content: '—';
+                @include vy;
+                left: 0;
+            }
+        }
+    }
+}

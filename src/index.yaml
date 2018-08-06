@@ -12,3 +12,18 @@ PageList:
 - file: jurnal-article.html
   ready: 50
   desc : Статья
+
+  #Согласие на обработку персональных данных
+- file: privacy.html
+  ready: 50
+  desc : Согласие на обработку персональных данных
+
+  #Политика обработки данных
+- file: policy.html
+  ready: 50
+  desc : Политика обработки данных
+
+  #404
+- file: 404.html
+  ready: 50
+  desc : Error Page

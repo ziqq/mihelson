@@ -30,7 +30,7 @@
         background-color: $color-bg--dark;
 
         .footer__item {
-            @include size(4);
+            @include size(3);
             @include size-sm(12);
             color: $gray--light;
 
@@ -78,6 +78,17 @@
 
     &__list {
         @include gutter($gutter / 2);
+
+        a {
+            display: block;
+
+            &:hover {
+
+                span {
+                    color: #fff;
+                }
+            }
+        }
 
         &:not(.no-hide) {
             @include respond-to(sm) {

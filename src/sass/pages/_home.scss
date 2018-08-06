@@ -98,7 +98,7 @@
         }
     } //.calculator__in
 
-    &__sleder {
+    &__slider {
         flex: 1;
 
         @include respond-to(xs) {
@@ -106,7 +106,7 @@
             margin-bottom: $gutter;
             padding: 0 10px;
         }
-    } //.calculator__sleder
+    } //.calculator__slider
 
     &__result {
         width: 30%;
@@ -401,18 +401,6 @@
         }
     }
 } //.reviews
-
-.jurnal {
-
-    .btn-link {
-
-        &.xs-only {
-            display: block;
-            margin-top: 20px;
-            text-align: center;
-        }
-    }
-} //.jurnal
 
 .article {
     padding: 30px;
