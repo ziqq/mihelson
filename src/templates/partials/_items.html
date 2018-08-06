@@ -33,11 +33,21 @@
 <!-- item.button('Пригласить', 'invite__btn') -->
 
 {% macro btnLink(title, class, href="#") %}
-<a href="{{ href }}" class="btn {{class}}">
+<a href="{{ href }}" class="btn-link {{class}}">
 	{{title}}
 </a>
 {% endmacro %}
 <!-- item.buttonLink('Пригласить', 'invite__btn') -->
+
+{% macro input(title, class, type, inputClass) %}
+<div class="m-input {{class}}">
+	<span class="m-input__title">{{title}}</span>
+	<input type="{{type}}" class="m-input__field {{inputClass}}">
+	<span class="m-input__error">*Какаято ошибочка</span>
+	</span>
+</div>
+{% endmacro %}
+<!-- item.input('title', 'class', 'type') -->
 
 {% macro picture(slider, img) %}
 <picture class="m-slider__image">

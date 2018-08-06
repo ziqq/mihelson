@@ -196,7 +196,8 @@
                                 <div class="mobile-nav__item">
                                   <div class="mobile-nav__link">
                                     <strong>Мобильный телефон: </strong>
-                                    <a href="tel:+79962100000">+7 (996) 210-00-00</a>
+                                    <a href="tel:+79962010000">+7 (996) 201-00-00</a>
+                                    <a href="tel:+79272253288">+7 (927) 225-32-88</a>
                                   </div>
                                 </div>
                               </li>
@@ -341,7 +342,7 @@
                 </div>
                 <!-- end search -->
               </div>
-              <button class="btn btn--black sm-hide"> Cтать дилером </button>
+              <a href="#nomenclature" class="btn btn--black sm-hide" data-toggle="modal">Cтать дилером</a>
             </div>
           </div>
         </div>
@@ -353,16 +354,16 @@
               <!-- begin nav -->
               <nav class="nav nav--bottom sm-hide">
                 <ul class="nav__list">
-                  <li class="nav__item">
+                  <li class="nav__item ">
                     <a href="#" class="nav__link">Легкий старт</a>
                   </li>
-                  <li class="nav__item">
+                  <li class="nav__item ">
                     <a href="#" class="nav__link">Логистика</a>
                   </li>
-                  <li class="nav__item">
+                  <li class="nav__item ">
                     <a href="#" class="nav__link">Уникальные коды</a>
                   </li>
-                  <li class="nav__item">
+                  <li class="nav__item is-active">
                     <a href="#" class="nav__link">Журнал</a>
                   </li>
                 </ul>
@@ -926,7 +927,7 @@
                     <a href="#" class="phone__link" itemprop="telephone">8 800 555 25 40</a>
                     <span class="phone__text">Звонок бесплатный</span>
                   </div>
-                  <button class="btn btn--black"> Cтать дилером </button>
+                  <a href="#cooperation" class="btn btn--black" data-toggle="modal"> Стать дилером</a>
                   <!-- begin social -->
                   <div class="social ">
                     <ul class="social__list">
@@ -1071,17 +1072,98 @@
     <!-- begin popups -->
     <div class="popups">
       <!-- begin example-popup -->
-      <div class="modal fade example-popup" id="example-popup">
+      <div class="modal fade cooperation" id="cooperation">
         <div class="modal-dialog modal-dialog--sm">
           <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Popup Title</h5>
-              <button class="modal-close" data-dismiss="modal" aria-label="Close"> </button>
+            <button class="modal-close" data-dismiss="modal" aria-label="Close"> </button>
+            <div class="modal-body">
+              <form class="form">
+                <h5 class="modal-title">Заявка на сотрудничество</h5>
+                <div class="m-input is-invalid">
+                  <span class="m-input__title">Наименование организации*</span>
+                  <input type="text" class="m-input__field ">
+                  <span class="m-input__error">*Какаято ошибочка</span>
+                  </span>
+                </div>
+                <div class="m-input m-input--select is-invalid">
+                  <span class="m-input__title">Регион*</span>
+                  <select class="js-select">
+                    <option value="Выберите регион" selected disabled>Выберите регион</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                  <span class="m-input__error">*Какаято ошибочка</span>
+                  </span>
+                </div>
+                <div class="m-input">
+                  <span class="m-input__title">Телефон*</span>
+                  <input type="num" class="m-input__field js-phone-mask">
+                  <span class="m-input__error">*Какаято ошибочка</span>
+                  </span>
+                </div>
+                <div class="m-input is-invalid">
+                  <span class="m-input__title">Эл. почта</span>
+                  <input type="email" class="m-input__field ">
+                  <span class="m-input__error">*Какаято ошибочка</span>
+                  </span>
+                </div>
+                <div class="modal__policy">
+                  <div class="policy">Нажимая на кнопку "Отправить", вы автоматически даете согласие на обработку
+                    <a href="/personaldata.html">персональных данных</a>
+                  </div>
+                </div>
+                <button class="btn btn--black modal__btn"> Отправить </button>
+              </form>
             </div>
-            <div class="modal-body"> ...modal body </div>
-            <div class="modal-footer">
-              <button class="button" data-dismiss="modal" aria-label="Close">Отмена</button>
-              <button class="btn modal__btn"> Применить </button>
+          </div>
+        </div>
+      </div>
+      <!-- end example-popup -->
+      <!-- begin example-popup -->
+      <div class="modal fade nomenclature" id="nomenclature">
+        <div class="modal-dialog modal-dialog--sm">
+          <div class="modal-content">
+            <button class="modal-close" data-dismiss="modal" aria-label="Close"> </button>
+            <div class="modal-body">
+              <form class="form">
+                <h5 class="modal-title">Отправка нуменклатуры</h5>
+                <div class="m-input is-invalid">
+                  <span class="m-input__title">Наименование организации*</span>
+                  <input type="text" class="m-input__field ">
+                  <span class="m-input__error">*Какаято ошибочка</span>
+                  </span>
+                </div>
+                <div class="m-input">
+                  <span class="m-input__title">Телефон*</span>
+                  <input type="num" class="m-input__field js-phone-mask">
+                  <span class="m-input__error">*Какаято ошибочка</span>
+                  </span>
+                </div>
+                <div class="m-input is-invalid">
+                  <span class="m-input__title">Эл. почта</span>
+                  <input type="email" class="m-input__field ">
+                  <span class="m-input__error">*Какаято ошибочка</span>
+                  </span>
+                </div>
+                <label class="m-input m-input--file">
+                  <span class="m-input__title">
+                    <i class="fal fa-paperclip"></i> Прикрепить файл
+                    <span>(не более 6 МВ)</span>
+                  </span>
+                  <input type="file" class="m-input__field">
+                  <span class="m-input__error">*Какаято ошибочка</span>
+                  </span>
+                </label>
+                <div class="modal__policy">
+                  <div class="policy">Нажимая на кнопку "Отправить", вы автоматически даете согласие на обработку
+                    <a href="/personaldata.html">персональных данных</a>
+                  </div>
+                </div>
+                <button class="btn btn--black modal__btn"> Отправить </button>
+              </form>
             </div>
           </div>
         </div>

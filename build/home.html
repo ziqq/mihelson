@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Title</title>
+    <title>Главная</title>
     <meta name="keywords" content>
     <meta name="description" content>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -196,7 +196,8 @@
                                 <div class="mobile-nav__item">
                                   <div class="mobile-nav__link">
                                     <strong>Мобильный телефон: </strong>
-                                    <a href="tel:+79962100000">+7 (996) 210-00-00</a>
+                                    <a href="tel:+79962010000">+7 (996) 201-00-00</a>
+                                    <a href="tel:+79272253288">+7 (927) 225-32-88</a>
                                   </div>
                                 </div>
                               </li>
@@ -341,7 +342,7 @@
                 </div>
                 <!-- end search -->
               </div>
-              <button class="btn btn--black sm-hide"> Cтать дилером </button>
+              <a href="#nomenclature" class="btn btn--black sm-hide" data-toggle="modal">Cтать дилером</a>
             </div>
           </div>
         </div>
@@ -353,16 +354,16 @@
               <!-- begin nav -->
               <nav class="nav nav--bottom sm-hide">
                 <ul class="nav__list">
-                  <li class="nav__item">
+                  <li class="nav__item ">
                     <a href="#" class="nav__link">Легкий старт</a>
                   </li>
-                  <li class="nav__item">
+                  <li class="nav__item ">
                     <a href="#" class="nav__link">Логистика</a>
                   </li>
-                  <li class="nav__item">
+                  <li class="nav__item ">
                     <a href="#" class="nav__link">Уникальные коды</a>
                   </li>
-                  <li class="nav__item">
+                  <li class="nav__item is-active">
                     <a href="#" class="nav__link">Журнал</a>
                   </li>
                 </ul>
@@ -874,7 +875,7 @@
                       <br> брендов автозапчастей напрямую
                       <br> от производителей на вашем
                       <br>складе через 3 дня</div>
-                    <button class="btn btn--accent m-slider__btn"> Оставить заявку </button>
+                    <a href="#cooperation" class="btn btn--accent" data-toggle="modal"> Оставить заявку</a>
                   </div>
                 </div>
                 <div class="hero__slide m-slider__slide">
@@ -889,7 +890,7 @@
                       <br> брендов автозапчастей напрямую
                       <br> от производителей на вашем
                       <br>складе через 3 дня</div>
-                    <button class="btn btn--accent m-slider__btn"> Оставить заявку </button>
+                    <a href="#cooperation" class="btn btn--accent" data-toggle="modal"> Оставить заявку</a>
                   </div>
                 </div>
                 <div class="hero__slide m-slider__slide">
@@ -904,7 +905,7 @@
                       <br> брендов автозапчастей напрямую
                       <br> от производителей на вашем
                       <br>складе через 3 дня</div>
-                    <button class="btn btn--accent m-slider__btn"> Оставить заявку </button>
+                    <a href="#cooperation" class="btn btn--accent" data-toggle="modal"> Оставить заявку</a>
                   </div>
                 </div>
               </div>
@@ -912,6 +913,158 @@
           </div>
         </section>
         <!-- end hero -->
+        <!-- begin calculator -->
+        <section class="section calculator">
+          <div class="container">
+            <div class="page-title__wrap">
+              <div class="page-title__in">
+                <h2 class="h2 page-title">Рассчитайте свой доход</h2>
+                <span class="page-title__sub">На примере бренда Балаково Запчасть</span>
+              </div>
+            </div>
+            <div class="calculator__in">
+              <div class="calculator__sleder">
+                <div class="calculator--sum">
+                  <div class="range__diapazon">
+                    <span class="range__title">Сумма закупки</span>
+                    <div class="range__to">
+                      <span id="calculator-sum-price">50000</span>
+                      <i class="far fa-ruble-sign"></i>
+                    </div>
+                  </div>
+                  <div class="range">
+                    <div class="range__slider" id="calculator-sum" data-start="50000" data-end="1000000"></div>
+                  </div>
+                </div>
+                <div class="calculator--status">
+                  <div class="range__diapazon">
+                    <span class="range__title">Статус </span>
+                    <div class="range__to">
+                      <span id="calculator-status-vall">Оптовик</span>
+                    </div>
+                  </div>
+                  <div class="range">
+                    <div class="range__slider" id="calculator-status"></div>
+                  </div>
+                </div>
+                <div class="calculator__info">*Предварительный расчет. Не является публичной офертой.</div>
+              </div>
+              <div class="calculator__result">
+                <div class="calculator-result">
+                  <div class="calculator-result__sum">
+                    <div>
+                      <span class="js-calculator-result">10 000</span>
+                      <i class="far fa-ruble-sign"></i>
+                    </div>
+                    <small>Прибыль / месяц</small>
+                  </div>
+                  <a href="#nomenclature" class="btn btn--black" data-toggle="modal">Стать оптовиком</a>
+                  <a href="#" class="btn-link "> Смотреть бренды </a>
+                  <span class="calculator-result__sale">
+                    <span class="js-calculator-profit" data-profit="20">20%</span> Рентабель
+                    <br>ность </span>
+                </div>
+              </div>
+            </div>
+            <div class="js-m-accordeon">
+              <button class="calculator__btn-slide js-m-accordeon-btn xs-only">Преимущества статуса</button>
+              <!-- begin calculator__desc -->
+              <div class="calculator__desc">
+                <div class="calculator-item calculator-item--opt"> Отсрочка платежа до 14 дней
+                  <br> Приоритет на сборку 3 степени
+                  <br> Гарантийные обязательства </div>
+                <div class="calculator-item calculator-item--opt"> Персональный менеджер
+                  <div class="box-info"> Моментальная обработка заявок
+                    <div class="dropdown js-dropdown">
+                      <div class="dropdown__inner">
+                        <i class="fal fa-times dropdown__close js-dropdown--close"></i> При работе с уникальными кодами. Ваш заказ начнет собираться через 180 секунд после оформления заказа. </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calculator-item calculator-item--opt">
+                  <div class="box-info"> Программа складского остатка на 90 дней
+                    <div class="dropdown js-dropdown">
+                      <div class="dropdown__inner">
+                        <i class="fal fa-times dropdown__close js-dropdown--close"></i> Условия участия в программе обсуждаются только с персональным менеджером после оформления минимального заказа. </div>
+                    </div>
+                  </div> Фирменная полиграфия </div>
+                <div class="calculator-item calculator-item--diler" style="display: none;"> Отсрочка платежа до 30 дней
+                  <br> Приоритет на сборку 2 степени
+                  <br> Гарантийные обязательства
+                  <br>
+                  <div class="box-info"> Бесплатная доставка
+                    <br>
+                    <div class="dropdown js-dropdown">
+                      <div class="dropdown__inner">
+                        <i class="fal fa-times dropdown__close js-dropdown--close"></i> Условия участия в программе обсуждаются только с персональным менеджером после оформления минимального заказа. </div>
+                    </div>
+                  </div> Дилерский прайс </div>
+                <div class="calculator-item calculator-item--diler" style="display: none;"> Персональный менеджер
+                  <br>
+                  <div class="box-info"> Моментальная обработка заявок
+                    <br>
+                    <div class="dropdown js-dropdown">
+                      <div class="dropdown__inner">
+                        <i class="fal fa-times dropdown__close js-dropdown--close"></i> Условия участия в программе обсуждаются только с персональным менеджером после оформления минимального заказа. </div>
+                    </div>
+                  </div> Онлайн обучение персонала
+                  <br> Мотивация Бернд-менеджеров
+                  <br> Свой экспедитор в Балаково </div>
+                <div class="calculator-item calculator-item--diler" style="display: none;">
+                  <div class="box-info"> Программа складского остатка на 90 дней
+                    <br>
+                    <div class="dropdown js-dropdown">
+                      <div class="dropdown__inner">
+                        <i class="fal fa-times dropdown__close js-dropdown--close"></i> Условия участия в программе обсуждаются только с персональным менеджером после оформления минимального заказа. </div>
+                    </div>
+                  </div> Фирменная полиграфия
+                  <br> Комплексная консультация маркетолога
+                  <br> Фирменные промостенды
+                  <br> Совместные рекламные акции
+                  <br> Эксклюзивная полиграфия </div>
+                <div class="calculator-item calculator-item--dilerplus" style="display: none;"> Отсрочка платежа до 45 дней
+                  <br> Приоритет на сборку 1 степени
+                  <br> Гарантийные обязательства
+                  <br>
+                  <div class="box-info"> Бесплатная доставка
+                    <br>
+                    <div class="dropdown js-dropdown">
+                      <div class="dropdown__inner">
+                        <i class="fal fa-times dropdown__close js-dropdown--close"></i> Условия участия в программе обсуждаются только с персональным менеджером после оформления минимального заказа. </div>
+                    </div>
+                  </div> Дилерский прайс
+                  <br> Эксклюзивная география продаж </div>
+                <div class="calculator-item calculator-item--dilerplus" style="display: none;"> Персональный менеджер 24/7
+                  <br>
+                  <div class="box-info"> Моментальная обработка заявок
+                    <br>
+                    <div class="dropdown js-dropdown">
+                      <div class="dropdown__inner">
+                        <i class="fal fa-times dropdown__close js-dropdown--close"></i> Условия участия в программе обсуждаются только с персональным менеджером после оформления минимального заказа. </div>
+                    </div>
+                  </div> Онлайн обучение персонала
+                  <br> Мотивация Бернд-менеджеров
+                  <br> Свой экспедитор в Балаково
+                  <br> Обучение персонала в Вашем городе
+                  <br> Больше чем бонусная программа </div>
+                <div class="calculator-item calculator-item--dilerplus" style="display: none;">
+                  <div class="box-info"> Программа складского остатка на 90 дней
+                    <br>
+                    <div class="dropdown js-dropdown">
+                      <div class="dropdown__inner">
+                        <i class="fal fa-times dropdown__close js-dropdown--close"></i> Условия участия в программе обсуждаются только с персональным менеджером после оформления минимального заказа. </div>
+                    </div>
+                  </div> Фирменная полиграфия
+                  <br> Комплексная консультация маркетолога
+                  <br> Фирменные промостенды
+                  <br> Совместные рекламные акции
+                  <br> Эксклюзивная полиграфия </div>
+              </div>
+              <!-- end calculator__
+			</div>desc -->
+            </div>
+        </section>
+        <!-- end calculator -->
         <!-- begin info -->
         <section class="section info">
           <div class="container">
@@ -1031,21 +1184,21 @@
                   <div class="m-slider__text m-slider__text--center">
                     <div class="m-slider__title">Персональный менеджер всегда на связи</div>
                     <div class="m-slider__desc">Никаких звонков на горячую линию и поисков писем на почте, мы на связи в Viber/WhatsApp</div>
-                    <button class="btn btn--black m-slider__btn"> Оставить заявку </button>
+                    <a href="#nomenclature" class="btn btn--black" data-toggle="modal"> Оставить заявку</a>
                   </div>
                   <img class="reviews__img" src="img/sliders/reviews/1.png" alt=""> </div>
                 <div class="reviews__slide m-slider__slide">
                   <div class="m-slider__text m-slider__text--center">
                     <div class="m-slider__title">Персональный менеджер всегда на связи</div>
                     <div class="m-slider__desc">Никаких звонков на горячую линию и поисков писем на почте, мы на связи в Viber/WhatsApp</div>
-                    <button class="btn btn--black m-slider__btn"> Оставить заявку </button>
+                    <a href="#nomenclature" class="btn btn--black" data-toggle="modal"> Оставить заявку</a>
                   </div>
                   <img class="reviews__img" src="img/sliders/reviews/1.png" alt=""> </div>
                 <div class="reviews__slide m-slider__slide">
                   <div class="m-slider__text m-slider__text--center">
                     <div class="m-slider__title">Персональный менеджер всегда на связи</div>
                     <div class="m-slider__desc">Никаких звонков на горячую линию и поисков писем на почте, мы на связи в Viber/WhatsApp</div>
-                    <button class="btn btn--black m-slider__btn"> Оставить заявку </button>
+                    <a href="#nomenclature" class="btn btn--black" data-toggle="modal"> Оставить заявку</a>
                   </div>
                   <img class="reviews__img" src="img/sliders/reviews/1.png" alt=""> </div>
               </div>
@@ -1115,7 +1268,7 @@
                     <a href="#" class="phone__link" itemprop="telephone">8 800 555 25 40</a>
                     <span class="phone__text">Звонок бесплатный</span>
                   </div>
-                  <button class="btn btn--black"> Cтать дилером </button>
+                  <a href="#cooperation" class="btn btn--black" data-toggle="modal"> Стать дилером</a>
                   <!-- begin social -->
                   <div class="social ">
                     <ul class="social__list">
@@ -1253,34 +1406,115 @@
         <!-- end footer__bottom -->
       </footer>
       <!-- end footer -->
-    </div>
-    <div class="preloader js-preloader--main"></div>
-    <div class="overlay js-overlay--main"></div>
-    <div class="go-top js-go-top"></div>
-    <!-- begin popups -->
-    <div class="popups">
-      <!-- begin example-popup -->
-      <div class="modal fade example-popup" id="example-popup">
-        <div class="modal-dialog modal-dialog--sm">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Popup Title</h5>
+      </div>
+      <div class="preloader js-preloader--main"></div>
+      <div class="overlay js-overlay--main"></div>
+      <div class="go-top js-go-top"></div>
+      <!-- begin popups -->
+      <div class="popups">
+        <!-- begin example-popup -->
+        <div class="modal fade cooperation" id="cooperation">
+          <div class="modal-dialog modal-dialog--sm">
+            <div class="modal-content">
               <button class="modal-close" data-dismiss="modal" aria-label="Close"> </button>
-            </div>
-            <div class="modal-body"> ...modal body </div>
-            <div class="modal-footer">
-              <button class="button" data-dismiss="modal" aria-label="Close">Отмена</button>
-              <button class="btn modal__btn"> Применить </button>
+              <div class="modal-body">
+                <form class="form">
+                  <h5 class="modal-title">Заявка на сотрудничество</h5>
+                  <div class="m-input is-invalid">
+                    <span class="m-input__title">Наименование организации*</span>
+                    <input type="text" class="m-input__field ">
+                    <span class="m-input__error">*Какаято ошибочка</span>
+                    </span>
+                  </div>
+                  <div class="m-input m-input--select is-invalid">
+                    <span class="m-input__title">Регион*</span>
+                    <select class="js-select">
+                      <option value="Выберите регион" selected disabled>Выберите регион</option>
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                    <span class="m-input__error">*Какаято ошибочка</span>
+                    </span>
+                  </div>
+                  <div class="m-input">
+                    <span class="m-input__title">Телефон*</span>
+                    <input type="num" class="m-input__field js-phone-mask">
+                    <span class="m-input__error">*Какаято ошибочка</span>
+                    </span>
+                  </div>
+                  <div class="m-input is-invalid">
+                    <span class="m-input__title">Эл. почта</span>
+                    <input type="email" class="m-input__field ">
+                    <span class="m-input__error">*Какаято ошибочка</span>
+                    </span>
+                  </div>
+                  <div class="modal__policy">
+                    <div class="policy">Нажимая на кнопку "Отправить", вы автоматически даете согласие на обработку
+                      <a href="/personaldata.html">персональных данных</a>
+                    </div>
+                  </div>
+                  <button class="btn btn--black modal__btn"> Отправить </button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
+        <!-- end example-popup -->
+        <!-- begin example-popup -->
+        <div class="modal fade nomenclature" id="nomenclature">
+          <div class="modal-dialog modal-dialog--sm">
+            <div class="modal-content">
+              <button class="modal-close" data-dismiss="modal" aria-label="Close"> </button>
+              <div class="modal-body">
+                <form class="form">
+                  <h5 class="modal-title">Отправка нуменклатуры</h5>
+                  <div class="m-input is-invalid">
+                    <span class="m-input__title">Наименование организации*</span>
+                    <input type="text" class="m-input__field ">
+                    <span class="m-input__error">*Какаято ошибочка</span>
+                    </span>
+                  </div>
+                  <div class="m-input">
+                    <span class="m-input__title">Телефон*</span>
+                    <input type="num" class="m-input__field js-phone-mask">
+                    <span class="m-input__error">*Какаято ошибочка</span>
+                    </span>
+                  </div>
+                  <div class="m-input is-invalid">
+                    <span class="m-input__title">Эл. почта</span>
+                    <input type="email" class="m-input__field ">
+                    <span class="m-input__error">*Какаято ошибочка</span>
+                    </span>
+                  </div>
+                  <label class="m-input m-input--file">
+                    <span class="m-input__title">
+                      <i class="fal fa-paperclip"></i> Прикрепить файл
+                      <span>(не более 6 МВ)</span>
+                    </span>
+                    <input type="file" class="m-input__field">
+                    <span class="m-input__error">*Какаято ошибочка</span>
+                    </span>
+                  </label>
+                  <div class="modal__policy">
+                    <div class="policy">Нажимая на кнопку "Отправить", вы автоматически даете согласие на обработку
+                      <a href="/personaldata.html">персональных данных</a>
+                    </div>
+                  </div>
+                  <button class="btn btn--black modal__btn"> Отправить </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end example-popup -->
       </div>
-      <!-- end example-popup -->
-    </div>
-    <!-- end popups -->
-    <!-- begin scripts & libs -->
-    <script src="js/libs.min.js" type="text/javascript"></script>
-    <script src="js/app.js" type="text/javascript"></script>
-    <!-- end scripts & libs -->
+      <!-- end popups -->
+      <!-- begin scripts & libs -->
+      <script src="js/libs.min.js" type="text/javascript"></script>
+      <script src="js/app.js" type="text/javascript"></script>
+      <!-- end scripts & libs -->
   </body>
 </html>

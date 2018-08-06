@@ -2,6 +2,8 @@
 title: Попап окна на сайте
 ---
 
+{% extends "layouts/_layout.html" %}
+
 {% block content %}
 
 	<style>
@@ -31,13 +33,20 @@ title: Попап окна на сайте
 
 <main>
 
-	<h1>{{title}}</h1>
+	<div class="container">
 
-	<ol class="container popup__list">
-		<li class="popup__item">
-			<a href="#example-popup"  data-toggle="modal">Example Popup</a>
-		</li>
-	</ol>
+			<h1>{{title}}</h1>
+
+			<ol class="container popup__list">
+				<li class="popup__item">
+					<a href="#cooperation"  data-toggle="modal">Заявка на сотрудничество</a>
+				</li>
+				<li class="popup__item">
+					<a href="#nomenclature"  data-toggle="modal">Отправка нуменклатуры</a>
+				</li>
+			</ol>
+
+	</div>
 
 </main>
 <!-- end home -->

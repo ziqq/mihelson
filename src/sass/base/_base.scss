@@ -1,6 +1,6 @@
 //base style
 
-html, body {
+html {
     height: 100%;
     overflow-x: hidden;
 }
@@ -63,6 +63,10 @@ textarea {
 
 .container {
     @include container;
+
+    &--small {
+        max-width: 820px;
+    }
 }
 
 .overlay {
@@ -171,49 +175,49 @@ textarea {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 .lg-only,
 .md-only,
 .sm-only,
 .xs-only {
-    display: none;
+    display: none !important;
 }
 @include respond-to(lg) {
 
     .lg-only {
-        display: block;
+        display: block !important;
     }
 
     .lg-hide {
-        display: none;
+        display: none !important;
     }
 }
 @include respond-to(md) {
 
     .md-only {
-        display: block;
+        display: block !important;
     }
 
     .md-hide {
-        display: none;
+        display: none !important;
     }
 }
 @include respond-to(sm) {
 
     .sm-only {
-        display: block;
+        display: block !important;
     }
 
     .sm-hide {
-        display: none;
+        display: none !important;
     }
 }
 @include respond-to(xs) {
 
     .xs-only {
-        display: block;
+        display: block !important;
     }
 
     .xs-hide {

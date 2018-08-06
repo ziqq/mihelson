@@ -28,15 +28,31 @@
 
             &:hover {
                 background-color: lighten($color, 15%);
+                color: #fff;
             }
 
             &:active {
                 box-shadow: inset 0 0 30px $color;
+                color: #fff;
             }
         }
 
-        &--accent {
+        &.btn--accent {
             color: #000;
+
+            &:hover,
+            &:active {
+                color: #000;
+            }
+        }
+
+        &.btn--black {
+            color: #fff;
+
+            &:hover,
+            &:active {
+                color: #fff;
+            }
         }
     }
 } //.btn

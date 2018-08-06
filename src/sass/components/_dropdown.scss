@@ -45,7 +45,7 @@
         filter: alpha(opacity=0);
         transition: opacity 100ms linear, top 100ms linear, bottom 100ms linear,
             visibility 100ms linear;
-        border: 1px solid $color-border--light;
+        border: 1px solid $color-border--lighten;
         @extend %box;
         @include nosel;
 
@@ -57,7 +57,7 @@
             border: solid transparent;
             pointer-events: none;
             border-width: 6px;
-            border-bottom-color: $color-border--light;
+            border-bottom-color: $color-border--lighten;
             position: absolute;
             top: -12px;
         }
@@ -74,7 +74,7 @@
             border-width: 5px;
             border-bottom-color: #fff;
         }
-    }
+    } //.bb-dropdown__list
 
     &.top {
 

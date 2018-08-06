@@ -1,19 +1,86 @@
 <!-- begin example-popup -->
-<div class="modal fade example-popup" id="example-popup">
+<div class="modal fade cooperation" id="cooperation">
 	<div class="modal-dialog modal-dialog--sm">
 		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title">Popup Title</h5>
-				<button class="modal-close" data-dismiss="modal" aria-label="Close">
-				</button>
-			</div>
+			<button class="modal-close" data-dismiss="modal" aria-label="Close">
+			</button>
 			<div class="modal-body">
-				...modal body
-			</div>
-			<div class="modal-footer">
-					<button class="button"  data-dismiss="modal" aria-label="Close">Отмена</button>
-					{{ item.btn('Применить', 'modal__btn') }}
+				<form class="form">
+					<h5 class="modal-title">Заявка на сотрудничество</h5>
+					{{item.input('Наименование организации*', 'is-invalid', 'text')}}
+
+					<div class="m-input m-input--select is-invalid">
+						<span class="m-input__title">Регион*</span>
+						<select class="js-select">
+							<option value="Выберите регион" selected disabled>Выберите регион</option>
+							{% for i in range(0, 5) %}
+								<option value="{{i}}">{{i}}</option>
+							 {% endfor %}
+						</select>
+						<span class="m-input__error">*Какаято ошибочка</span>
+						</span>
+					</div>
+
+					<div class="m-input">
+						<span class="m-input__title">Телефон*</span>
+						<input type="num" class="m-input__field js-phone-mask">
+						<span class="m-input__error">*Какаято ошибочка</span>
+						</span>
+					</div>
+
+					{{item.input('Эл. почта', 'is-invalid', 'email')}}
+
+					<div class="modal__policy">
+						{% include "partials/components/_policy.html" %}
+					</div>
+
+					{{item.btn('Отправить', 'btn--black modal__btn')}}
+				</form>
 			</div>
 		</div>
 	</div>
-</div><!-- end example-popup -->
+</div>
+<!-- end example-popup -->
+
+<!-- begin example-popup -->
+<div class="modal fade nomenclature" id="nomenclature">
+	<div class="modal-dialog modal-dialog--sm">
+		<div class="modal-content">
+			<button class="modal-close" data-dismiss="modal" aria-label="Close">
+			</button>
+			<div class="modal-body">
+				<form class="form">
+					<h5 class="modal-title">Отправка нуменклатуры</h5>
+					{{item.input('Наименование организации*', 'is-invalid', 'text')}}
+
+					<div class="m-input">
+						<span class="m-input__title">Телефон*</span>
+						<input type="num" class="m-input__field js-phone-mask">
+						<span class="m-input__error">*Какаято ошибочка</span>
+						</span>
+					</div>
+
+					{{item.input('Эл. почта', 'is-invalid', 'email')}}
+
+					<label class="m-input m-input--file">
+						<span class="m-input__title">
+							<i class="fal fa-paperclip"></i>
+							Прикрепить файл <span>(не более 6 МВ)</span>
+						</span>
+						<input type="file" class="m-input__field">
+						<span class="m-input__error">*Какаято ошибочка</span>
+						</span>
+					</label>
+
+					<div class="modal__policy">
+						{% include "partials/components/_policy.html" %}
+					</div>
+
+					{{item.btn('Отправить', 'btn--black modal__btn')}}
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end example-popup -->
+

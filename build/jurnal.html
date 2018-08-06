@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Каталог</title>
+    <title>Журнал</title>
     <meta name="keywords" content>
     <meta name="description" content>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -196,7 +196,8 @@
                                 <div class="mobile-nav__item">
                                   <div class="mobile-nav__link">
                                     <strong>Мобильный телефон: </strong>
-                                    <a href="tel:+79962100000">+7 (996) 210-00-00</a>
+                                    <a href="tel:+79962010000">+7 (996) 201-00-00</a>
+                                    <a href="tel:+79272253288">+7 (927) 225-32-88</a>
                                   </div>
                                 </div>
                               </li>
@@ -341,7 +342,7 @@
                 </div>
                 <!-- end search -->
               </div>
-              <button class="btn btn--black sm-hide"> Cтать дилером </button>
+              <a href="#nomenclature" class="btn btn--black sm-hide" data-toggle="modal">Cтать дилером</a>
             </div>
           </div>
         </div>
@@ -353,16 +354,16 @@
               <!-- begin nav -->
               <nav class="nav nav--bottom sm-hide">
                 <ul class="nav__list">
-                  <li class="nav__item">
+                  <li class="nav__item ">
                     <a href="#" class="nav__link">Легкий старт</a>
                   </li>
-                  <li class="nav__item">
+                  <li class="nav__item ">
                     <a href="#" class="nav__link">Логистика</a>
                   </li>
-                  <li class="nav__item">
+                  <li class="nav__item ">
                     <a href="#" class="nav__link">Уникальные коды</a>
                   </li>
-                  <li class="nav__item">
+                  <li class="nav__item is-active">
                     <a href="#" class="nav__link">Журнал</a>
                   </li>
                 </ul>
@@ -854,9 +855,105 @@
         <!-- end mobile-nav -->
       </header>
       <!-- end header -->
-      <!-- begin catalog -->
-      <main class="main catalog"> </main>
-      <!-- end catalog -->
+      <!-- begin home -->
+      <main class="main jurnal">
+        <!-- begin firstscreen -->
+        <div class="firstscreen">
+          <picture class="firstscreen__image">
+            <source media="(max-width: 480px)" srcset="img/jurnal/480/firstscreen-bg.jpg'">
+            <source media="(max-width: 768px)" srcset="img/jurnal/768/firstscreen-bg.jpg'">
+            <img class="firstscreen__img" src="img/jurnal/firstscreen-bg.jpg'" alt="alt"> </picture>
+          <div class="container">
+            <div class="firstscreen__inner">
+              <h1 class="h1 firstscreen__title">Михельсон журнал</h1>
+              <h5 class="h5 firstscreen__subtitle">Полезные статьи о бизнесе</h5>
+            </div>
+          </div>
+        </div>
+        <!-- end firstscreen -->
+        <div class="container">
+          <div class="jurnal__top-line">
+            <div class="m-input__wrap">
+              <span class="m-input__wrap_title">Показать статьи за период</span>
+              <div class="m-input m-input--date jurnal__input">
+                <input class="m-input__field js-date" type="text" placeholder="дд.мм.гг">
+                <i class="fal fa-calendar-alt m-input__icon js-input-icon"></i>
+                <span class="m-input__error">*Какаято ошибочка</span>
+                </span>
+              </div>
+              <div class="m-input m-input--date jurnal__input">
+                <input class="m-input__field js-date" type="text" placeholder="дд.мм.гг">
+                <i class="fal fa-calendar-alt m-input__icon js-input-icon"></i>
+                <span class="m-input__error">*Какаято ошибочка</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- begin jurnal-item__wrap -->
+        <div class="jurnal-item__wrap">
+          <div class="container">
+            <a href="#" class="jurnal__item jurnal-item">
+              <span class="jurnal-item__date">24 июля 2018</span>
+              <div class="jurnal-item__title">Наставники из Екатеринбурга приняли участие в первой интеллектуальной игре «Что? Где? Когда?»</div>
+            </a>
+            <a href="#" class="jurnal__item jurnal-item">
+              <span class="jurnal-item__date">24 июля 2018</span>
+              <div class="jurnal-item__title">Наставники из Екатеринбурга приняли участие в первой интеллектуальной игре «Что? Где? Когда?»</div>
+            </a>
+            <a href="#" class="jurnal__item jurnal-item">
+              <span class="jurnal-item__date">24 июля 2018</span>
+              <div class="jurnal-item__title">Сбербанк первым в России запустил сервис сурдоперевода в своих отделениях и не только в своих отделениях</div>
+            </a>
+            <a href="#" class="jurnal__item jurnal-item">
+              <span class="jurnal-item__date">24 июля 2018</span>
+              <div class="jurnal-item__title">Сбербанк первым в России запустил сервис сурдоперевода в своих отделениях и не только в своих отделениях</div>
+            </a>
+            <a href="#" class="jurnal__item jurnal-item">
+              <span class="jurnal-item__date">24 июля 2018</span>
+              <div class="jurnal-item__title">При обслуживании сотрудник передает клиенту планшет, на котором к диалогу удаленно подключается переводчик </div>
+            </a>
+            <a href="#" class="jurnal__item jurnal-item">
+              <span class="jurnal-item__date">24 июля 2018</span>
+              <div class="jurnal-item__title">При обслуживании сотрудник передает клиенту планшет, на котором к диалогу удаленно подключается переводчик </div>
+            </a>
+          </div>
+          <!-- end jurnal-item__wrap -->
+          <!-- begin pagination -->
+          <div class="pagination catalog__pagination">
+            <ul class="pagination__list">
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">
+                  <i class="fal fa-angle-left"></i>
+                </a>
+              </li>
+              <li class="pagination__item is-active">
+                <a href="#" class="pagination__link">1</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">2</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">3</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">4</a>
+              </li>
+              <li class="pagination__item">
+                <span class="pagination__gap">...</span>
+                <a href="#" class="pagination__link">18</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">
+                  <i class="fal fa-angle-right"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- end pagination -->
+        </div>
+      </main>
+      <!-- end home -->
       <!-- begin footer -->
       <footer class="footer">
         <!-- begin footer__top -->
@@ -917,7 +1014,7 @@
                     <a href="#" class="phone__link" itemprop="telephone">8 800 555 25 40</a>
                     <span class="phone__text">Звонок бесплатный</span>
                   </div>
-                  <button class="btn btn--black"> Cтать дилером </button>
+                  <a href="#cooperation" class="btn btn--black" data-toggle="modal"> Стать дилером</a>
                   <!-- begin social -->
                   <div class="social ">
                     <ul class="social__list">
@@ -1062,17 +1159,98 @@
     <!-- begin popups -->
     <div class="popups">
       <!-- begin example-popup -->
-      <div class="modal fade example-popup" id="example-popup">
+      <div class="modal fade cooperation" id="cooperation">
         <div class="modal-dialog modal-dialog--sm">
           <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Popup Title</h5>
-              <button class="modal-close" data-dismiss="modal" aria-label="Close"> </button>
+            <button class="modal-close" data-dismiss="modal" aria-label="Close"> </button>
+            <div class="modal-body">
+              <form class="form">
+                <h5 class="modal-title">Заявка на сотрудничество</h5>
+                <div class="m-input is-invalid">
+                  <span class="m-input__title">Наименование организации*</span>
+                  <input type="text" class="m-input__field ">
+                  <span class="m-input__error">*Какаято ошибочка</span>
+                  </span>
+                </div>
+                <div class="m-input m-input--select is-invalid">
+                  <span class="m-input__title">Регион*</span>
+                  <select class="js-select">
+                    <option value="Выберите регион" selected disabled>Выберите регион</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                  <span class="m-input__error">*Какаято ошибочка</span>
+                  </span>
+                </div>
+                <div class="m-input">
+                  <span class="m-input__title">Телефон*</span>
+                  <input type="num" class="m-input__field js-phone-mask">
+                  <span class="m-input__error">*Какаято ошибочка</span>
+                  </span>
+                </div>
+                <div class="m-input is-invalid">
+                  <span class="m-input__title">Эл. почта</span>
+                  <input type="email" class="m-input__field ">
+                  <span class="m-input__error">*Какаято ошибочка</span>
+                  </span>
+                </div>
+                <div class="modal__policy">
+                  <div class="policy">Нажимая на кнопку "Отправить", вы автоматически даете согласие на обработку
+                    <a href="/personaldata.html">персональных данных</a>
+                  </div>
+                </div>
+                <button class="btn btn--black modal__btn"> Отправить </button>
+              </form>
             </div>
-            <div class="modal-body"> ...modal body </div>
-            <div class="modal-footer">
-              <button class="button" data-dismiss="modal" aria-label="Close">Отмена</button>
-              <button class="btn modal__btn"> Применить </button>
+          </div>
+        </div>
+      </div>
+      <!-- end example-popup -->
+      <!-- begin example-popup -->
+      <div class="modal fade nomenclature" id="nomenclature">
+        <div class="modal-dialog modal-dialog--sm">
+          <div class="modal-content">
+            <button class="modal-close" data-dismiss="modal" aria-label="Close"> </button>
+            <div class="modal-body">
+              <form class="form">
+                <h5 class="modal-title">Отправка нуменклатуры</h5>
+                <div class="m-input is-invalid">
+                  <span class="m-input__title">Наименование организации*</span>
+                  <input type="text" class="m-input__field ">
+                  <span class="m-input__error">*Какаято ошибочка</span>
+                  </span>
+                </div>
+                <div class="m-input">
+                  <span class="m-input__title">Телефон*</span>
+                  <input type="num" class="m-input__field js-phone-mask">
+                  <span class="m-input__error">*Какаято ошибочка</span>
+                  </span>
+                </div>
+                <div class="m-input is-invalid">
+                  <span class="m-input__title">Эл. почта</span>
+                  <input type="email" class="m-input__field ">
+                  <span class="m-input__error">*Какаято ошибочка</span>
+                  </span>
+                </div>
+                <label class="m-input m-input--file">
+                  <span class="m-input__title">
+                    <i class="fal fa-paperclip"></i> Прикрепить файл
+                    <span>(не более 6 МВ)</span>
+                  </span>
+                  <input type="file" class="m-input__field">
+                  <span class="m-input__error">*Какаято ошибочка</span>
+                  </span>
+                </label>
+                <div class="modal__policy">
+                  <div class="policy">Нажимая на кнопку "Отправить", вы автоматически даете согласие на обработку
+                    <a href="/personaldata.html">персональных данных</a>
+                  </div>
+                </div>
+                <button class="btn btn--black modal__btn"> Отправить </button>
+              </form>
             </div>
           </div>
         </div>

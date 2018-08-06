@@ -18,7 +18,7 @@
 					{% include "partials/_search.html" %}
 				</div>
 
-				{{item.btn('Cтать дилером', 'btn--black sm-hide')}}
+				<a href="#nomenclature" class="btn btn--black sm-hide" data-toggle="modal">Cтать дилером</a>
 
 			</div>
 		</div>
@@ -33,7 +33,7 @@
 				<nav class="nav nav--bottom sm-hide">
 					<ul class="nav__list">
 						{% import "data/data.html" as nav %} {% for item in nav.mainMenu %}
-						<li class="nav__item">
+						<li class="nav__item {{item.class}}">
 							<a href="#" class="nav__link">{{item.title}}</a>
 						</li>
 						{% endfor %}

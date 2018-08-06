@@ -1,25 +1,29 @@
 //noUiSlider
+$noUi-height: 7px;
+$noUi-radius: 5px;
+$noUi-bg: $gray--lighten;
+$noUi-bg-active: $color-accent;
 
 .noUi-horizontal {
-    height: 2px;
+    height: $noUi-height;
 
     .noUi-handle {
-        width: 8px;
-        height: 8px;
-        top: -3px;
+        top: -10px;
         left: -5px;
         border-radius: 50%;
-        background: $color-main;
-        @include respond-to(xs) {
-            width: 10px;
-            height: 10px;
-        }
+
+        width: 23px;
+        height: 24px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        background-color: #fff;
     }
 }
 
 .noUi-base,
 .noUi-handle {
-    background-color: $gray--lighten;
+    background: $noUi-bg-active;
+    border-radius: $noUi-radius;
+    z-index: initial;
 }
 
 .noUi-handle {
@@ -31,16 +35,7 @@
     outline: none;
 
     &::after {
-        width: 24px;
-        height: 24px;
-        border-radius: 50%;
-        background-color: rgba($color-main, 0.5);
-        @include vcenter;
-        @include tr(0.5s);
-        @include respond-to(xs) {
-            width: 28px;
-            height: 28px;
-        }
+        display: none;
     }
 
     &::before {
@@ -50,36 +45,40 @@
 
 .noUi-connect,
 .noUi-target {
-    background: $color-main;
+    background-color: $noUi-bg;
     border: none;
-    border-radius: 0;
+    border-radius: $noUi-radius;
     box-shadow: none;
 }
 
 .range {
+    margin: 0 7px;
     @include clr;
 
-    &__slider {
-        margin-top: 5px;
-        margin-bottom: 15px;
-    } //.range__slider
+    &__diapazon {
+        margin-bottom: $gutter;
+    }
+
+    &__title {
+        color: $color-text;
+        font-size: 20px;
+    }
 
     &__from,
     &__to {
         display: inline-block;
         vertical-align: middle;
-        font-size: 15px;
-        font-family: $f-num;
+        font-family: $f-medium;
         color: $color-text;
+        font-size: 20px;
 
         span {
-            font-size: 14px;
+            font-size: 20px;
             color: $color-text;
         }
 
         i {
-            font-size: 13px;
-            color: $gray--light;
+            font-size: 15px;
         }
     } //.range__from
 

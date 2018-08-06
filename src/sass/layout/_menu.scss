@@ -65,6 +65,16 @@
         }
     } //.nav__link
 
+    &__icon {
+        margin-right: $gutter / 2;
+        color: $color-link;
+        @include tr;
+        @include respond-to(xs) {
+            margin-right: 0;
+            font-size: 20px;
+        }
+    } //.nav__icon
+
     &--top {
 
         .nav {
@@ -83,6 +93,17 @@
 
         .nav {
 
+            &__item {
+                position: relative;
+
+                &.is-active {
+
+                    .nav__link {
+                        color: $gray;
+                    }
+                }
+            }
+
             &__link {
 
                 &::after {
@@ -91,6 +112,67 @@
             }
         }
     } //.nav--bottom
+
+    &--icon {
+        border-top: 1px solid $color-border--light;
+
+        &.is-fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: z(success);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+            background-color: #fff;
+
+            @include respond-to(xs) {
+                top: 50px;
+            }
+        }
+
+        .nav {
+
+            &__item {
+
+                &:hover {
+
+                    .nav__link {
+
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+
+                &--last {
+                    margin-left: auto;
+                }
+            }
+
+            &__link {
+                padding: 18px 0;
+                line-height: 1;
+                @include flexCenter;
+
+                &:hover {
+
+                    &::after {
+                        display: none;
+                    }
+
+                    .nav__icon {
+                        color: $color-link--hover;
+                    }
+                }
+            }
+
+            &__text {
+                @include respond-to(xs) {
+                    display: none;
+                }
+            }
+        }
+    } //.nav--icon
 } //.nav
 
 .nav-dropdown {

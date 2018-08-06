@@ -1,0 +1,67 @@
+---
+title: Журнал
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<!-- begin home -->
+<main class="main jurnal">
+
+	<!-- begin firstscreen -->
+	 <div class="firstscreen">
+		<picture class="firstscreen__image">
+			<source media="(max-width: 480px)" srcset="img/jurnal/480/firstscreen-bg.jpg'">
+			<source media="(max-width: 768px)" srcset="img/jurnal/768/firstscreen-bg.jpg'">
+			<img class="firstscreen__img" src="img/jurnal/firstscreen-bg.jpg'" alt="alt">
+		</picture>
+		<div class="container">
+			<div class="firstscreen__inner">
+				<h1 class="h1 firstscreen__title">Михельсон журнал</h1>
+				<h5 class="h5 firstscreen__subtitle">Полезные статьи о бизнесе</h5>
+			</div>
+		</div>
+	</div><!-- end firstscreen -->
+
+	<div class="container">
+		<div class="jurnal__top-line">
+			<div class="m-input__wrap">
+				<span class="m-input__wrap_title">Показать статьи за период</span>
+
+				<div class="m-input m-input--date jurnal__input">
+					<input class="m-input__field js-date" type="text" placeholder="дд.мм.гг">
+					<i class="fal fa-calendar-alt m-input__icon js-input-icon"></i>
+					<span class="m-input__error">*Какаято ошибочка</span>
+					</span>
+				</div>
+				<div class="m-input m-input--date jurnal__input">
+					<input class="m-input__field js-date" type="text" placeholder="дд.мм.гг">
+					<i class="fal fa-calendar-alt m-input__icon js-input-icon"></i>
+					<span class="m-input__error">*Какаято ошибочка</span>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- begin jurnal-item__wrap -->
+		<div class="jurnal-item__wrap">
+			<div class="container">
+			{% import "data/data.html" as jurnalItem %}
+			{% for item in jurnalItem.jurnalItem %}
+				{% for i in range(0, 2) %}
+				<a href="#" class="jurnal__item jurnal-item">
+					<span class="jurnal-item__date">24 июля 2018</span>
+					<div class="jurnal-item__title">{{item.title}}</div>
+				</a>
+				{% endfor %}
+			{% endfor %}
+		</div><!-- end jurnal-item__wrap -->
+
+		{% include "partials/components/_pagination.html" %}
+	</div>
+
+</main>
+<!-- end home -->
+
+{% endblock %}

@@ -130,7 +130,7 @@
         color: rgba(#fff, 0.8);
         font-family: $f-light;
         font-size: 16px;
-        @include respond-to(i5) {
+        @include respond-to(xs) {
             margin-bottom: 20px;
         }
     } //.m-slider__desc
