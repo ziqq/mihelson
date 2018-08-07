@@ -13,6 +13,14 @@ PageList:
   ready: 50
   desc : Статья
 
+- file: unicode.html
+  ready: 50
+  desc : Уникальные коды
+
+- file: brands.html
+  ready: 50
+  desc : Бренды
+
   #Согласие на обработку персональных данных
 - file: privacy.html
   ready: 50

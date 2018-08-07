@@ -1,0 +1,132 @@
+---
+title: Unicode
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<!-- begin unicode -->
+<main class="main unicode">
+
+	<!-- begin firstscreen -->
+	<div class="firstscreen unicode__firstscreen">
+		<picture class="firstscreen__image">
+			<source media="(max-width: 480px)" srcset="img/unicode/480/unicode-bg.jpg">
+			<source media="(max-width: 768px)" srcset="img/unicode/768/unicode-bg.jpg">
+			<img class="firstscreen__img" src="img/unicode/unicode-bg.jpg" alt="alt">
+		</picture>
+		<div class="firstscreen__inner">
+			<div class="firstscreen__text">
+				<h1 class="h1 firstscreen__title">Добавим в Вашу базу <br> уникальные коды
+					</h1>
+				<h5 class="h5 firstscreen__subtitle">и увеличим эффективность работы на 97,7%</h5>
+				<a href="#cooperation" class="btn btn--accent firstscreen__btn" data-toggle="modal">Попробовать</a>
+			</div>
+
+		</div>
+	</div><!-- end firstscreen -->
+
+	<!-- begin send -->
+	 <section class="send">
+		<div class="container">
+			<div class="unicode__title-wrap">
+				<h2 class="unicode__title">Все сделаем за Вас, просто <br> пришлите номенклатуру </h2>
+				<p class="unicode__subtitle">Порядок действий для перехода на уникальные коды.</p>
+			</div>
+
+			<div class="send__items">
+				<div class="item-icon is-checked">
+					<div class="item-icon__inner">
+						{{ mixin.icon('mail', 'item-icon__icon') }}
+					</div>
+					<div class="item-icon__title">Пришлите нам <br> свою номенклатуру</div>
+				</div>
+				<div class="item-icon">
+					<div class="item-icon__inner">
+						{{ mixin.icon('list', 'item-icon__icon') }}
+					</div>
+					<div class="item-icon__title">Наши специалисты <br> дополнят её кодами</div>
+				</div>
+				<div class="item-icon">
+					<div class="item-icon__inner">
+						{{ mixin.icon('upload', 'item-icon__icon') }}
+					</div>
+					<div class="item-icon__title">Загрузите новую <br> номенклатуру в 	базу</div>
+			</div>
+
+		</div>
+	</section><!-- end send -->
+
+	<!-- begin reviews -->
+	<section class="section reviews">
+		<div class="container">
+			<div class="reviews__slider m-slider m-slider--reviews">
+				<div class="reviews__slides m-slider__slides">
+					<div class="reviews__slide m-slider__slide">
+						<div class="m-slider__text m-slider__text--center">
+							<div class="m-slider__title">Получите приоритет первой степени </div>
+							<div class="m-slider__desc">на следующий заказ, просто отправив
+									нам свою номенклатуру</div>
+
+							<a href="#cooperation" class="btn btn--black" data-toggle="modal"> Отправить</a>
+
+						</div>
+						<div class="reviews__img">
+							<img src="img/unicode/info.png" alt="alt">
+							<div class="badge badge--yellow reviews__badge"><span>Обработка,<br>сборка и отправка <br>заказа меньше<br>120 минут</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end reviews -->
+
+	<!-- begin adv -->
+	 <section class="adv">
+		<div class="container">
+			<div class="unicode__title-wrap">
+				<h2 class="unicode__title">Преимущества перехода <br>на уникальные коды</h2>
+			</div>
+
+			<!-- begin adv__items -->
+			 <div class="adv__items">
+				<div class="item-icon">
+					{{ mixin.icon('time', 'item-icon__icon') }}
+					<div class="item-icon__title">Обработаем заявку <br> за 180 секунд</div>
+					<div class="item-icon__desc">За счет добавления уникальных кодов сущетсвенно увеличивается скорость обработки заявки. 3 минуты против 5 часов.</div>
+				</div>
+				<div class="item-icon">
+					{{ mixin.icon('box', 'item-icon__icon') }}
+					<div class="item-icon__title">Ваш заказ будет <br> собран первым</div>
+					<div class="item-icon__desc">Дилеры, работающие с уникальными кодами, получают приоритет на сборку и отгрузку товаров со склада.</div>
+				</div>
+				<div class="item-icon">
+					{{ mixin.icon('graphic', 'item-icon__icon') }}
+					<div class="item-icon__title">Вероятность ошибки <br> меньше 0,2%</div>
+					<div class="item-icon__desc">За счёт загрузки данных в автоматическом режиме вероятность ошибки сводится к нулю, т.к. исключается человеческий фактор.</div>
+				</div>
+			</div><!-- end adv__items -->
+		</div>
+	</section><!-- end adv -->
+
+	<!-- begin section-bg -->
+	<div class="container">
+		 <section class="section-bg" style="background-image: url('img/unicode/new.png');">
+			<div class="section-bg__inner">
+				<div class="section-bg__text">
+					<div class="section-bg__title">Новая система работы - новая система мотивации </div>
+					<div class="section-bg__desc">Менеджеры, которые работают с системой уникальных кодов, получают дополнительные, личные преимущества в виде стабильных поощрений нашей компанией</div>
+					<a href="#cooperation" class="btn btn--black" data-toggle="modal"> Попробовать</a>
+				</div>
+			</div>
+		</section>
+	</div><!-- end section-bg -->
+
+
+
+
+</main>
+<!-- end unicode -->
+
+{% endblock %}

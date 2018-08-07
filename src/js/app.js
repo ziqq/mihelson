@@ -93,10 +93,12 @@ $(document).ready(function() {
     });
 
     //Section Animarions
-    $('.info__left').animated('slideInLeft', 'slideOutLeft');
-    $('.info__right').animated('slideInRight', 'slideOutRight');
-    $('.reviews__img').animated('fadeInUp', 'fadeOutDown');
-    $('.calculator-item').animated('fadeInUp', 'fadeOutDown');
+    if ($(window).width() >= 480) {
+        $('.info__left').animated('slideInLeft', 'slideOutLeft');
+        $('.info__right').animated('slideInRight', 'slideOutRight');
+        $('.reviews__img').animated('fadeInUp', 'fadeOutDown');
+        $('.calculator-item').animated('fadeInUp', 'fadeOutDown');
+    }
 
     if ($('.js-m-accordeon').length > 0 && $(window).width() <= 480) {
         $('.js-m-accordeon')

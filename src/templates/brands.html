@@ -1,0 +1,38 @@
+---
+title: Бренды
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<!-- begin brands -->
+<main class="main brands">
+
+	<div class="container">
+			<h1 class="h1 page-title" itemprop="headline">Бренды</h1>
+
+			<div class="brands__list">
+				<li class="brands__item">
+					{% import "data/data.html" as navDropdownBrandsOne %}
+					{% for item in navDropdownBrandsOne.navDropdownBrandsOne %}
+						<a href="" class="brands__link">{{item.title}}</a>
+					{% endfor %}
+				</li>
+				<li class="brands__item">
+					{% import "data/data.html" as navDropdownBrandsTwo %}
+					{% for item in navDropdownBrandsTwo.navDropdownBrandsTwo %}
+						<a href="" class="brands__link">{{item.title}}</a>
+					{% endfor %}
+				</li>
+				<li class="brands__item">
+					{% import "data/data.html" as navDropdownBrandsThree %}
+					{% for item in navDropdownBrandsThree.navDropdownBrandsThree %}
+						<a href="" class="brands__link">{{item.title}}</a>
+					{% endfor %}
+				</li>
+			</div>
+	</div>
+
+</main><!-- end brands -->
+
+{% endblock %}

@@ -2,7 +2,7 @@
     margin-bottom: 80px;
     background-color: $color-bg--dark;
     @include respond-to(sm) {
-        margin-bottom: 40px;
+        margin-bottom: $gutter;
     }
 
     &__slide {
@@ -213,8 +213,8 @@
         justify-content: center;
 
         @include respond-to(xs) {
-            bottom: 55px;
-            left: 280px;
+            bottom: 50px;
+            left: 275px;
         }
 
         span {
@@ -369,7 +369,7 @@
         height: 500px;
         margin-bottom: -7px;
         @include respond-to(xs) {
-            height: 650px;
+            height: 600px;
             margin-bottom: 0;
         }
     } //.reviews__slide
@@ -381,7 +381,7 @@
         right: 100px;
         @include respond-to(sm) {
             max-width: 375px;
-            right: -30px;
+            right: 10px;
         }
         @include respond-to(xs) {
             max-width: 100%;
@@ -390,6 +390,20 @@
             @include tX(0);
         }
     } //.reviews__img
+
+    &__badge {
+        position: absolute;
+        top: -100px;
+        right: -50px;
+
+        @include respond-to(sm) {
+            right: 35px;
+        }
+
+        @include respond-to(xs) {
+            right: -35px;
+        }
+    } //.reviews__badge
 
     .m-slider {
 

@@ -195,8 +195,11 @@
         @include vy;
         left: 0;
 
-        @include respond-to(sm) {
-            left: 10px;
+        @include respond-to(md) {
+            left: 60px;
+        }
+        @include respond-to(xs) {
+            left: 15px;
         }
     } //.firstscreen__text
 
@@ -208,6 +211,7 @@
     } //.firstscreen__title
 
     &__subtitle {
+        margin-bottom: $gutter;
         color: $color-text;
         font-size: 16px;
         font-family: $f-light;

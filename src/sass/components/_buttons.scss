@@ -1,6 +1,6 @@
 %button {
     padding: 8px 35px;
-    font-family: $f;
+    font-family: $f-medium;
     font-size: 14px;
     letter-spacing: 0.5px;
     text-align: center;
@@ -16,6 +16,10 @@
     @include tr;
     display: inline-flex;
     justify-content: center;
+
+    @include respond-to(xs) {
+        font-size: 16px;
+    }
 }
 
 .btn {
@@ -72,5 +76,9 @@
         position: relative;
         top: 1px;
         right: -3px;
+    }
+
+    @include respond-to(xs) {
+        font-size: 16px;
     }
 } //.btn-link
