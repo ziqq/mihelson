@@ -3,9 +3,6 @@
     &__wrap {
         padding: 100px 0 50px;
         @include flexCenter;
-        @include respond-to(i8-l) {
-            padding-top: 35px;
-        }
         @include respond-to(xs) {
             padding: 35px 0;
         }

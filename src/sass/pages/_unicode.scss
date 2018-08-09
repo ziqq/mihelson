@@ -1,7 +1,7 @@
 .unicode {
 
     &__firstscreen {
-        margin-bottom: $gutter * 2;
+        margin-bottom: 70px;
 
         @include respond-to(xs) {
             margin-bottom: $gutter;
@@ -124,24 +124,30 @@
             content: '';
             display: block;
             height: 5px;
-            width: 42%;
+            width: 39%;
             background-color: $gray--lighten;
             position: absolute;
             top: 80px;
-            @include respond-to(md) {
-                width: 40%;
-            }
             @include respond-to(sm) {
                 width: 35%;
             }
         }
 
         &::before {
-            left: -15px;
+            left: -20px;
+            @include respond-to(sm) {
+                left: -16px;
+            }
         }
 
         &::after {
-            right: -15px;
+            right: -19px;
+            @include respond-to(md) {
+                right: -20px;
+            }
+            @include respond-to(sm) {
+                right: -16px;
+            }
         }
 
         &:first-child {
@@ -166,7 +172,7 @@
             }
 
             .item-icon__inner {
-                border-color: $color-accent;
+                background-color: $color-accent;
             }
         }
     }
@@ -176,20 +182,29 @@
     margin-bottom: $gutter;
     padding: $gutter;
     text-align: center;
+    @include nosel;
 
     &__inner {
         width: 100px;
         height: 100px;
         margin: 0 auto $gutter;
-        border: 5px solid $gray--lighten;
+        background-color: $gray--lighten;
         border-radius: 50%;
-        background-color: #fff;
         @include flexCenter;
 
         .item-icon__icon {
             margin: auto;
         }
     }
+
+    &__in {
+        width: 90px;
+        height: 90px;
+        margin: auto;
+        background-color: #fff;
+        border-radius: 50%;
+        @include flexCenter;
+    } //.item-icon__in
 
     &__icon {
         width: 55px;
@@ -206,9 +221,6 @@
         line-height: 1.2;
         font-weight: 500;
     } //.item-icon__title
-
-    &__desc {
-    } //.item-icon__desc
 } //.item-icon
 
 .section-bg {
@@ -221,9 +233,6 @@
         padding: $gutter;
     }
 
-    &__inner {
-    } //.section-bg__inner
-
     &__text {
         max-width: 405px;
         text-align: center;
@@ -234,7 +243,7 @@
     } //.section-bg__tex
 
     &__title {
-        margin-bottom: $gutter * 1.5;
+        margin-bottom: 45px;
         font-family: $f-medium;
         font-size: 27px;
         line-height: 1.3;

@@ -66,13 +66,8 @@
     }
 
     &__text {
-        padding-top: 4%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        @include respond-to(xs) {
-            padding: 18% 20px 0;
-        }
+        padding-top: $gutter * 2;
+
         @include respond-to(i5) {
             padding-top: 12%;
         }
@@ -109,29 +104,28 @@
 
     &__title {
         display: block;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         color: #fff;
         font-family: $f-medium;
         font-size: 40px;
+        line-height: 1.2;
         font-weight: 500;
         text-transform: uppercase;
         @include respond-to(xs) {
             font-size: 27px;
-        }
-        @include respond-to(i5) {
-            margin-bottom: 10px;
         }
     } //.m-slider__title
 
     &__desc {
         display: block;
         max-width: 320px;
-        margin-bottom: 50px;
+        margin-bottom: 45px;
         color: rgba(#fff, 0.8);
         font-family: $f-light;
         font-size: 16px;
+
         @include respond-to(xs) {
-            margin-bottom: 20px;
+            max-width: 100%;
         }
     } //.m-slider__desc
 
@@ -229,6 +223,7 @@
     &--info {
 
         .m-slider {
+
             &__text {
                 @include respond-to(xs) {
                     padding-top: 0;

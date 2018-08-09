@@ -25,42 +25,99 @@
         }
     } //.jurnalinput
 
-    &__date {
-        display: block;
-        margin-bottom: $gutter;
+    &__pag {
+        margin-bottom: $gutter * 2;
+
+        @include respond-to(xs) {
+            margin-bottom: $gutter;
+        }
+    } //.jurnal__pag
+
+    &.theme-dark {
+        color: #b8b8b8;
+        background-color: #111;
+
+        .jurnal-article {
+
+            &__title,
+            &__text,
+            &__subtitle {
+                color: #b8b8b8;
+            }
+
+            &__text {
+                color: #a3a3a3;
+            }
+        }
+
+        .nav--icon.is-fixed {
+            border-top: 0;
+            background-color: #111;
+            box-shadow: 0 1px 30px rgba(#000, 0.5);
+        }
+    } //.jurnal.theme-dark
+
+    .btn-link {
+
+        &.xs-only {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+        }
+    } //.jurnal .btn-link
+} //.jurnal
+
+.jurnal-article {
+    font-family: pt-400, serif;
+    font-size: 19px;
+
+    &__info {
+        @include flexCenter;
+    }
+
+    &__date,
+    &__time {
+        margin: $gutter $gutter $gutter 0;
         color: $gray;
+        font-family: $f;
         font-size: 14px;
-    } //.jurnal__date
+    } //.jurnal-article__date
 
     &__title {
+        margin-top: 10px;
         margin-bottom: $gutter;
         color: $color-text;
         font-family: $f-medium;
         font-weight: 500;
         font-size: 40px;
-    } //.jurnal__title
+    } //.jurnal-article__title
 
     &__text {
         display: block;
-        margin-bottom: $gutter / 2;
+        margin-top: 12px;
+        margin-bottom: 0;
         color: $color-text;
-    } //.jurnal__text
+        font-size: 19px;
+        line-height: 1.5;
+    } //.jurnal-article__text
 
     &__img {
         display: block;
+        margin-top: $gutter;
         margin-bottom: $gutter;
-    } //.jurnal__img
+    } //.jurnal-article__img
 
     &__subtitle {
-        margin-top: $gutter * 2;
-        margin-bottom: $gutter;
+        margin-top: 40px;
+        margin-bottom: 0;
         color: $color-text;
         font-family: $f-medium;
         font-weight: 500;
         font-size: 27px;
-    } //.jurnal__subtitle
+    } //.jurnal-article__subtitle
 
     &__slider {
+        margin-top: $gutter;
         margin-bottom: $gutter;
 
         .slick-arrow {
@@ -87,44 +144,7 @@
             }
         }
     }
-
-    &__pag {
-        margin-bottom: $gutter * 2;
-
-        @include respond-to(xs) {
-            margin-bottom: $gutter;
-        }
-    } //.jurnal__pag
-
-    &.theme-dark {
-        color: #b8b8b8;
-        background-color: #111;
-
-        .jurnal {
-
-            &__title,
-            &__text,
-            &__subtitle {
-                color: #b8b8b8;
-            }
-        }
-
-        .nav--icon.is-fixed {
-            border-top: 0;
-            background-color: #111;
-            box-shadow: 0 1px 30px rgba(#000, 0.5);
-        }
-    } //.jurnal.theme-dark
-
-    .btn-link {
-
-        &.xs-only {
-            display: block;
-            margin-top: 20px;
-            text-align: center;
-        }
-    } //.jurnal .btn-link
-} //.jurnal
+} //.jurnal-article
 
 .jurnal-pag {
     padding: $gutter 0;

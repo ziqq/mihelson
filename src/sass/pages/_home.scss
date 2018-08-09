@@ -1,27 +1,28 @@
 .hero {
     margin-bottom: 80px;
     background-color: $color-bg--dark;
-    @include respond-to(sm) {
+    @include respond-to(md) {
         margin-bottom: $gutter;
     }
 
     &__slide {
-        height: 368px;
+        min-height: 420px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50% 50%;
+
+        @include respond-to(lg) {
+            background-size: cover;
+        }
+
         @include respond-to(md) {
+
             padding: 0 $gutter;
-            height: 375px;
+            min-height: 320px;
         }
+
         @include respond-to(xs) {
-            height: 407px;
-        }
-        @include respond-to(i8) {
-            height: 391px;
-        }
-        @include respond-to(i7) {
-            height: 358px;
-        }
-        @include respond-to(i5) {
-            height: 300px;
+            background-image: none;
         }
     } //.hero__slide
 
@@ -29,6 +30,7 @@
 
         &__text {
             @include respond-to(md) {
+                padding-top: $gutter;
                 left: 10px;
             }
             @include respond-to(sm) {
@@ -39,31 +41,34 @@
         .slick-arrow {
 
             &.slick-next {
-                right: 10px;
-                @include respond-to(sm) {
-                    right: 30px;
+                right: 18%;
+                @include respond-to(lg) {
+                    right: 2%;
+                }
+                @include respond-to(xs) {
+                    right: 10px;
                 }
             }
 
             &.slick-prev {
-                right: 50px;
-                @include respond-to(sm) {
-                    right: 80px;
+                right: 20%;
+                @include respond-to(lg) {
+                    right: 6%;
+                }
+                @include respond-to(xs) {
+                    right: 50px;
                 }
             }
         }
 
         .slick-dots {
-            right: 10px;
-            @include respond-to(sm) {
-                right: 30px;
+            right: 18%;
+            @include respond-to(lg) {
+                right: 2%;
             }
         }
     }
 
-    .container {
-        padding: 0;
-    }
 } //.hero
 
 .calculator {
@@ -74,7 +79,7 @@
 
     &__desc {
         margin: $gutter 0 0;
-        @include row-flex;
+        @include row-flex();
 
         .calculator-item {
             @include col;
@@ -114,12 +119,13 @@
 
         @include respond-to(sm) {
             width: 35%;
-            margin-left: 0;
+            margin-left: $gutter * 2;
         }
 
         @include respond-to(xs) {
             width: 100%;
             margin-bottom: 20px;
+            margin-left: 0;
         }
     } //.calculator__result
 
@@ -157,14 +163,6 @@
 
 .calculator-item {
     font-size: 14px;
-
-    &:nth-child(2n) {
-        animation-delay: 0.5s;
-    }
-
-    &:nth-child(3n) {
-        animation-delay: 1s;
-    }
 } //.calculator-item
 
 .calculator-result {
@@ -237,6 +235,12 @@
     }
 } //.calculator-result
 
+#calculator-status {
+    .noUi-handle {
+        pointer-events: none;
+    }
+}
+
 .dropdown {
     width: 25px;
     height: 25px;
@@ -287,6 +291,7 @@
     } //.dropdown__inner
 
     &__close {
+        display: none;
         font-size: 18px;
         position: absolute;
         top: 15px;
@@ -375,10 +380,10 @@
     } //.reviews__slide
 
     &__img {
-        max-width: 425px;
+        max-width: 500px;
         position: absolute;
         bottom: 0;
-        right: 100px;
+        right: 150px;
         @include respond-to(sm) {
             max-width: 375px;
             right: 10px;

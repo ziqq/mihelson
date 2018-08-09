@@ -17,7 +17,7 @@
         width: 0;
         padding: 3px;
         padding-right: 30px;
-        margin-right: 50px;
+        // margin-right: 50px;
         color: $gray;
         font-family: $f;
         font-size: 15px;
@@ -27,23 +27,27 @@
         outline: none;
         cursor: pointer;
         position: absolute;
-        top: -1px;
+        top: -7px;
         right: 0;
         z-index: 3;
         transition: width 0.4s cubic-bezier(0, 0.795, 0, 1);
+
+        @include respond-to(sm) {
+            top: -1px;
+        }
 
         @include placeholder {
             color: $gray;
         }
 
         &:focus:hover {
-            border-bottom: 2px solid #000;
+            // border-bottom: 2px solid #000;
         }
 
         &:focus {
             width: 300px;
             z-index: 1;
-            border-bottom: 2px solid #222;
+            // border-bottom: 2px solid #222;
             cursor: text;
             @include respond-to(i5) {
                 width: 250px;
@@ -66,9 +70,13 @@
             content: '';
             @include s('search');
             position: absolute;
-            top: 0;
-            left: -22px;
+            top: -14px;
+            left: -15px;
             z-index: 2;
+
+            @include respond-to(sm) {
+                top: 0;
+            }
         }
     }
 
@@ -78,7 +86,7 @@
 } //.search
 
 .search-hint {
-    min-height: 159px;
+    min-height: 180px;
     max-height: 100%;
     width: 300px;
     height: 100%;

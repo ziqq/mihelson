@@ -16,6 +16,14 @@
             @include size(3);
             @include size-sm(12);
 
+            &:first-child {
+                @include size(2);
+            }
+
+            &:last-child {
+                @include size(4);
+            }
+
             &:not(.no-hide) {
                 @include respond-to(sm) {
                     display: none;

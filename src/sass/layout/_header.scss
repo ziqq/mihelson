@@ -51,5 +51,9 @@ $header-height: 50px;
         font-family: $f-bold;
         line-height: $header-height;
         letter-spacing: 0.5px;
+
+        &:hover {
+            color: $color-text;
+        }
     }//.logo__link
 }//.logo

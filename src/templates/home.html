@@ -10,27 +10,26 @@
 <main class="main home">
 	<!-- begin hero -->
 	<section class="hero">
-		<div class="container">
 			<div class="hero__slider m-slider">
 				<div class="m-slider__dots"></div>
 				<div class="hero__slides m-slider__slides js-hero-slider">
-					{% for i in range(0, 3) %}
-					<div class="hero__slide m-slider__slide">
-						{{item.picture('hero', '1')}}
-						<div class="m-slider__text">
-							<div class="m-slider__title">Победа очевидна</div>
-							<div class="m-slider__desc">Более 20 высокорентабельных
-								<br> брендов автозапчастей напрямую
-								<br> от производителей на вашем
-								<br>складе через 3 дня</div>
+						{% for i in range(0, 3) %}
+						<div class="hero__slide m-slider__slide" style="background-image: url('img/general/firstscreen-home.png');">
+							<div class="container">
+								<div class="m-slider__text">
+									<div class="m-slider__title">Победа очевидна</div>
+									<div class="m-slider__desc">Более 20 высокорентабельных
+										<br> брендов автозапчастей напрямую
+										<br> от производителей на вашем
+										<br>складе через 3 дня</div>
 
-								<a href="#cooperation" class="btn btn--accent" data-toggle="modal"> Оставить заявку</a>
+										<a class="btn btn--accent" data-toggle="modal" href="#cooperation"> Оставить заявку</a>
+								</div>
+							</div>
 						</div>
-					</div>
 					{% endfor %}
 				</div>
 			</div>
-		</div>
 	</section>
 	<!-- end hero -->
 
@@ -50,7 +49,7 @@
 						<div class="range__diapazon">
 							<span class="range__title">Сумма закупки</span>
 							<div class="range__to">
-								<span id="calculator-sum-price">50000</span>
+								<span id="calculator-sum-price">500000</span>
 								<i class="far fa-ruble-sign"></i>
 							</div>
 						</div>
@@ -77,18 +76,18 @@
 					<div class="calculator-result">
 						<div class="calculator-result__sum">
 							<div>
-								<span class="js-calculator-result">10 000</span>
+								<span class="js-calculator-result">125000</span>
 								<i class="far fa-ruble-sign"></i>
 							</div>
 							<small>Прибыль / месяц</small>
 						</div>
 
-						<a href="#cooperation" class="btn btn--black" data-toggle="modal">Стать оптовиком</a>
+						<a class="btn btn--black" data-toggle="modal" href="#cooperation">Стать оптовиком</a>
 
 						{{item.btnLink('Смотреть бренды')}}
 
 						<span class="calculator-result__sale">
-							<span class="js-calculator-profit" data-profit="20">20%</span>
+							<span class="js-calculator-profit" data-profit="25">25%</span>
 							Рентабель<br>ность
 						</span>
 					</div>
@@ -100,58 +99,58 @@
 				<button class="calculator__btn-slide js-m-accordeon-btn xs-only">Преимущества статуса</button>
 				<!-- begin calculator__desc -->
 				 <div class="calculator__desc">
-					<div class="calculator-item calculator-item--opt">
+					<div class="calculator-item wow fadeInUp calculator-item--opt" data-wow-delay="0.3s">
 						Отсрочка платежа до 14 дней  <br>
 						Приоритет на сборку 3 степени <br>
 						Гарантийные обязательства
 					</div>
-					<div class="calculator-item calculator-item--opt">
+					<div class="calculator-item wow fadeInUp calculator-item--opt" data-wow-delay="0.6s">
 						Персональный менеджер
 
 						<div class="box-info">
 							Моментальная обработка заявок
-							<div class="dropdown js-dropdown">
+							<div class="dropdown">
 								<div class="dropdown__inner">
-									<i class="fal fa-times dropdown__close js-dropdown--close"></i>
+									<i class="fal fa-times dropdown__close"></i>
 									При работе с уникальными кодами. Ваш заказ начнет собираться через 180 секунд после оформления заказа.
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="calculator-item calculator-item--opt">
+					<div class="calculator-item wow fadeInUp calculator-item--opt" data-wow-delay="0.9s">
 							<div class="box-info">
 							Программа складского остатка на 90 дней
-							<div class="dropdown js-dropdown">
+							<div class="dropdown">
 								<div class="dropdown__inner">
-									<i class="fal fa-times dropdown__close js-dropdown--close"></i>
+									<i class="fal fa-times dropdown__close"></i>
 									Условия участия в программе обсуждаются только с персональным менеджером после оформления минимального заказа.
 								</div>
 							</div>
 						</div>
 						Фирменная полиграфия
 					</div>
-					<div class="calculator-item calculator-item--diler" style="display: none;">
+					<div class="calculator-item calculator-item--diler is-hidden" data-wow-delay="0.3s">
 						Отсрочка платежа до 30 дней  <br>
 						Приоритет на сборку 2 степени <br>
 						Гарантийные обязательства <br>
 						<div class="box-info">
 							Бесплатная доставка
-							<div class="dropdown js-dropdown">
+							<div class="dropdown">
 								<div class="dropdown__inner">
-									<i class="fal fa-times dropdown__close js-dropdown--close"></i>
+									<i class="fal fa-times dropdown__close"></i>
 									Условия участия в программе обсуждаются только с персональным менеджером после оформления минимального заказа.
 								</div>
 							</div>
 						</div>
 						Дилерский прайс
 					</div>
-					<div class="calculator-item calculator-item--diler" style="display: none;">
+					<div class="calculator-item calculator-item--diler is-hidden" data-wow-delay="0.6s">
 						Персональный менеджер  <br>
 						<div class="box-info">
 							Моментальная обработка заявок
-							<div class="dropdown js-dropdown">
+							<div class="dropdown">
 								<div class="dropdown__inner">
-									<i class="fal fa-times dropdown__close js-dropdown--close"></i>
+									<i class="fal fa-times dropdown__close"></i>
 									Условия участия в программе обсуждаются только с персональным менеджером после оформления минимального заказа.
 								</div>
 							</div>
@@ -160,12 +159,12 @@
 						Мотивация Бернд-менеджеров <br>
 						Свой экспедитор в Балаково
 					</div>
-					<div class="calculator-item calculator-item--diler" style="display: none;">
+					<div class="calculator-item calculator-item--diler is-hidden" data-wow-delay="0.9s">
 						<div class="box-info">
 							Программа складского остатка на 90 дней
-							<div class="dropdown js-dropdown">
+							<div class="dropdown">
 								<div class="dropdown__inner">
-									<i class="fal fa-times dropdown__close js-dropdown--close"></i>
+									<i class="fal fa-times dropdown__close"></i>
 									Условия участия в программе обсуждаются только с персональным менеджером после оформления минимального заказа.
 								</div>
 							</div>
@@ -176,15 +175,15 @@
 						Совместные рекламные акции <br>
 						Эксклюзивная полиграфия
 					</div>
-					<div class="calculator-item calculator-item--dilerplus" style="display: none;">
+					<div class="calculator-item calculator-item--dilerplus is-hidden" data-wow-delay="0.3s">
 						Отсрочка платежа до 45 дней   <br>
 						Приоритет на сборку 1 степени <br>
 						Гарантийные обязательства <br>
 						<div class="box-info">
 							Бесплатная доставка
-							<div class="dropdown js-dropdown">
+							<div class="dropdown">
 								<div class="dropdown__inner">
-									<i class="fal fa-times dropdown__close js-dropdown--close"></i>
+									<i class="fal fa-times dropdown__close"></i>
 									Условия участия в программе обсуждаются только с персональным менеджером после оформления минимального заказа.
 								</div>
 							</div>
@@ -192,13 +191,13 @@
 						Дилерский прайс <br>
 						Эксклюзивная география продаж
 					</div>
-					<div class="calculator-item calculator-item--dilerplus" style="display: none;">
+					<div class="calculator-item calculator-item--dilerplus is-hidden" data-wow-delay="0.6s">
 						Персональный менеджер 24/7   <br>
 						<div class="box-info">
 							Моментальная обработка заявок
-							<div class="dropdown js-dropdown">
+							<div class="dropdown">
 								<div class="dropdown__inner">
-									<i class="fal fa-times dropdown__close js-dropdown--close"></i>
+									<i class="fal fa-times dropdown__close"></i>
 									Условия участия в программе обсуждаются только с персональным менеджером после оформления минимального заказа.
 								</div>
 							</div>
@@ -209,12 +208,12 @@
 						Обучение персонала в Вашем городе <br>
 						Больше чем бонусная программа
 					</div>
-					<div class="calculator-item calculator-item--dilerplus" style="display: none;">
+					<div class="calculator-item calculator-item--dilerplus is-hidden" data-wow-delay="0.9s">
 						<div class="box-info">
 							Программа складского остатка на 90 дней
-							<div class="dropdown js-dropdown">
+							<div class="dropdown">
 								<div class="dropdown__inner">
-									<i class="fal fa-times dropdown__close js-dropdown--close"></i>
+									<i class="fal fa-times dropdown__close"></i>
 									Условия участия в программе обсуждаются только с персональным менеджером после оформления минимального заказа.
 								</div>
 							</div>
@@ -225,8 +224,8 @@
 						Совместные рекламные акции <br>
 						Эксклюзивная полиграфия
 					</div>
-				</div><!-- end calculator__
-			</div>desc -->
+				</div><!-- end calculator__desc -->
+			</div>
 
 		</div>
 	</section>
@@ -242,7 +241,7 @@
 						<div class="info__slides m-slider__slides js-slider">
 							{% for i in range(0, 3) %}
 							<div class="info__slide m-slider__slide">
-								<img src="img/sliders/info/1.jpg" alt="">
+								<img src="img/sliders/info/1.jpg" alt>
 								<div class="m-slider__text m-slider__text--center">
 									<div class="m-slider__title">Свой экспедитор в
 										<br>Балаково</div>
@@ -259,7 +258,7 @@
 						<div class="info__slides m-slider__slides js-slider">
 							{% for i in range(0, 3) %}
 							<div class="info__slide m-slider__slide">
-								<img src="img/sliders/info/2.jpg" alt="">
+								<img src="img/sliders/info/2.jpg" alt>
 								<div class="m-slider__text m-slider__text--center">
 									<div class="m-slider__title">Бесплатная доставка до
 										<br>Вашего склада</div>
@@ -283,14 +282,14 @@
 					<h2 class="h2 page-title">Михельсон журнал</h2>
 					<span class="page-title__sub">Полезные статьи о бизнесе.</span>
 				</div>
-				<a href="#" class="btn-link page-title__btn">Все статьи</a>
+				<a class="btn-link page-title__btn" href="#">Все статьи</a>
 			</div>
 
 			<!-- begin article__wrap -->
 			 <div class="article__wrap">
 				 {% for i in range(0, 3) %}
 				<!-- begin article -->
-				<a href="#" class="article">
+				<a class="article" href="#">
 					<span class="article__date">24.07.2018</span>
 					<p class="article__text">Наставники из Екатеринбурга приняли участие в первой интеллектуальной игре «Что? Где? Когда?»</p>
 					<button class="article__link btn-link">Подробнее</button>
@@ -298,7 +297,7 @@
 				  {% endfor %}
 			</div><!-- end article__wrap -->
 
-			<a href="#" class="btn-link xs-only">Все статьи</a>
+			<a class="btn-link xs-only" href="#">Все статьи</a>
 		</div>
 	</section>
 	<!-- end jurnal -->
@@ -313,12 +312,12 @@
 					<div class="reviews__slide m-slider__slide">
 						<div class="m-slider__text m-slider__text--center">
 							<div class="m-slider__title">Персональный менеджер всегда на связи</div>
-							<div class="m-slider__desc">Никаких звонков на горячую линию и поисков писем на почте, мы на связи в Viber/WhatsApp</div>
+							<div class="m-slider__desc">Никаких звонков на горячую линию <br> и поисков писем на почте, мы на <br> связи в Viber/WhatsApp</div>
 
-							<a href="#cooperation" class="btn btn--black" data-toggle="modal"> Оставить заявку</a>
+							<a class="btn btn--black" data-toggle="modal" href="#cooperation"> Оставить заявку</a>
 
 						</div>
-						<img class="reviews__img" src="img/sliders/reviews/1.png" alt="">
+						<img class="reviews__img wow fadeInUp" data-wow-offset="250" src="img/sliders/reviews/1.png" alt="">
 					</div>
 					{% endfor %}
 				</div>

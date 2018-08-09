@@ -1,5 +1,5 @@
 %button {
-    padding: 8px 35px;
+    padding: 9px 35px;
     font-family: $f-medium;
     font-size: 14px;
     letter-spacing: 0.5px;
@@ -47,6 +47,7 @@
             &:hover,
             &:active {
                 color: #000;
+                background-color: #ffcd33;
             }
         }
 

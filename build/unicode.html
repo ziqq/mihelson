@@ -305,7 +305,7 @@
                   <div class="search js-search">
                     <form autocomplete="on">
                       <input class="search__field js-search-input" type="text" placeholder="Что вы ищите ?" autocomplete="off">
-                      <button class="search__submit">Поиск</button>
+                      <button class="search__submit"></button>
                       <div class="search__hint" style="display: none;">
                         <div class="search-hint search-hint--cyties">
                           <ul class="search-hint__list">
@@ -875,7 +875,7 @@
         <!-- end firstscreen -->
         <!-- begin send -->
         <section class="send">
-          <div class="container">
+          <div class="container container--md">
             <div class="unicode__title-wrap">
               <h2 class="unicode__title">Все сделаем за Вас, просто
                 <br> пришлите номенклатуру </h2>
@@ -884,27 +884,33 @@
             <div class="send__items">
               <div class="item-icon is-checked">
                 <div class="item-icon__inner">
-                  <svg class="icon icon-mail item-icon__icon">
-                    <use xlink:href="img/sprite.svg#mail"></use>
-                  </svg>
+                  <div class="item-icon__in">
+                    <svg class="icon icon-mail item-icon__icon">
+                      <use xlink:href="img/sprite.svg#mail"></use>
+                    </svg>
+                  </div>
                 </div>
                 <div class="item-icon__title">Пришлите нам
                   <br> свою номенклатуру</div>
               </div>
               <div class="item-icon">
                 <div class="item-icon__inner">
-                  <svg class="icon icon-list item-icon__icon">
-                    <use xlink:href="img/sprite.svg#list"></use>
-                  </svg>
+                  <div class="item-icon__in">
+                    <svg class="icon icon-list item-icon__icon">
+                      <use xlink:href="img/sprite.svg#list"></use>
+                    </svg>
+                  </div>
                 </div>
                 <div class="item-icon__title">Наши специалисты
                   <br> дополнят её кодами</div>
               </div>
               <div class="item-icon">
                 <div class="item-icon__inner">
-                  <svg class="icon icon-upload item-icon__icon">
-                    <use xlink:href="img/sprite.svg#upload"></use>
-                  </svg>
+                  <div class="item-icon__in">
+                    <svg class="icon icon-upload item-icon__icon">
+                      <use xlink:href="img/sprite.svg#upload"></use>
+                    </svg>
+                  </div>
                 </div>
                 <div class="item-icon__title">Загрузите новую
                   <br> номенклатуру в базу</div>
@@ -919,9 +925,10 @@
               <div class="reviews__slides m-slider__slides">
                 <div class="reviews__slide m-slider__slide">
                   <div class="m-slider__text m-slider__text--center">
-                    <div class="m-slider__title">Получите приоритет первой степени </div>
+                    <div class="m-slider__title">Получите приоритет
+                      <br> первой степени </div>
                     <div class="m-slider__desc">на следующий заказ, просто отправив нам свою номенклатуру</div>
-                    <a href="#cooperation" class="btn btn--black" data-toggle="modal"> Отправить</a>
+                    <a href="#nomenclature" class="btn btn--black" data-toggle="modal"> Отправить</a>
                   </div>
                   <div class="reviews__img">
                     <img src="img/unicode/info.png" alt="alt">
@@ -1019,9 +1026,6 @@
                   <a href="#">Журнал</a>
                 </li>
                 <li>
-                  <a href="#">Все бренды</a>
-                </li>
-                <li>
                   <a href="#">Сертификаты (.pdf)</a>
                 </li>
                 <li>
@@ -1043,6 +1047,9 @@
                 </li>
                 <li>
                   <a href="#">БРТИ</a>
+                </li>
+                <li>
+                  <a href="#">Все бренды</a>
                 </li>
               </ul>
               <div class="footer__item no-hide">

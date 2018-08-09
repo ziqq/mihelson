@@ -6,7 +6,7 @@ if ($('.js-hero-slider').length > 0) {
         autoplay: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        speed: 700,
+        speed: 400,
         autoplaySpeed: 5000,
         dots: true,
         appendDots: '.hero__slider .m-slider__dots',
@@ -58,7 +58,7 @@ if ($('.js-jurnal-slider').length > 0) {
         speed: 700,
         autoplaySpeed: 5000,
         dots: true,
-        appendDots: '.jurnal__slider .m-slider__dots',
+        appendDots: '.jurnal-article__slider .m-slider__dots',
         customPaging: function(slider, i) {
             return i + 1 + '/' + slider.slideCount;
         },
