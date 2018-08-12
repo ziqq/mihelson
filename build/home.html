@@ -41,7 +41,7 @@
               <!-- end logo -->
               <!-- begin nav -->
               <nav class="nav nav--top header__nav sm-hide">
-                <ul class="nav__list">
+                <ul class="nav__list js-nav-list">
                   <li class="nav__item">
                     <a href="#" class="nav__link">Производство</a>
                     <!-- begin nav-dropdown -->
@@ -287,7 +287,7 @@
                                 <li class="nav-dropdown-adv__item">Персональный менеджер</li>
                                 <li class="nav-dropdown-adv__item">Гарантийные обязательсва</li>
                               </ul>
-                              <a href="#" class="nav-dropdown-adv__link btn-link">Попробовать</a>
+                              <a href="#" class="nav-dropdown-adv__link btn-link">Стать дилером</a>
                             </div>
                           </div>
                           <!-- end nav-dropdown-adv -->
@@ -297,6 +297,7 @@
                     <!-- end nav-dropdown -->
                   </li>
                 </ul>
+                <div class="nav__overlay js-nav-overlay"></div>
               </nav>
               <!-- end nav -->
               <div class="header__search sm-hide">
@@ -862,7 +863,7 @@
           <div class="hero__slider m-slider">
             <div class="m-slider__dots"></div>
             <div class="hero__slides m-slider__slides js-hero-slider">
-              <div class="hero__slide m-slider__slide" style="background-image: url('img/general/firstscreen-home.png');">
+              <div class="hero__slide m-slider__slide" style="background-image: url('img/general/firstscreen-bg.jpg');">
                 <div class="container">
                   <div class="m-slider__text">
                     <div class="m-slider__title">Победа очевидна</div>
@@ -874,7 +875,7 @@
                   </div>
                 </div>
               </div>
-              <div class="hero__slide m-slider__slide" style="background-image: url('img/general/firstscreen-home.png');">
+              <div class="hero__slide m-slider__slide" style="background-image: url('img/general/firstscreen-bg.jpg');">
                 <div class="container">
                   <div class="m-slider__text">
                     <div class="m-slider__title">Победа очевидна</div>
@@ -886,7 +887,7 @@
                   </div>
                 </div>
               </div>
-              <div class="hero__slide m-slider__slide" style="background-image: url('img/general/firstscreen-home.png');">
+              <div class="hero__slide m-slider__slide" style="background-image: url('img/general/firstscreen-bg.jpg');">
                 <div class="container">
                   <div class="m-slider__text">
                     <div class="m-slider__title">Победа очевидна</div>
@@ -948,7 +949,7 @@
                     <small>Прибыль / месяц</small>
                   </div>
                   <a class="btn btn--black" data-toggle="modal" href="#cooperation">Стать оптовиком</a>
-                  <a href="#" class="btn-link "> Смотреть бренды </a>
+                  <a href="brands.html" class="btn-link">Смотреть бренды</a>
                   <span class="calculator-result__sale">
                     <span class="js-calculator-profit" data-profit="25">25%</span> Рентабель
                     <br>ность </span>
@@ -1056,6 +1057,7 @@
                 <div class="info__slider m-slider m-slider--info">
                   <div class="m-slider__dots"></div>
                   <div class="info__slides m-slider__slides js-slider">
+                    <!-- begin info__slide -->
                     <div class="info__slide m-slider__slide">
                       <img src="img/sliders/info/1.jpg" alt>
                       <div class="m-slider__text m-slider__text--center">
@@ -1064,22 +1066,7 @@
                         <div class="m-slider__desc">Погрузка, доставка, межтерминальное хранение без очередей и расходов на водителей.</div>
                       </div>
                     </div>
-                    <div class="info__slide m-slider__slide">
-                      <img src="img/sliders/info/1.jpg" alt>
-                      <div class="m-slider__text m-slider__text--center">
-                        <div class="m-slider__title">Свой экспедитор в
-                          <br>Балаково</div>
-                        <div class="m-slider__desc">Погрузка, доставка, межтерминальное хранение без очередей и расходов на водителей.</div>
-                      </div>
-                    </div>
-                    <div class="info__slide m-slider__slide">
-                      <img src="img/sliders/info/1.jpg" alt>
-                      <div class="m-slider__text m-slider__text--center">
-                        <div class="m-slider__title">Свой экспедитор в
-                          <br>Балаково</div>
-                        <div class="m-slider__desc">Погрузка, доставка, межтерминальное хранение без очередей и расходов на водителей.</div>
-                      </div>
-                    </div>
+                    <!-- end info__slide -->
                   </div>
                 </div>
               </div>
@@ -1087,6 +1074,7 @@
                 <div class="info__slider m-slider m-slider--info">
                   <div class="m-slider__dots"></div>
                   <div class="info__slides m-slider__slides js-slider">
+                    <!-- begin info__slide -->
                     <div class="info__slide m-slider__slide">
                       <img src="img/sliders/info/2.jpg" alt>
                       <div class="m-slider__text m-slider__text--center">
@@ -1095,6 +1083,8 @@
                         <div class="m-slider__desc">Погрузка, доставка, межтерминальное хранение без очередей и расходов на водителей.</div>
                       </div>
                     </div>
+                    <!-- end info__slide -->
+                    <!-- begin info__slide -->
                     <div class="info__slide m-slider__slide">
                       <img src="img/sliders/info/2.jpg" alt>
                       <div class="m-slider__text m-slider__text--center">
@@ -1103,6 +1093,8 @@
                         <div class="m-slider__desc">Погрузка, доставка, межтерминальное хранение без очередей и расходов на водителей.</div>
                       </div>
                     </div>
+                    <!-- end info__slide -->
+                    <!-- begin info__slide -->
                     <div class="info__slide m-slider__slide">
                       <img src="img/sliders/info/2.jpg" alt>
                       <div class="m-slider__text m-slider__text--center">
@@ -1111,6 +1103,7 @@
                         <div class="m-slider__desc">Погрузка, доставка, межтерминальное хранение без очередей и расходов на водителей.</div>
                       </div>
                     </div>
+                    <!-- end info__slide -->
                   </div>
                 </div>
               </div>
@@ -1126,30 +1119,30 @@
                 <h2 class="h2 page-title">Михельсон журнал</h2>
                 <span class="page-title__sub">Полезные статьи о бизнесе.</span>
               </div>
-              <a class="btn-link page-title__btn" href="#">Все статьи</a>
+              <a class="btn-link page-title__btn" href="jurnal.html">Все статьи</a>
             </div>
             <!-- begin article__wrap -->
             <div class="article__wrap">
               <!-- begin article -->
-              <a class="article" href="#">
+              <article class="article" href="jurnal-article.html">
                 <span class="article__date">24.07.2018</span>
                 <p class="article__text">Наставники из Екатеринбурга приняли участие в первой интеллектуальной игре «Что? Где? Когда?»</p>
-                <button class="article__link btn-link">Подробнее</button>
-              </a>
+                <a href="jurnal-article.html" class="article__link btn-link">Подробнее</a>
+              </article>
               <!-- end article -->
               <!-- begin article -->
-              <a class="article" href="#">
+              <article class="article" href="jurnal-article.html">
                 <span class="article__date">24.07.2018</span>
                 <p class="article__text">Наставники из Екатеринбурга приняли участие в первой интеллектуальной игре «Что? Где? Когда?»</p>
-                <button class="article__link btn-link">Подробнее</button>
-              </a>
+                <a href="jurnal-article.html" class="article__link btn-link">Подробнее</a>
+              </article>
               <!-- end article -->
               <!-- begin article -->
-              <a class="article" href="#">
+              <article class="article" href="jurnal-article.html">
                 <span class="article__date">24.07.2018</span>
                 <p class="article__text">Наставники из Екатеринбурга приняли участие в первой интеллектуальной игре «Что? Где? Когда?»</p>
-                <button class="article__link btn-link">Подробнее</button>
-              </a>
+                <a href="jurnal-article.html" class="article__link btn-link">Подробнее</a>
+              </article>
               <!-- end article -->
             </div>
             <!-- end article__wrap -->
@@ -1164,6 +1157,10 @@
               <div class="m-slider__dots"></div>
               <div class="reviews__slides m-slider__slides js-slider">
                 <div class="reviews__slide m-slider__slide">
+                  <picture class="m-slider__image">
+                    <source media="(max-width: 480px)" srcset="img/sliders/reviews/480/reviews.jpg">
+                    <source media="(max-width: 768px)" srcset="img/sliders/reviews/768/reviews.jpg">
+                    <img class="firstscreen__img" src="img/sliders/reviews/1200/reviews.jpg" alt="alt"> </picture>
                   <div class="m-slider__text m-slider__text--center">
                     <div class="m-slider__title">Персональный менеджер всегда на связи</div>
                     <div class="m-slider__desc">Никаких звонков на горячую линию
@@ -1171,25 +1168,7 @@
                       <br> связи в Viber/WhatsApp</div>
                     <a class="btn btn--black" data-toggle="modal" href="#cooperation"> Оставить заявку</a>
                   </div>
-                  <img class="reviews__img wow fadeInUp" data-wow-offset="250" src="img/sliders/reviews/1.png" alt=""> </div>
-                <div class="reviews__slide m-slider__slide">
-                  <div class="m-slider__text m-slider__text--center">
-                    <div class="m-slider__title">Персональный менеджер всегда на связи</div>
-                    <div class="m-slider__desc">Никаких звонков на горячую линию
-                      <br> и поисков писем на почте, мы на
-                      <br> связи в Viber/WhatsApp</div>
-                    <a class="btn btn--black" data-toggle="modal" href="#cooperation"> Оставить заявку</a>
-                  </div>
-                  <img class="reviews__img wow fadeInUp" data-wow-offset="250" src="img/sliders/reviews/1.png" alt=""> </div>
-                <div class="reviews__slide m-slider__slide">
-                  <div class="m-slider__text m-slider__text--center">
-                    <div class="m-slider__title">Персональный менеджер всегда на связи</div>
-                    <div class="m-slider__desc">Никаких звонков на горячую линию
-                      <br> и поисков писем на почте, мы на
-                      <br> связи в Viber/WhatsApp</div>
-                    <a class="btn btn--black" data-toggle="modal" href="#cooperation"> Оставить заявку</a>
-                  </div>
-                  <img class="reviews__img wow fadeInUp" data-wow-offset="250" src="img/sliders/reviews/1.png" alt=""> </div>
+                </div>
               </div>
             </div>
           </div>

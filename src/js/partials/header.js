@@ -59,3 +59,17 @@ if ($('.js-search-input').length > 0) {
             .css('display', 'none');
     });
 }
+
+let navList = $('.js-nav-list');
+let overlay = $('.js-nav-overlay');
+
+if (navList.length) {
+    navList
+        .find('.nav__item')
+        .on('mouseenter', function() {
+            overlay.css('display', 'block');
+        })
+        .on('mouseout', function() {
+            overlay.removeAttr('style');
+        });
+}

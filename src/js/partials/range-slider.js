@@ -93,7 +93,6 @@ if ($('.js-calculator').length > 0) {
             result.text((rangeSum[values[handle]] * 25) / 100);
             profit.attr('data-profit', '25');
             profit.text('25%');
-            console.log('---', profitData);
 
             if (calculatorItemDiler.hasClass('is-hidden')) {
                 calculatorItem
@@ -138,19 +137,19 @@ if ($('.js-calculator').length > 0) {
         }
     });
 
-    // sliderStatus.noUiSlider.on('update', function(values, handle) {
-    //     sliderStatusBox.text(rangeStatus[values[handle]]);
+    sliderStatus.noUiSlider.on('update', function(values, handle) {
+        sliderStatusBox.text(rangeStatus[values[handle]]);
 
-    //     if (rangeStatus[values[handle]] === 'Дилер') {
-    //         result.text((rangeSum[values[handle]] * profitData) / 100);
+        // if (rangeStatus[values[handle]] === 'Дилер') {
+        //     result.text((rangeSum[values[handle]] * profitData) / 100);
 
-    //         // sliderSum.noUiSlider.set(4);
-    //     } else if (rangeStatus[values[handle]] === 'Дилер +') {
-    //         // sliderSum.noUiSlider.set(7);
-    //         result.text((rangeSum[values[handle]] * profitData) / 100);
-    //     } else {
-    //         result.text((rangeSum[values[handle]] * profitData) / 100);
-    //         // sliderSum.noUiSlider.set(0);
-    //     }
-    // });
+        //     // sliderSum.noUiSlider.set(4);
+        // } else if (rangeStatus[values[handle]] === 'Дилер +') {
+        //     // sliderSum.noUiSlider.set(7);
+        //     result.text((rangeSum[values[handle]] * profitData) / 100);
+        // } else {
+        //     result.text((rangeSum[values[handle]] * profitData) / 100);
+        //     // sliderSum.noUiSlider.set(0);
+        // }
+    });
 }

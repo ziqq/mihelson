@@ -22,6 +22,7 @@
 
             &:last-child {
                 @include size(4);
+                @include size-sm(12);
             }
 
             &:not(.no-hide) {

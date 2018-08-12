@@ -68,6 +68,10 @@
     &__text {
         padding-top: $gutter * 2;
 
+        @include respond-to(xs) {
+            padding: $gutter * 2 $gutter 0;
+        }
+
         @include respond-to(i5) {
             padding-top: 12%;
         }
@@ -171,6 +175,10 @@
         cursor: pointer;
         outline: none;
         z-index: z(default);
+
+        @include respond-to(xs) {
+            display: none !important;
+        }
 
         &.slick-disabled {
             display: none !important;

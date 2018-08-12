@@ -1,5 +1,5 @@
 //Slick Slider https://kenwheeler.github.io/slick/
-if ($('.js-hero-slider').length > 0) {
+if ($('.js-hero-slider').find('.m-slider__slide').length > 1) {
     $('.js-hero-slider').slick({
         arrows: true,
         infinite: true,
@@ -18,7 +18,8 @@ if ($('.js-hero-slider').length > 0) {
             {
                 breakpoint: 481,
                 settings: {
-                    dots: false
+                    dots: false,
+                    arrows: false
                 }
             }
         ]
@@ -36,19 +37,20 @@ var infoSliderSettings = {
         {
             breakpoint: 481,
             settings: {
-                dots: false
+                dots: false,
+                arrows: false
             }
         }
     ]
 };
 
-if ($('.js-slider').length > 0) {
+if ($('.js-slider').find('.m-slider__slide').length > 1) {
     $('.js-slider').slick({
         infoSliderSettings
     });
 }
 
-if ($('.js-jurnal-slider').length > 0) {
+if ($('.js-jurnal-slider').find('.m-slider__slide').length > 1) {
     $('.js-jurnal-slider').slick({
         arrows: true,
         infinite: true,
@@ -66,7 +68,8 @@ if ($('.js-jurnal-slider').length > 0) {
             {
                 breakpoint: 481,
                 settings: {
-                    dots: false
+                    dots: false,
+                    arrows: false
                 }
             }
         ]
