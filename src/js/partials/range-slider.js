@@ -2,6 +2,7 @@
 if ($('.js-calculator').length > 0) {
     let profit = $('.js-calculator-profit');
     let result = $('.js-calculator-result');
+    let btn = $('.js-calculator-btn');
     let profitData = profit.data('profit');
 
     let sliderSum = document.getElementById('calculator-sum');
@@ -74,6 +75,7 @@ if ($('.js-calculator').length > 0) {
             result.text((rangeSum[values[handle]] * 20) / 100);
             profit.text('20%');
             profit.attr('data-profit', '20');
+            btn.text('Стать оптовиком');
 
             if (calculatorItemOpt.hasClass('is-hidden')) {
                 calculatorItem
@@ -93,6 +95,7 @@ if ($('.js-calculator').length > 0) {
             result.text((rangeSum[values[handle]] * 25) / 100);
             profit.attr('data-profit', '25');
             profit.text('25%');
+            btn.text('Стать дилером');
 
             if (calculatorItemDiler.hasClass('is-hidden')) {
                 calculatorItem
@@ -108,6 +111,7 @@ if ($('.js-calculator').length > 0) {
             result.text((rangeSum[values[handle]] * 30) / 100);
             profit.text('30%');
             profit.attr('data-profit', '30');
+            btn.text('Стать дилером +');
 
             if (calculatorItemDilerPlus.hasClass('is-hidden')) {
                 calculatorItem
@@ -124,6 +128,7 @@ if ($('.js-calculator').length > 0) {
             result.text((rangeSum[values[handle]] * 30) / 100);
             profit.text('30%');
             profit.attr('data-profit', '30');
+            btn.text('Стать дилером +');
 
             if (calculatorItemDilerPlus.hasClass('is-hidden')) {
                 calculatorItem

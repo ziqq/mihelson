@@ -14,7 +14,7 @@
 				<div class="m-slider__dots"></div>
 				<div class="hero__slides m-slider__slides js-hero-slider">
 						{% for i in range(0, 3) %}
-						<div class="hero__slide m-slider__slide" style="background-image: url('img/general/firstscreen-bg.jpg');">
+						<div class="hero__slide m-slider__slide" style="background-image: url('img/sliders/hero/firstscreen-bg.jpg');">
 							<div class="container">
 								<div class="m-slider__text">
 									<div class="m-slider__title">Победа очевидна</div>
@@ -54,7 +54,7 @@
 							</div>
 						</div>
 						<div class="range">
-							<div class="range__slider" id="calculator-sum" data-start="50000" data-end="1000000"></div>
+							<div class="range__slider" id="calculator-sum" data-end="1000000" data-start="50000"></div>
 						</div>
 					</div>
 
@@ -82,9 +82,9 @@
 							<small>Прибыль / месяц</small>
 						</div>
 
-						<a class="btn btn--black" data-toggle="modal" href="#cooperation">Стать оптовиком</a>
+						<a class="btn btn--black js-calculator-btn" data-toggle="modal" href="#cooperation">Стать оптовиком</a>
 
-						<a href="brands.html" class="btn-link">Смотреть бренды</a>
+						<a class="btn-link" href="brands.html">Смотреть бренды</a>
 
 						<span class="calculator-result__sale">
 							<span class="js-calculator-profit" data-profit="25">25%</span>
@@ -138,7 +138,7 @@
 							<div class="dropdown">
 								<div class="dropdown__inner">
 									<i class="fal fa-times dropdown__close"></i>
-									Условия участия в программе обсуждаются только с персональным менеджером после оформления минимального заказа.
+									Если Ваш регион входит в зону бесплатной доставки. Уточняйте географию логистики у персонального менеджера.
 								</div>
 							</div>
 						</div>
@@ -151,13 +151,21 @@
 							<div class="dropdown">
 								<div class="dropdown__inner">
 									<i class="fal fa-times dropdown__close"></i>
-									Условия участия в программе обсуждаются только с персональным менеджером после оформления минимального заказа.
+									Если в Вашу базу занесены уникальные коды номенклатуры компании Михельсон. Обработка займет не более 5 минут (если заказ оформлен в рабочее время).
 								</div>
 							</div>
 						</div>
 						Онлайн обучение персонала <br>
 						Мотивация Бернд-менеджеров <br>
-						Свой экспедитор в Балаково
+						<div class="box-info">
+							Свой экспедитор в Балаково
+							<div class="dropdown">
+								<div class="dropdown__inner">
+									<i class="fal fa-times dropdown__close"></i>
+									Погрузка, доставка, межтерминальное хранение без очередей и расходов на водителей.
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="calculator-item calculator-item--diler is-hidden" data-wow-delay="0.9s">
 						<div class="box-info">
@@ -170,7 +178,15 @@
 							</div>
 						</div>
 						Фирменная полиграфия <br>
-						Комплексная консультация маркетолога <br>
+						<div class="box-info">
+							Консультация маркетолога
+							<div class="dropdown">
+								<div class="dropdown__inner">
+									<i class="fal fa-times dropdown__close"></i>
+									Консультация маркетолога - онлайн. Помощь в реализации продукции компании Михельсон.
+								</div>
+							</div>
+						</div>
 						Фирменные промостенды <br>
 						Совместные рекламные акции <br>
 						Эксклюзивная полиграфия
@@ -189,7 +205,7 @@
 							</div>
 						</div>
 						Дилерский прайс <br>
-						Эксклюзивная география продаж
+						Ваша компания - единственный <br> дилер в своем регионе
 					</div>
 					<div class="calculator-item calculator-item--dilerplus is-hidden" data-wow-delay="0.6s">
 						Персональный менеджер 24/7   <br>
@@ -204,9 +220,17 @@
 						</div>
 						Онлайн обучение персонала <br>
 						Мотивация Бернд-менеджеров <br>
-						Свой экспедитор в Балаково <br>
+						<div class="box-info">
+							Свой экспедитор в Балаково
+							<div class="dropdown">
+								<div class="dropdown__inner">
+									<i class="fal fa-times dropdown__close"></i>
+									Погрузка, доставка, межтерминальное хранение без очередей и расходов на водителей.
+								</div>
+							</div>
+						</div>
 						Обучение персонала в Вашем городе <br>
-						Больше чем бонусная программа
+						Уникальная бонусная программа
 					</div>
 					<div class="calculator-item calculator-item--dilerplus is-hidden" data-wow-delay="0.9s">
 						<div class="box-info">
@@ -219,7 +243,15 @@
 							</div>
 						</div>
 						Фирменная полиграфия <br>
-						Комплексная консультация маркетолога <br>
+						<div class="box-info">
+							Консультация маркетолога
+							<div class="dropdown">
+								<div class="dropdown__inner">
+									<i class="fal fa-times dropdown__close"></i>
+									Консультация маркетолога - онлайн. Помощь в реализации продукции компании Михельсон.
+								</div>
+							</div>
+						</div>
 						Фирменные промостенды <br>
 						Совместные рекламные акции <br>
 						Эксклюзивная полиграфия
@@ -255,7 +287,6 @@
 					<div class="info__slider m-slider m-slider--info">
 						<div class="m-slider__dots"></div>
 						<div class="info__slides m-slider__slides js-slider">
-							{% for i in range(0, 3) %}
 							<!-- begin info__slide -->
 							<div class="info__slide m-slider__slide">
 								<img src="img/sliders/info/2.jpg" alt>
@@ -265,7 +296,6 @@
 									<div class="m-slider__desc">Погрузка, доставка, межтерминальное хранение без очередей и расходов на водителей.</div>
 								</div>
 							</div><!-- end info__slide -->
-							{% endfor %}
 						</div>
 					</div>
 				</div>
@@ -292,7 +322,7 @@
 				<article class="article" href="jurnal-article.html">
 					<span class="article__date">24.07.2018</span>
 					<p class="article__text">Наставники из Екатеринбурга приняли участие в первой интеллектуальной игре «Что? Где? Когда?»</p>
-					<a href="jurnal-article.html" class="article__link btn-link">Подробнее</a>
+					<a class="article__link btn-link" href="jurnal-article.html">Подробнее</a>
 				</article><!-- end article -->
 				  {% endfor %}
 			</div><!-- end article__wrap -->

@@ -90,7 +90,7 @@
                                 <li class="nav-dropdown-adv__item">Персональный менеджер</li>
                                 <li class="nav-dropdown-adv__item">Гарантийные обязательсва</li>
                               </ul>
-                              <a href="#" class="nav-dropdown-adv__link btn-link">Попробовать</a>
+                              <a href="#cooperation" class="nav-dropdown-adv__link btn-link" data-toggle="modal">Попробовать</a>
                             </div>
                           </div>
                           <!-- end nav-dropdown-adv -->
@@ -150,7 +150,7 @@
                                 <li class="nav-dropdown-adv__item">Персональный менеджер</li>
                                 <li class="nav-dropdown-adv__item">Гарантийные обязательсва</li>
                               </ul>
-                              <a href="#" class="nav-dropdown-adv__link btn-link">Попробовать</a>
+                              <a href="#cooperation" class="nav-dropdown-adv__link btn-link" data-toggle="modal">Попробовать</a>
                             </div>
                           </div>
                           <!-- end nav-dropdown-adv -->
@@ -287,7 +287,7 @@
                                 <li class="nav-dropdown-adv__item">Персональный менеджер</li>
                                 <li class="nav-dropdown-adv__item">Гарантийные обязательсва</li>
                               </ul>
-                              <a href="#" class="nav-dropdown-adv__link btn-link">Стать дилером</a>
+                              <a href="#cooperation" class="nav-dropdown-adv__link btn-link" data-toggle="modal">Стать дилером</a>
                             </div>
                           </div>
                           <!-- end nav-dropdown-adv -->
@@ -375,14 +375,7 @@
         </div>
         <!-- end header__bottom -->
         <!-- begin mobile-toggle-btn -->
-        <div class="js-nav-toggle menu-toggle">
-          <div class="menu-toggle__boxes">
-            <span class="menu-toggle__box"></span>
-            <span class="menu-toggle__box"></span>
-            <span class="menu-toggle__box"></span>
-            <div class="menu-toggle__box--other"></div>
-          </div>
-        </div>
+        <button class="menu-toggle js-nav-toggle"></button>
         <!-- end mobile-toggle-btn -->
         <!-- begin mobile-nave -->
         <nav class="mobile-nav js-nav">
@@ -1165,19 +1158,22 @@
                     <option value="4">4</option>
                   </select>
                   <span class="m-input__error">*Какаято ошибочка</span>
-                  </span>
                 </div>
                 <div class="m-input">
                   <span class="m-input__title">Телефон*</span>
                   <input type="num" class="m-input__field js-phone-mask">
                   <span class="m-input__error">*Какаято ошибочка</span>
-                  </span>
                 </div>
                 <div class="m-input is-invalid">
                   <span class="m-input__title">Эл. почта</span>
                   <input type="email" class="m-input__field ">
                   <span class="m-input__error">*Какаято ошибочка</span>
                   </span>
+                </div>
+                <div class="m-input m-input--text">
+                  <span class="m-input__title">Коментарий</span>
+                  <textarea></textarea>
+                  <span class="m-input__error">*Какаято ошибочка</span>
                 </div>
                 <div class="modal__policy">
                   <div class="policy">Нажимая на кнопку "Отправить", вы автоматически даете согласие на обработку
@@ -1209,7 +1205,6 @@
                   <span class="m-input__title">Телефон*</span>
                   <input type="num" class="m-input__field js-phone-mask">
                   <span class="m-input__error">*Какаято ошибочка</span>
-                  </span>
                 </div>
                 <div class="m-input is-invalid">
                   <span class="m-input__title">Эл. почта</span>
@@ -1224,7 +1219,6 @@
                   </span>
                   <input type="file" class="m-input__field">
                   <span class="m-input__error">*Какаято ошибочка</span>
-                  </span>
                 </label>
                 <div class="modal__policy">
                   <div class="policy">Нажимая на кнопку "Отправить", вы автоматически даете согласие на обработку

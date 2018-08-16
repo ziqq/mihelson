@@ -77,12 +77,14 @@
         cursor: pointer;
 
         &:hover {
+
             .m-input__title {
                 color: #247fc5;
             }
         }
 
         .m-input {
+
             &__title {
                 color: $color-link;
 
@@ -102,6 +104,7 @@
         position: relative;
 
         & + & {
+
             &::before {
                 content: '\f068';
                 color: $color-icon;
@@ -110,10 +113,16 @@
                 left: -21.5px;
             }
         }
+
         .m-input {
+
             &__field {
                 padding-right: 30px;
             }
         }
     } //.m-input--date
+
+    &--text {
+        margin-bottom: 0;
+    } //.m-input--text
 } //.m-input

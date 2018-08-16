@@ -69,7 +69,7 @@ if (navList.length) {
         .on('mouseenter', function() {
             overlay.css('display', 'block');
         })
-        .on('mouseout', function() {
+        .on('mouseleave', function() {
             overlay.removeAttr('style');
         });
 }

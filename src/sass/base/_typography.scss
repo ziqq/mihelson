@@ -21,18 +21,30 @@ a {
     }
 }
 
-p{
-	margin-bottom: 20px;
-	color: $color-text;
-	font-size: 15px;
-	line-height: 1.7;
+p {
+    margin-bottom: 20px;
+    color: $color-text;
+    font-size: 15px;
+    line-height: 1.7;
 }
 
-h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
     margin-top: 0;
 }
 
-h1,.h1 {
+h1,
+.h1 {
     font-family: $f-bold;
     font-weight: 600;
     font-size: 40px;
@@ -46,14 +58,18 @@ h1,.h1 {
     }
 }
 
-h2,.h2, h3,.h3 {
+h2,
+.h2,
+h3,
+.h3 {
     color: $color-text;
     font-family: $f-medium;
     font-size: 27px;
     font-weight: 500;
 }
 
-h3,.h3 {
+h3,
+.h3 {
     font-family: $f-medium;
     font-weight: 500;
     font-size: 28px;
@@ -67,7 +83,12 @@ h3,.h3 {
     }
 }
 
-h4,.h4,h5,.h5,h6,.h6 {
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
     font-size: 18px;
     font-family: $f-light;
     font-weight: 300;
@@ -128,6 +149,11 @@ select {
             font-size: 16px;
         }
     }
+}
+
+textarea {
+    min-height: 100px;
+    resize: none;
 }
 
 .text-color {
