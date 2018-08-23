@@ -19,6 +19,10 @@
         &-wrap {
             margin-bottom: 45px;
             text-align: center;
+
+            @include respond-to(xs) {
+                margin-bottom: 15px;
+            }
         }
     } //.unicode__title
 
@@ -67,10 +71,6 @@
     &__items {
         @include row-flex;
 
-        @include respond-to(sm) {
-            flex-direction: column;
-        }
-
         .item-icon {
             border: 1px solid $color-border--light;
             @include col;
@@ -80,6 +80,41 @@
             @include respond-to(sm) {
                 max-width: 320px;
                 margin: 0 auto $gutter;
+            }
+
+            &--small {
+                padding: 15px;
+                margin-bottom: 0;
+                @include size(3);
+                @include size-sm(6);
+                @include size-xs(12);
+
+                @include respond-to(md) {
+                    margin-bottom: $gutter;
+                }
+
+                @include respond-to(sm) {
+                    max-width: 320px;
+                    margin: 0 auto $gutter;
+                    padding: $gutter;
+                }
+
+                .dropdown__inner {
+                    padding: 15px;
+                    text-align: left;
+
+                    @include respond-to(xs) {
+                        left: -220px;
+
+                        &::after {
+                            right: 48px;
+                        }
+                    }
+
+                    li {
+                        @include listIcon($color-accent, 9px);
+                    }
+                }
             }
         }
     } //.adv__items
@@ -225,7 +260,7 @@
 
 .section-bg {
     margin-bottom: 80px;
-    padding: $gutter * 4;
+    padding: $gutter * 4 50px;
     @include cover;
 
     @include respond-to(xs) {
@@ -234,8 +269,11 @@
     }
 
     &__text {
-        max-width: 405px;
-        text-align: center;
+        max-width: 350px;
+
+        &--right {
+            margin-left: auto;
+        }
 
         @include respond-to(sm) {
             margin: auto;
@@ -252,5 +290,5 @@
 
     &__desc {
         margin-bottom: $gutter * 1.5;
-    } //.section-bgg__desc
+    } //.section-bg__desc
 } //.section-bg

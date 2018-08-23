@@ -257,6 +257,16 @@
 
     .social {
         margin-top: 10px;
+
+        &__list {
+            max-width: 170px;
+        }
+
+        &__item {
+            & + .social__item {
+                margin-left: 20px;
+            }
+        }
     }
 } //.nav-dropdown
 
@@ -315,7 +325,8 @@
     width: 100%;
     height: 100%;
     z-index: 199;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     @include smooth-scroll;
 
     &__in {

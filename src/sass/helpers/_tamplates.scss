@@ -50,7 +50,7 @@
     }
 }
 
-@mixin listIcon {
+@mixin listIcon($color: $color-accent, $posTop: 12px) {
     padding-left: 15px;
     position: relative;
 
@@ -59,9 +59,9 @@
         display: block;
         width: 8px;
         height: 2px;
-        background-color: $color-main;
+        background-color: $color;
         position: absolute;
-        top: 12px;
+        top: $posTop;
         left: 0;
     }
 } //ul li &::before (-)

@@ -1,0 +1,33 @@
+<!-- begin header -->
+<header class="header {{headerClass}}">
+
+	<!-- begin header__top -->
+	<div class="header__top">
+		<div class="container">
+			<div class="header__inner">
+
+				<!-- begin logo -->
+				<div class="logo header__logo">
+					<a href="/" class="logo__link">Михельсон</a>
+				</div>
+				<!-- end logo -->
+
+				{% include "partials/_nav-top.html" %}
+
+				<div class="header__search is-hidden">
+					{% include "partials/_search.html" %}
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- end header__top -->
+
+	<!-- begin mobile-toggle-btn -->
+	<button class="menu-toggle js-nav-toggle"></button>
+	<!-- end mobile-toggle-btn -->
+
+	{% include "partials/_mobile-menu.html" %}
+
+</header>
+<!-- end header -->

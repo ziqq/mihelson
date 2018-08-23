@@ -24,8 +24,8 @@ a {
 p {
     margin-bottom: 20px;
     color: $color-text;
-    font-size: 15px;
-    line-height: 1.7;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 h1,
@@ -51,7 +51,6 @@ h1,
     line-height: 1.05em;
     @include max-screen(1024) {
         font-size: 36px;
-        line-height: 1.125em;
     }
     @include respond-to(sm) {
         font-size: 32px;
@@ -79,7 +78,6 @@ h3,
     }
     @include respond-to(sm) {
         font-size: 22px;
-        line-height: 1.13636364em;
     }
 }
 
@@ -92,11 +90,7 @@ h6,
     font-size: 18px;
     font-family: $f-light;
     font-weight: 300;
-    line-height: 1.22222222em;
     margin-bottom: $half-indent;
-    @include respond-to(sm) {
-        line-height: 1.11111111em;
-    }
 }
 
 // упразднить стили для плейсхолдера

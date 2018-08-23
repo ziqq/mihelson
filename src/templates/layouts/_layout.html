@@ -26,7 +26,7 @@
 <body class="loading">
 
 	<div class="wrapper {{ wrapperClass }}">
-		{% include "partials/_header.html" %}
+		{% block header %}{% endblock %}
 		{% block content %}{% endblock %}
 		{% include "partials/_footer.html" %}
 	</div>

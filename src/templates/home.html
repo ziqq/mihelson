@@ -109,7 +109,7 @@
 
 						<div class="box-info">
 							Моментальная обработка заявок
-							<div class="dropdown">
+							<div class="dropdown js-dropdown">
 								<div class="dropdown__inner">
 									<i class="fal fa-times dropdown__close"></i>
 									При работе с уникальными кодами. Ваш заказ начнет собираться через 180 секунд после оформления заказа.
@@ -120,7 +120,7 @@
 					<div class="calculator-item wow fadeInUp calculator-item--opt" data-wow-delay="0.9s">
 							<div class="box-info">
 							Программа складского остатка на 90 дней
-							<div class="dropdown">
+							<div class="dropdown right js-dropdown">
 								<div class="dropdown__inner">
 									<i class="fal fa-times dropdown__close"></i>
 									Условия участия в программе обсуждаются только с персональным менеджером после оформления минимального заказа.
@@ -135,7 +135,7 @@
 						Гарантийные обязательства <br>
 						<div class="box-info">
 							Бесплатная доставка
-							<div class="dropdown">
+							<div class="dropdown center js-dropdown">
 								<div class="dropdown__inner">
 									<i class="fal fa-times dropdown__close"></i>
 									Если Ваш регион входит в зону бесплатной доставки. Уточняйте географию логистики у персонального менеджера.
@@ -148,7 +148,7 @@
 						Персональный менеджер  <br>
 						<div class="box-info">
 							Моментальная обработка заявок
-							<div class="dropdown">
+							<div class="dropdown js-dropdown">
 								<div class="dropdown__inner">
 									<i class="fal fa-times dropdown__close"></i>
 									Если в Вашу базу занесены уникальные коды номенклатуры компании Михельсон. Обработка займет не более 5 минут (если заказ оформлен в рабочее время).
@@ -159,7 +159,7 @@
 						Мотивация Бернд-менеджеров <br>
 						<div class="box-info">
 							Свой экспедитор в Балаково
-							<div class="dropdown">
+							<div class="dropdown js-dropdown">
 								<div class="dropdown__inner">
 									<i class="fal fa-times dropdown__close"></i>
 									Погрузка, доставка, межтерминальное хранение без очередей и расходов на водителей.
@@ -170,7 +170,7 @@
 					<div class="calculator-item calculator-item--diler is-hidden" data-wow-delay="0.9s">
 						<div class="box-info">
 							Программа складского остатка на 90 дней
-							<div class="dropdown">
+							<div class="dropdown right js-dropdown">
 								<div class="dropdown__inner">
 									<i class="fal fa-times dropdown__close"></i>
 									Условия участия в программе обсуждаются только с персональным менеджером после оформления минимального заказа.
@@ -180,7 +180,7 @@
 						Фирменная полиграфия <br>
 						<div class="box-info">
 							Консультация маркетолога
-							<div class="dropdown">
+							<div class="dropdown right js-dropdown">
 								<div class="dropdown__inner">
 									<i class="fal fa-times dropdown__close"></i>
 									Консультация маркетолога - онлайн. Помощь в реализации продукции компании Михельсон.
@@ -197,7 +197,7 @@
 						Гарантийные обязательства <br>
 						<div class="box-info">
 							Бесплатная доставка
-							<div class="dropdown">
+							<div class="dropdown center js-dropdown">
 								<div class="dropdown__inner">
 									<i class="fal fa-times dropdown__close"></i>
 									Условия участия в программе обсуждаются только с персональным менеджером после оформления минимального заказа.
@@ -211,7 +211,7 @@
 						Персональный менеджер 24/7   <br>
 						<div class="box-info">
 							Моментальная обработка заявок
-							<div class="dropdown">
+							<div class="dropdown js-dropdown">
 								<div class="dropdown__inner">
 									<i class="fal fa-times dropdown__close"></i>
 									Условия участия в программе обсуждаются только с персональным менеджером после оформления минимального заказа.
@@ -222,7 +222,7 @@
 						Мотивация Бернд-менеджеров <br>
 						<div class="box-info">
 							Свой экспедитор в Балаково
-							<div class="dropdown">
+							<div class="dropdown js-dropdown">
 								<div class="dropdown__inner">
 									<i class="fal fa-times dropdown__close"></i>
 									Погрузка, доставка, межтерминальное хранение без очередей и расходов на водителей.
@@ -235,7 +235,7 @@
 					<div class="calculator-item calculator-item--dilerplus is-hidden" data-wow-delay="0.9s">
 						<div class="box-info">
 							Программа складского остатка на 90 дней
-							<div class="dropdown">
+							<div class="dropdown right js-dropdown">
 								<div class="dropdown__inner">
 									<i class="fal fa-times dropdown__close"></i>
 									Условия участия в программе обсуждаются только с персональным менеджером после оформления минимального заказа.
@@ -245,7 +245,7 @@
 						Фирменная полиграфия <br>
 						<div class="box-info">
 							Консультация маркетолога
-							<div class="dropdown">
+							<div class="dropdown right js-dropdown">
 								<div class="dropdown__inner">
 									<i class="fal fa-times dropdown__close"></i>
 									Консультация маркетолога - онлайн. Помощь в реализации продукции компании Михельсон.
@@ -273,11 +273,14 @@
 						<div class="info__slides m-slider__slides js-slider">
 							<!-- begin info__slide -->
 							<div class="info__slide m-slider__slide">
-								<img src="img/sliders/info/1.jpg" alt>
+								<picture class="firstscreen__img">
+									<source media="(max-width: 480px)" srcset="img/sliders/info/480/1.jpg">
+									<source media="(max-width: 768px)" srcset="img/sliders/info/768/1.jpg">
+									<img class="firstscreen__img" src="img/sliders/info/1.jpg" alt="alt">
+								</picture>
 								<div class="m-slider__text m-slider__text--center">
-									<div class="m-slider__title">Свой экспедитор в
-										<br>Балаково</div>
-									<div class="m-slider__desc">Погрузка, доставка, межтерминальное хранение без очередей и расходов на водителей.</div>
+									<div class="m-slider__title">Ваш персональный <br> менеджер </div>
+									<div class="m-slider__desc">Никаких звонков на горячую линию и поисков писем на почте, мы на связи в Viber/WhatsApp </div>
 								</div>
 							</div><!-- end info__slide -->
 						</div>
@@ -289,11 +292,14 @@
 						<div class="info__slides m-slider__slides js-slider">
 							<!-- begin info__slide -->
 							<div class="info__slide m-slider__slide">
-								<img src="img/sliders/info/2.jpg" alt>
+								<picture class="firstscreen__img">
+									<source media="(max-width: 480px)" srcset="img/sliders/info/480/2.jpg">
+									<source media="(max-width: 768px)" srcset="img/sliders/info/768/2.jpg">
+									<img class="firstscreen__img" src="img/sliders/info/2.jpg" alt="alt">
+								</picture>
 								<div class="m-slider__text m-slider__text--center">
-									<div class="m-slider__title">Бесплатная доставка до
-										<br>Вашего склада</div>
-									<div class="m-slider__desc">Погрузка, доставка, межтерминальное хранение без очередей и расходов на водителей.</div>
+									<div class="m-slider__title">Программа <br>	складского остатка </div>
+									<div class="m-slider__desc">Бесплатно заполним Ваш склад ликвидной продукцией компании на 90 дней</div>
 								</div>
 							</div><!-- end info__slide -->
 						</div>
@@ -340,15 +346,15 @@
 				<div class="reviews__slides m-slider__slides js-slider">
 					<div class="reviews__slide m-slider__slide">
 						<picture class="m-slider__image">
-							<source media="(max-width: 480px)" srcset="img/sliders/reviews/480/reviews.jpg">
-							<source media="(max-width: 768px)" srcset="img/sliders/reviews/768/reviews.jpg">
-							<img class="firstscreen__img" src="img/sliders/reviews/1200/reviews.jpg" alt="alt">
+							<source media="(max-width: 480px)" srcset="img/sliders/reviews/480/1.jpg">
+							<source media="(max-width: 768px)" srcset="img/sliders/reviews/768/1.jpg">
+							<img class="firstscreen__img" src="img/sliders/reviews/1200/1.jpg" alt="alt">
 						</picture>
 						<div class="m-slider__text m-slider__text--center">
-							<div class="m-slider__title">Персональный менеджер всегда на связи</div>
-							<div class="m-slider__desc">Никаких звонков на горячую линию <br> и поисков писем на почте, мы на <br> связи в Viber/WhatsApp</div>
+							<div class="m-slider__title">Бесплатная доставка до вашего склада</div>
+							<div class="m-slider__desc">Доставим автозапчасти до Вашего склада собственной транспортной компанией</div>
 
-							<a class="btn btn--black" data-toggle="modal" href="#cooperation"> Оставить заявку</a>
+							<a class="btn btn--black" data-toggle="modal" href="#cooperation"> Подробнее</a>
 						</div>
 					</div>
 				</div>

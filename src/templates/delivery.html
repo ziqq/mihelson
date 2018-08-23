@@ -1,0 +1,139 @@
+---
+title: Логистика
+headerClass: is-fixed header--transparent
+---
+{% extends "layouts/_layout.html" %}
+
+{% block header %}
+{% include "partials/_header-light.html" %}
+{% endblock %}
+
+{% block content %}
+
+<!-- begin unicode -->
+<main class="main delivery">
+
+	<!-- begin firstscreen -->
+	<div class="firstscreen delivery__firstscreen">
+		<picture class="firstscreen__image">
+			<source media="(max-width: 480px)" srcset="img/delivery/480/1.jpg">
+			<source media="(max-width: 768px)" srcset="img/delivery/768/1.jpg">
+			<img class="firstscreen__img" src="img/delivery/1200/1.jpg" alt="alt">
+		</picture>
+		<div class="firstscreen__inner">
+			<div class="firstscreen__text">
+				<h1 class="h1 firstscreen__title">Логистика</h1>
+				<h5 class="h5 firstscreen__subtitle">Не только производим, но и доставляем, отправляем, собираем и храним автозапчасти. </h5>
+				<a href="#cooperation" class="btn btn--accent firstscreen__btn" data-toggle="modal">Заказать доставку
+				</a>
+			</div>
+
+		</div>
+	</div><!-- end firstscreen -->
+
+	<!-- begin adv -->
+	<section class="adv delivery__adv">
+		<div class="container">
+			<div class="unicode__title-wrap">
+				<h2 class="unicode__title">Наши приемущества</h2>
+			</div>
+
+			<!-- begin adv__items -->
+				<div class="adv__items">
+				<div class="item-icon item-icon--small">
+					{{ mixin.icon('delivery', 'item-icon__icon') }}
+					<div class="item-icon__title">Доставка</div>
+					<div class="item-icon__desc">Бесплатная доставка грузов до Вашего склада или терминала ТК. Зона доставки.
+						<div class="dropdown right js-dropdown">
+							<div class="dropdown__inner">
+								<i class="fal fa-times dropdown__close"></i>
+								<ul>
+									<li><strong>Бузулук</strong>- 1 раз в две недели </li>
+									<li><strong>Волгоград</strong>- 1 раз в неделю </li>
+									<li><strong>Воронеж</strong> - 1 раз в неделю </li>
+									<li><strong>Екатеринбург</strong> - 1 раз в две недели </li>
+									<li><strong>Ижевск</strong> - 1 раз в две недели</li>
+									<li><strong>Йошкар-Ола</strong> - 1 раз в две недели </li>
+									<li><strong>Казань</strong> - 1 раз в две недели </li>
+									<li><strong>Киров</strong> - 1 раз в две недели </li>
+									<li><strong>Москва</strong> - 1 раз в неделю </li>
+									<li><strong>Набережные Челны </strong>- 1 раз в две надели </li>
+									<li><strong>Оренбург</strong> - 1 раз в две недели </li>
+									<li><strong>Орск</strong> - 1 раз в две недели </li>
+									<li><strong>Пенза</strong> - 1 раз в неделю </li>
+									<li><strong>Ростов-на-Дону</strong> - 1 раз в неделю </li>
+									<li><strong>Рязань</strong> - 1 раз в неделю </li>
+									<li><strong>Тамбов</strong> - 1 раз в неделю </li>
+									<li><strong>Тольятти</strong> - 1 раз в две недели </li>
+									<li><strong>Ульяновск</strong> - 1 раз в две недели </li>
+									<li><strong>Уфа</strong> - 1 раз в две недели </li>
+									<li><strong>Чебоксары</strong> - 1 раз в две недели </li>
+									<li><strong>Челябинск</strong> - 1 раз в две недели</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item-icon item-icon--small">
+					{{ mixin.icon('box2', 'item-icon__icon') }}
+					<div class="item-icon__title">Хранение</div>
+					<div class="item-icon__desc">Межтерминальное хранение Ваших грузов на  охраняемом складе с видеонаблюдением.</div>
+				</div>
+				<div class="item-icon item-icon--small">
+					{{ mixin.icon('callcenter', 'item-icon__icon') }}
+					<div class="item-icon__title">Экспедитор</div>
+					<div class="item-icon__desc">Сбор заказов у сторонних поставщиков, ответственное  хранение продукции до момента отгрузки.</div>
+				</div>
+				<div class="item-icon item-icon--small">
+					{{ mixin.icon('gz', 'item-icon__icon') }}
+					<div class="item-icon__title">Погрузка</div>
+					<div class="item-icon__desc">Бережная погрузка исключает повреждения груза и крены авто во время движения.</div>
+				</div>
+			</div><!-- end adv__items -->
+		</div>
+	</section><!-- end adv -->
+
+	<!-- begin storage -->
+	<section class="section">
+		<div class="container">
+			<div class="section__in">
+				<div class="section__text">
+					<h3 class="section__title">Ответственное хранение грузов </h3>
+					<p>С 1 октября компания Михельсон предоставляет возможность ответсвенного хранения со своим экспедитором в Балаково. </p>
+					<p>
+					Целый комплекс логистических услуг избавит Вас от расходов на собственный трнаспорт и содержание склада. Наши экспедиторы знают каждого производителя и поставщика автозапчастей, а это значит что Вам не придется оплачивать дополнительное время водителям. Мы сами заберем Ваш заказ, доставим до своего терминала и разместим на современном, охраняемом складе до момента отгрузки.</p>
+				</div>
+				<div class="section__image">
+					<img src="img/general/storage-1.svg" alt="">
+					<img src="img/general/storage-2.svg" alt="">
+				</div>
+		</div>
+	</section>
+	<!-- end storage -->
+
+
+	<!-- begin section-bg -->
+	<div class="container posible">
+		 <section class="section-bg">
+			<picture class="firstscreen__image">
+				<source media="(max-width: 480px)" srcset="img/posible/480/1.jpg">
+				<source media="(max-width: 768px)" srcset="img/posible/768/1.jpg">
+				<img class="firstscreen__img" src="img/posible/1200/1.jpg" alt="alt">
+			</picture>
+			<div class="section-bg__inner">
+				<div class="section-bg__text section-bg__text--right">
+					<div class="section-bg__title">Новый терминал - <br> новые возможности.</div>
+					<div class="section-bg__desc">Адресное хранение, оптимизация маршрутов сборщиков, одновременный набор до 5-ти заказов, двойной пересчет. Доступно с 1 октября 2018 г.</div>
+					<a href="#cooperation" class="btn btn--black" data-toggle="modal"> Заказать хранение</a>
+				</div>
+			</div>
+		</section>
+	</div><!-- end section-bg -->
+
+
+
+
+</main>
+<!-- end unicode -->
+
+{% endblock %}

@@ -108,7 +108,6 @@
         @include respond-to(xs) {
             width: 100%;
             margin-bottom: $gutter;
-            padding: 0 10px;
         }
     } //.calculator__slider
 
@@ -214,7 +213,7 @@
         justify-content: center;
 
         @include respond-to(xs) {
-            bottom: 50px;
+            bottom: 65px;
             left: 275px;
         }
 
@@ -230,6 +229,7 @@
         margin-bottom: 10px;
 
         @include respond-to(xs) {
+            width: 100%;
             padding: 10px 50px;
         }
     }
@@ -246,8 +246,8 @@
 }
 
 .dropdown {
-    width: 20px;
-    height: 20px;
+    width: 26px;
+    height: 26px;
     position: relative;
     top: 2px;
     display: inline-flex;
@@ -281,8 +281,7 @@
         background-color: #fff;
         box-shadow: 0 7px 10px rgba(0, 0, 0, 0.26);
         position: absolute;
-        top: -155px;
-        left: -238px;
+        left: -237px;
         z-index: z(default);
 
         &::after {
@@ -311,6 +310,7 @@
     &.center {
 
         .dropdown__inner {
+            left: -136px;
 
             &::after {
                 @include vx;
@@ -325,6 +325,17 @@
             &::after {
                 right: auto;
                 left: 30px;
+            }
+        }
+    }
+
+    &.right {
+
+        .dropdown__inner {
+            left: -23px;
+
+            &::after {
+                right: auto;
             }
         }
     }
@@ -366,11 +377,6 @@
 .reviews {
 
     &__slider {
-        // background-image: linear-gradient(
-        //     111deg,
-        //     #dbe6f1 0%,
-        //     $gray--lighten 100%
-        // );
         overflow: hidden;
     } //.reviews__slider
 
@@ -424,6 +430,9 @@
             @include respond-to(sm) {
                 max-width: 320px;
                 left: 30px;
+            }
+            @include respond-to(xs) {
+                text-align: center;
             }
         }
     }

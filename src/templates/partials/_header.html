@@ -14,11 +14,11 @@
 
 				{% include "partials/_nav-top.html" %}
 
-				<div class="header__search sm-hide">
+				<div class="header__search is-hidden">
 					{% include "partials/_search.html" %}
 				</div>
 
-				<a href="#cooperation" class="btn btn--black sm-hide" data-toggle="modal">Cтать дилером</a>
+				<a href="#cooperation" class="btn btn--black sm-hide header__btn" data-toggle="modal">Cтать дилером</a>
 
 			</div>
 		</div>
@@ -32,7 +32,8 @@
 				<!-- begin nav -->
 				<nav class="nav nav--bottom sm-hide">
 					<ul class="nav__list">
-						{% import "data/data.html" as nav %} {% for item in nav.mainMenu %}
+						{% import "data/data.html" as nav %}
+						{% for item in nav.mainMenu %}
 						<li class="nav__item {{item.class}}">
 							<a href="#" class="nav__link">{{item.title}}</a>
 						</li>

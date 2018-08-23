@@ -68,8 +68,16 @@ if (navList.length) {
         .find('.nav__item')
         .on('mouseenter', function() {
             overlay.css('display', 'block');
+
+            if ($('.header').hasClass('header--transparent')) {
+                $('.header').css('background-color', '#fff');
+            }
         })
         .on('mouseleave', function() {
             overlay.removeAttr('style');
+
+            if ($('.header').hasClass('header--transparent')) {
+                $('.header').css('background-color', 'transparent');
+            }
         });
 }

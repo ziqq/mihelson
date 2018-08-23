@@ -74,18 +74,6 @@ $(document).ready(function() {
         event.preventDefault();
     });
 
-    $('.js-dropdown').on('click', function() {
-        $('.js-dropdown').removeClass('is-active');
-        $(this).addClass('is-active');
-    });
-
-    $('.js-dropdown--close').on('click', function(e) {
-        $(this)
-            .closest('.js-dropdown')
-            .removeClass('is-active');
-        e.stopPropagation();
-    });
-
     $(document).on('click', function(e) {
         if ($(e.target).closest('.js-dropdown').length) return;
         $('.js-dropdown').removeClass('is-active');
@@ -154,6 +142,25 @@ $(document).ready(function() {
             $('.jurnal').addClass('theme-dark');
         }
     });
+
+    //Dropdown
+    if ($('.js-dropdown').length) {
+        $('.js-dropdown')
+            .on('mouseenter', function() {
+                let dropdown = $(this).children('.dropdown__inner');
+                let dropdownHeight = $(this)
+                    .children('.dropdown__inner')
+                    .outerHeight();
+                dropdown.css({
+                    display: 'block',
+                    top: -dropdownHeight - 7 + 'px'
+                });
+            })
+            .on('mouseleave', function() {
+                let dropdown = $(this).children('.dropdown__inner');
+                dropdown.removeAttr('style');
+            });
+    }
 
     /*
     * slider.js

@@ -17,6 +17,10 @@ PageList:
   ready: 50
   desc : Уникальные коды
 
+- file: delivery.html
+  ready: 50
+  desc : Логистика
+
 - file: brands.html
   ready: 50
   desc : Бренды

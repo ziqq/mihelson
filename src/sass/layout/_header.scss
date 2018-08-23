@@ -2,6 +2,18 @@ $header-height: 50px;
 
 .header {
 
+    &.is-fixed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: z(default);
+
+        @include respond-to(sm) {
+            position: fixed;
+        }
+    }
+
     @include respond-to(sm) {
         position: fixed;
         top: 0;
@@ -31,8 +43,9 @@ $header-height: 50px;
 
     &__logo {
         margin-right: 40px;
+
         @include respond-to(sm) {
-            margin-left: 52px;
+            margin-left: 45px;
         }
     }//.header__logo
 
@@ -43,6 +56,32 @@ $header-height: 50px;
     &__search {
         margin-right: $gutter;
     }//.header__search
+
+    &__btn {
+        padding: 7px 35px;
+    }//.header__btn
+
+    &--transparent {
+        .header {
+            &__top {
+                background-color: transparent;
+
+                @include respond-to(sm) {
+                    background-color: $gray--lighten;
+                }
+            }
+        }
+
+        .nav {
+            &__item {
+                &:hover {
+                    .header {
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+    } //.header--transparent
 } //.header
 
 .logo {
