@@ -27,7 +27,8 @@ body {
 }
 
 .section {
-    margin-bottom: 80px;
+    margin-bottom: $gutter * 2;
+
     @include respond-to(md) {
         margin-bottom: 40px;
     }
@@ -84,6 +85,25 @@ body {
         }
     }
 } //.section
+
+.section-img {
+
+    &__in {
+        @include row-flex;
+    } //.section--img__in
+
+    &__text {
+        @include col;
+        @include size(7);
+        @include size-xs(12);
+    } //.section--img__text
+
+    &__image {
+        @include col;
+        @include size(5);
+        @include size-xs(12);
+    } //.section--img__image
+} //.section-img
 
 .page-title {
     @include respond-to(xs) {

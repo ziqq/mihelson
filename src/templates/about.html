@@ -1,0 +1,50 @@
+---
+title: О нас
+---
+{% extends "layouts/_layout.html" %}
+
+{% block header %}
+{% include "partials/_header.html" %}
+{% endblock %}
+
+{% block content %}
+
+<!-- begin unicode -->
+<main class="main about">
+
+	<!-- begin firstscreen -->
+	<div class="firstscreen about__firstscreen">
+		<picture class="firstscreen__image">
+			<source media="(max-width: 768px)" srcset="img/about/768/1.jpg">
+			<img class="firstscreen__img" src="img/about/1200/1.jpg" alt="alt">
+		</picture>
+		<div class="firstscreen__inner">
+			<div class="firstscreen__text">
+				<h1 class="h1 firstscreen__title">Добро пожаловать <br> в компанию Михельсон
+						</h1>
+				<h5 class="h5 firstscreen__subtitle">Более 1000 довольных клиентов в России и странах ближнего зарубежья. Мы делаем Вашу работу с нами простой и рентабельной.</h5>
+			</div>
+
+		</div>
+	</div><!-- end firstscreen -->
+
+	<!-- begin about -->
+	 <section class="section section-img">
+	   <div class="container container--md">
+		   <div class="section-img__in">
+			   <div class="section-img__text">
+				   <p>Компания названа фамилией основателя - Михельсон Станислав Юрьевича. Начал свою деятельность Станислав Юрьевич как ИП ещё в 1993 году в Балаково на автомобильном рынке автозапчастей. В 2002 году образовался Торговый дом семьи Михельсон и спустя 15 лет в 2008 году имея за плечами огромный опыт началось освоение собственной промышленно-складской оптовой площадки.</p>
+				   <p>На сегодняшний день компания Михельсон имеет комплекс зданий общей площадью свыше 4000 квадратных метров, три собственных товарных марки и общую номенклатуру более 8000 наименований. Парк современного оборудования позволяет производить детали из резины, термопластичного и заливного полиуретана.</p>
+				   <p>В 2018 году компания Михельсон под руководством Михельсон Игоря Станиславовича это: стабильная доставка собственным транспортом и централизованная продажа через официальных дилеров, современный подход к рекламе и маркетингу, информативные и современные сайты.</p>
+			   </div>
+			   <div class="section-img__image">
+				   <img src="img/general/about-person.jpg" alt="person">
+			   </div>
+		   </div>
+	   </div>
+	</section><!-- end about -->
+
+</main>
+<!-- end unicode -->
+
+{% endblock %}

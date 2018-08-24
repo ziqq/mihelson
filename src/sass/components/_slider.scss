@@ -81,6 +81,7 @@
             text-align: center;
             @include vx;
             top: 5%;
+
             @include respond-to(sm) {
                 left: 10px;
                 right: 10px;
@@ -98,12 +99,12 @@
                 }
 
                 &__desc {
-                    min-width: 100%;
+                    // min-width: 100%;
                     color: $color-text;
                     font-family: $f-light;
                 }
             }
-        }//.m-slider__text--center
+        } //.m-slider__text--center
     } //.m-slider__text
 
     &__title {
@@ -260,9 +261,10 @@
                 text-align: left;
                 @include vy;
                 left: 50px;
+
                 @include respond-to(xs) {
                     max-width: 100%;
-                    padding-top: 20px;
+                    padding: 15% $gutter;
                     position: static;
                     @include tY(0);
                 }
@@ -271,7 +273,11 @@
             &__desc {
                 @include respond-to(sm) {
                     max-width: 240px;
-                    min-width: auto;
+                    margin: auto auto 45px 0;
+                }
+
+                @include respond-to(xs) {
+                    margin: auto auto 45px;
                 }
             }
         }

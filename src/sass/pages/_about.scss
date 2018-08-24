@@ -1,0 +1,30 @@
+.about {
+
+    &__firstscreen {
+        margin-bottom: $gutter * 2;
+        background-color: #efefef;
+
+        @include respond-to(xs) {
+            min-height: 350px;
+            margin-bottom: $gutter;
+            padding: 0;
+        }
+    }
+
+    .firstscreen {
+
+        &__subtitle {
+            max-width: 400px;
+
+            @include respond-to(xs) {
+                max-width: 300px;
+            }
+        }
+
+        &__image {
+            @include respond-to(xs) {
+                display: none;
+            }
+        }
+    }
+} //.about

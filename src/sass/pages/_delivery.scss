@@ -23,19 +23,12 @@
         }
     } //.delivery__adv
 
-    .firstscreen {
-
-        &__image {
-        }
-
-        &__subtitle {
-            max-width: 250px;
-        }
+    &__subtitle {
+        max-width: 250px;
     }
 } //.delivery
 
 .posible {
-
     @include respond-to(sm) {
         margin-bottom: $gutter * 2;
     }
@@ -45,7 +38,7 @@
         padding: 0;
     }
 
-    .section-bg{
+    .section-bg {
         padding: 0;
         position: relative;
 
@@ -71,7 +64,6 @@
         }
 
         &__text {
-
             @include respond-to(sm) {
                 max-width: 320px;
             }

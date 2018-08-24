@@ -216,7 +216,7 @@
         left: 0;
 
         @include respond-to(md) {
-            left: 60px;
+            left: 55px;
         }
         @include respond-to(xs) {
             left: 15px;
@@ -231,12 +231,16 @@
     } //.firstscreen__title
 
     &__subtitle {
+        max-width: 400px;
         margin-bottom: $gutter;
-        color: $color-text;
         font-size: 16px;
         font-family: $f;
         font-weight: 300;
         line-height: 1.5;
+
+        @include respond-to(xs) {
+            max-width: 300px;
+        }
     } //.firstscreen__subtitle
 
     .container {

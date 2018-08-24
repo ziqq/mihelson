@@ -47,22 +47,24 @@ $header-height: 50px;
         @include respond-to(sm) {
             margin-left: 45px;
         }
-    }//.header__logo
+    } //.header__logo
 
     &__nav {
         flex: 1;
-    }//.header__nav
+    } //.header__nav
 
     &__search {
         margin-right: $gutter;
-    }//.header__search
+    } //.header__search
 
     &__btn {
         padding: 7px 35px;
-    }//.header__btn
+    } //.header__btn
 
     &--transparent {
+
         .header {
+
             &__top {
                 background-color: transparent;
 
@@ -73,8 +75,11 @@ $header-height: 50px;
         }
 
         .nav {
+
             &__item {
+
                 &:hover {
+
                     .header {
                         background-color: #fff;
                     }
@@ -85,6 +90,7 @@ $header-height: 50px;
 } //.header
 
 .logo {
+
     &__link {
         color: $color-text;
         font-family: $f-bold;
@@ -94,5 +100,5 @@ $header-height: 50px;
         &:hover {
             color: $color-text;
         }
-    }//.logo__link
-}//.logo
+    } //.logo__link
+} //.logo

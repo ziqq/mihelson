@@ -20,7 +20,7 @@
         }
 
         @include respond-to(xs) {
-            padding: 0 $gutter / 2;
+            padding: 0;
             background-image: none;
         }
     } //.hero__slide
@@ -29,11 +29,11 @@
 
         &__text {
             @include respond-to(md) {
-                padding-top: $gutter;
-                left: 10px;
+                padding: $gutter 0 0;
+                left: 12px;
             }
             @include respond-to(sm) {
-                left: 30px;
+                left: 0;
             }
         }
 

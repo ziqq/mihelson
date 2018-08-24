@@ -1,7 +1,7 @@
 .unicode {
 
     &__firstscreen {
-        margin-bottom: 70px;
+        margin-bottom: $gutter * 2;
 
         @include respond-to(xs) {
             margin-bottom: $gutter;
@@ -21,7 +21,7 @@
             text-align: center;
 
             @include respond-to(xs) {
-                margin-bottom: 15px;
+                margin-bottom: $gutter;
             }
         }
     } //.unicode__title
@@ -53,16 +53,25 @@
             }
         }
 
-        .m-slider__text--center {
-            @include respond-to(xs) {
-                padding-top: 15%;
+        .m-slider {
+
+            &__text--center {
+                @include respond-to(xs) {
+                    padding-top: 14%;
+                }
+            }
+
+            &__desc {
+                @include respond-to(xs) {
+                    margin: auto auto $gutter;
+                }
             }
         }
     }
 } //.unicode
 
 .adv {
-    margin-bottom: 50px;
+    margin-bottom: $gutter;
 
     @include respond-to(xs) {
         margin-bottom: 0;
@@ -210,6 +219,13 @@
                 background-color: $color-accent;
             }
         }
+
+        &.is-active {
+
+            .item-icon__inner {
+                background-color: $color-accent;
+            }
+        }
     }
 }
 
@@ -238,7 +254,22 @@
         margin: auto;
         background-color: #fff;
         border-radius: 50%;
-        @include flexCenter;
+        @include flexColumn;
+
+        span {
+
+            &:first-child {
+                display: block;
+                margin: auto auto 0;
+                font-family: $f-medium;
+                font-size: 40px;
+                line-height: 1;
+            }
+
+            &:last-child {
+                margin: 0 auto auto;
+            }
+        }
     } //.item-icon__in
 
     &__icon {
@@ -259,7 +290,7 @@
 } //.item-icon
 
 .section-bg {
-    margin-bottom: 80px;
+    margin-bottom: $gutter * 2;
     padding: $gutter * 4 50px;
     @include cover;
 
@@ -273,10 +304,6 @@
 
         &--right {
             margin-left: auto;
-        }
-
-        @include respond-to(sm) {
-            margin: auto;
         }
     } //.section-bg__tex
 

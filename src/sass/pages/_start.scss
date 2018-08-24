@@ -1,0 +1,36 @@
+.start {
+
+    &__firstscreen {
+        margin-bottom: $gutter * 2;
+        color: #fff;
+
+        @include respond-to(xs) {
+            margin-bottom: $gutter;
+        }
+    } //.start__firstscreen
+
+    .item-icon {
+
+        &__inner {
+            @include respond-to(xs) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .reviews {
+
+        &__slide {
+            @include respond-to(xs) {
+                height: auto;
+            }
+        }
+    }
+
+    .m-slider--reviews {
+
+        .m-slider__desc {
+            margin-left: 0;
+        }
+    }
+} //.start

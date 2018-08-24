@@ -17,9 +17,17 @@ PageList:
   ready: 50
   desc : Уникальные коды
 
+- file: start.html
+  ready: 50
+  desc : Быстрый старт
+
 - file: delivery.html
   ready: 50
   desc : Логистика
+
+- file: about.html
+  ready: 50
+  desc : О нас
 
 - file: brands.html
   ready: 50

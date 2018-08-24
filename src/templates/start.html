@@ -1,0 +1,122 @@
+---
+title: Легкий старт
+---
+{% extends "layouts/_layout.html" %}
+
+{% block header %}
+{% include "partials/_header.html" %}
+{% endblock %}
+
+{% block content %}
+
+<!-- begin unicode -->
+<main class="main start">
+
+	<!-- begin firstscreen -->
+	<div class="firstscreen start__firstscreen">
+		<picture class="firstscreen__image">
+			<source media="(max-width: 480px)" srcset="img/start/480/1.jpg">
+			<source media="(max-width: 768px)" srcset="img/start/768/1.jpg">
+			<img class="firstscreen__img" src="img/start/1200/1.jpg" alt="alt">
+		</picture>
+		<div class="firstscreen__inner">
+			<div class="firstscreen__text">
+				<h1 class="h1 firstscreen__title">Легкий старт!</h1>
+				<h5 class="h5 firstscreen__subtitle">Возьмите любой бренд <br> на тест-драйв и не платите, <br> если не понравится.</h5>
+				<a href="#cooperation" class="btn btn--accent firstscreen__btn" data-toggle="modal">Попробовать</a>
+			</div>
+		</div>
+	</div><!-- end firstscreen -->
+
+	<!-- begin send -->
+	 <section class="send">
+		<div class="container container--md">
+			<div class="unicode__title-wrap">
+				<h2 class="unicode__title">Выбирайте сами, через <br> сколько платить</h2>
+				<p class="unicode__subtitle">Срок отсрочки платежа зависит <br> от статуса сотрудничества</p>
+			</div>
+
+			<div class="send__items">
+				<div class="item-icon">
+					<div class="item-icon__inner">
+						<div class="item-icon__in">
+							<span>15</span>
+							<span>дней</span>
+						</div>
+					</div>
+					<div class="item-icon__title">Оптовик</div>
+				</div>
+				<div class="item-icon is-active">
+					<div class="item-icon__inner">
+						<div class="item-icon__in">
+							<span>30</span>
+							<span>дней</span>
+						</div>
+					</div>
+					<div class="item-icon__title">Дилер</div>
+				</div>
+				<div class="item-icon">
+					<div class="item-icon__inner">
+						<div class="item-icon__in">
+							<span>45</span>
+							<span>дней</span>
+						</div>
+					</div>
+					<div class="item-icon__title">Дилер +</div>
+			</div>
+
+		</div>
+	</section><!-- end send -->
+
+	<!-- begin adv -->
+	 <section class="adv">
+		<div class="container">
+			<!-- begin adv__items -->
+			 <div class="adv__items">
+				<div class="item-icon">
+					{{ mixin.icon('rub', 'item-icon__icon') }}
+					<div class="item-icon__title">Не нужно <br> вкладывать деньги</div>
+					<div class="item-icon__desc">Все расходы, связанные с приобритением товара, мы берем на себя, Вам остается только отправить заявку.</div>
+				</div>
+				<div class="item-icon">
+					{{ mixin.icon('delivery2', 'item-icon__icon') }}
+					<div class="item-icon__title">Бесплатная <br> доставка до склада </div>
+					<div class="item-icon__desc">Бесплатная доставка до Вашего склада или терминала любой ТК собственной логистической компанией Михельсон. </div>
+				</div>
+				<div class="item-icon">
+					{{ mixin.icon('manager', 'item-icon__icon') }}
+					<div class="item-icon__title">Персональный <br> менеджер</div>
+					<div class="item-icon__desc">Все вопросы будут решаться мгновенно, персональный менеджер всегда на связи в любом месенджере.</div>
+				</div>
+			</div><!-- end adv__items -->
+		</div>
+	</section><!-- end adv -->
+
+	<!-- begin reviews -->
+	<section class="section">
+		<div class="container">
+			<div class="reviews__slider m-slider m-slider--reviews">
+				<div class="m-slider__dots"></div>
+				<div class="reviews__slides m-slider__slides js-slider">
+					<div class="reviews__slide m-slider__slide">
+						<picture class="m-slider__image">
+							<source media="(max-width: 480px)" srcset="img/start/480/2.jpg">
+							<source media="(max-width: 768px)" srcset="img/start/768/2.jpg">
+							<img class="firstscreen__img" src="img/start/1200/2.jpg" alt="alt">
+						</picture>
+						<div class="m-slider__text m-slider__text--center">
+							<div class="m-slider__title">Получите приоритет <br> первой степени</div>
+							<div class="m-slider__desc">Возьмите любой бренд на тест-драйв и Ваш заказ соберут первым! </div>
+
+							<a class="btn btn--black" data-toggle="modal" href="#cooperation"> Тест-драйв</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- end reviews -->
+
+</main>
+<!-- end unicode -->
+
+{% endblock %}
