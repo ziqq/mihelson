@@ -439,6 +439,7 @@
 } //.reviews
 
 .article {
+    margin-bottom: $gutter;
     padding: 30px;
     border: 1px solid $gray--lighten;
     border-radius: $border-radius;
