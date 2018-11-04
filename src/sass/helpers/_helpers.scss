@@ -22,15 +22,6 @@
 @mixin scroll {
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    @include scrollbar {
-        width: 5px;
-    }
-    @include scrollbar-track {
-        width: 5px;
-    }
-    @include scrollbar-thumb {
-        background-color: $color-bg--dark;
-    }
 }
 
 @mixin scroll--thin {
